@@ -7,6 +7,8 @@ import farm1 from '../../../assets/descargar.jpg'
 const useStyles = makeStyles((theme)=>({
     root:{
         height: "50vh",
+        paddingLeft:100,
+        paddingRight:100
         
     }
 
@@ -20,25 +22,24 @@ const MundoSection = () => {
             container
             spacing={0} 
             justify="center"
-            direction="row"
-            alignItems="center">
+           >
                 <Grid container spacing={10} item xs={12}>                        
-                    <Grid item lg={2} md={6} sm={6} xs={12}>
+                    <Grid item lg={2} md={4} sm={6} xs={12}>
                         <NavCard image={farm1} tittle="titulo1"/>
                     </Grid>
-                    <Grid item lg={2} md={6} sm={6} xs={12}>
+                    <Grid item lg={2} md={4} sm={6} xs={12}>
                         <NavCard image={farm1} tittle="titulo2"/>
                     </Grid>
-                    <Grid item lg={2} md={6} sm={6} xs={12}>
+                    <Grid item lg={2} md={4} sm={6} xs={12}>
                         <NavCard image={farm1} tittle="titulo3"/>
                     </Grid>
-                    <Grid item lg={2} md={6} sm={6} xs={12}>
+                    <Grid item lg={2} md={4} sm={6} xs={12}>
                         <NavCard image={farm1} tittle="titulo4"/>
                     </Grid>
-                    <Grid item lg={2} md={6} sm={6} xs={12}>
+                    <Grid item lg={2} md={4} sm={6} xs={12}>
                         <NavCard image={farm1} tittle="titulo5"/>
                     </Grid>
-                    <Grid item lg={2} md={6} sm={6} xs={12}>
+                    <Grid item lg={2} md={4} sm={6} xs={12}>
                         <NavCard image={farm1} tittle="titulo6"/>
                     </Grid>
                         
