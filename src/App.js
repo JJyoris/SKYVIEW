@@ -1,24 +1,37 @@
-import logo from './logo.svg';
-import './App.css';
+import Header from "./components/Organism/Header";
+import { ThemeProvider } from "@material-ui/core/styles";
+import { CssBaseline, createMuiTheme } from "@material-ui/core/";
+import { Route, Switch, BrowserRouter } from "react-router-dom";
+import Home from "./components/Screens/Home";
+
+const baseTheme = createMuiTheme();
 
 function App() {
   return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
-    </div>
+    <ThemeProvider theme={baseTheme}>
+      <BrowserRouter>
+        <CssBaseline>
+          <Header />
+
+          {/* <div className={classes.content}> */}
+            <Switch>
+              {/*
+              public routes
+            */}
+              <Route path="/" exact component={Home} />
+            </Switch>
+          {/* </div> */}
+
+          {/* <div className={classes.footer}>
+            {/*
+              Here add footer component
+          
+
+            <Footer />
+          </div> */}
+        </CssBaseline>
+      </BrowserRouter>
+    </ThemeProvider>
   );
 }
 
