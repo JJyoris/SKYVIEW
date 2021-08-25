@@ -1,10 +1,10 @@
 import Header from "./components/Organism/Header";
 import { ThemeProvider } from "@material-ui/core/styles";
-import { CssBaseline, createMuiTheme } from "@material-ui/core/";
+import { CssBaseline, createTheme } from "@material-ui/core/";
 import { Route, Switch, BrowserRouter } from "react-router-dom";
 import Home from "./components/Screens/Home";
 
-const baseTheme = createMuiTheme();
+const baseTheme = createTheme();
 
 function App() {
   return (

@@ -7,6 +7,7 @@ import {
   useMediaQuery,
   IconButton,
   Box,
+  Drawer,
   Popper,
   MenuItem,
   Grow,
@@ -17,6 +18,7 @@ import {
 import MenuIcon from "@material-ui/icons/Menu";
 import MoreHorizIcon from "@material-ui/icons/MoreHoriz";
 import { Link as Scroll } from "react-scroll";
+import DrawerMenu from "../../Molecules/DrawerMenu";
 
 const headerOptions = [
   {
@@ -57,9 +59,13 @@ const Header = () => {
   const classes = useStyles();
   const [open, setOpen] = useState(false);
   const anchorRef = useRef(null);
+
   const handleToggle = () => {
-    setOpen((prevOpen) => !prevOpen);
+    console.log("aqui");
+    setOpen(!open);
+    
   };
+  
   const handleClose = (event) => {
     if (anchorRef.current && anchorRef.current.contains(event.target)) {
       return;
@@ -70,39 +76,41 @@ const Header = () => {
 
   const isMobile = useMediaQuery((theme) => theme.breakpoints.down("sm"));
 
-  function handleListKeyDown(event) {
-    if (event.key === "Tab") {
-      event.preventDefault();
-      setOpen(false);
-    }
-  }
+  // function handleListKeyDown(event) {
+  //   if (event.key === "Tab") {
+  //     event.preventDefault();
+  //     setOpen(false);
+  //   }
+  // }
 
   const getOptions = () => {
     return headerOptions.map(({ label, href }) => {
       return (
-        <Scroll to={href} smooth={true}>
+        <Scroll to={href} smooth={true} key={label}>
+          <Box ml={10}>
           <Typography>
-            <Box ml={10}> {label}</Box>
+             {label}
           </Typography>
+          </Box>
         </Scroll>
       );
     });
   };
 
-  const getOptionsMobile = () => {
-    return headerOptions.map(({ label, href }) => {
-      return (
-        <MenuItem
-          onClick={handleClose}
-          component={Scroll}
-          to={href}
-          smooth={true}
-        >
-          {label}
-        </MenuItem>
-      );
-    });
-  };
+  // const getOptionsMobile = () => {
+  //   return headerOptions.map(({ label, href }) => {
+  //     return (
+  //       <MenuItem
+  //         onClick={handleClose}
+  //         component={Scroll}
+  //         to={href}
+  //         smooth={true}
+  //       >
+  //         {label}
+  //       </MenuItem>
+  //     );
+  //   });
+  // };
   const displayDesktop = () => {
     return (
       <>
@@ -129,7 +137,11 @@ const Header = () => {
           <IconButton color="inherit" onClick={handleToggle} ref={anchorRef}>
             <MenuIcon />
           </IconButton>
+          <DrawerMenu headerOptions={headerOptions}  open={open} onClose={handleClose} onClick={handleToggle}/> 
 
+
+
+{/* 
           <Popper
             open={open}
             anchorEl={anchorRef.current}
@@ -151,6 +163,7 @@ const Header = () => {
                       autoFocusItem={open}
                       id="menu-list-grow"
                       onKeyDown={handleListKeyDown}
+                      
                     >
                       {getOptionsMobile()}
                     </MenuList>
@@ -158,7 +171,7 @@ const Header = () => {
                 </Paper>
               </Grow>
             )}
-          </Popper>
+          </Popper> */}
         </Toolbar>
       </>
     );

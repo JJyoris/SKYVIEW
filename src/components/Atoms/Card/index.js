@@ -2,7 +2,7 @@ import React from "react";
 import {
   Card,
   CardActionArea,
-  Grid,
+  Box,
   CardMedia,
   makeStyles,
   Typography,
@@ -10,11 +10,12 @@ import {
 
 const useStyles = makeStyles((theme) => ({
   root: {
-    maxWidth: 150,
+    maxWidth: "100%",
     borderRadius: 30,
   },
   media: {
-    padding: "56.25%",
+    height: 130,
+    width: "auto",
   },
 }));
 
@@ -27,11 +28,10 @@ const NavCard = ({ image, tittle }) => {
           <CardMedia image={image} className={classes.media} />
         </CardActionArea>
       </Card>
-      <Grid container justify="center" direction="row" alignItems="center">
-        <Grid item>
-          <Typography>{tittle}</Typography>
-        </Grid>
-      </Grid>
+
+      <Box textAlign="center">
+        <Typography>{tittle}</Typography>
+      </Box>
     </>
   );
 };

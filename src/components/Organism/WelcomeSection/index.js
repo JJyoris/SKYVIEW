@@ -7,7 +7,8 @@ const useStyles = makeStyles((theme)=>({
         justifyContent: "center",
         alignItems: "center",
         height: "70vh",
-    }
+        },
+    toolbar: theme.mixins.toolbar
 
 }))
 
@@ -15,7 +16,11 @@ const WelcomeSection = () => {
     const classes = useStyles();
     return (
         <div id="home" className={classes.root}>
-            MAPA
+            <div className={classes.toolbar}>
+                MAPA
+
+            </div>
+           
             
         </div>
     )
