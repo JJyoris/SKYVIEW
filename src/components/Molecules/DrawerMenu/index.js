@@ -13,7 +13,9 @@ const DrawerMenu = ({headerOptions, onClose, open, onClick}) => {
         variant="temporary"
         anchor="top"
         onClose={onClose}
-        open={open} >
+        open={open} 
+        transitionDuration={{ enter: 500, exit: 1000 }}
+        >
             <div className={classes.toolbar}>               
                 <MenuList headerOptions={headerOptions} onClick={onClick} />
              </div> 
