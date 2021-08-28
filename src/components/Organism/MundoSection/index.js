@@ -10,7 +10,7 @@ import oficinaCentral from "../../../assets/icn_oficentral.png";
 
 const useStyles = makeStyles((theme) => ({
   root: {
-    height: "50vh",
+    height: "30vh",
     paddingLeft: 100,
     paddingRight: 100,
   },

@@ -44,7 +44,7 @@ const useStyles = makeStyles((theme) => ({
     flexGrow: 1,
   },
   appBarWrapper: {
-    marginRight: theme.spacing(10),
+   
     marginLeft: theme.spacing(10),
     color: theme.palette.text.secondary
   },
@@ -78,7 +78,7 @@ const Header = () => {
     return headerOptions.map(({ label, href }) => {
       return (
         <Scroll to={href} smooth={true} key={label}>
-          <Box ml={10}>
+          <Box ml={6}>
             <Typography className={classes.header} variant="h1" >{label}</Typography>
           </Box>
         </Scroll>
@@ -119,7 +119,7 @@ const Header = () => {
               alt=" logo"
             />
           </Scroll>
-          <IconButton color="inherit" onClick={handleToggle} ref={anchorRef}>
+          <IconButton onClick={handleToggle} ref={anchorRef}>
             <MenuIcon />
           </IconButton>
         </Toolbar>
@@ -136,7 +136,7 @@ const Header = () => {
 
   return (
     <div id="header">
-      <AppBar elevation={0} className={classes.appbar} >
+      <AppBar elevation={0} className={classes.appbar} position="sticky" >
         {isMobile ? displayMobile() : displayDesktop()}
       </AppBar>
     </div>

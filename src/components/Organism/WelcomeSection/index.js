@@ -1,31 +1,41 @@
-import React from 'react'
-import { Box, makeStyles, Typography } from '@material-ui/core'
+import React from "react";
+import { Grid, makeStyles, Typography, Box } from "@material-ui/core";
+import mapa from "../../../assets/banner-mapa.png";
 
-const useStyles = makeStyles((theme)=>({
-    root:{
-        display: "flex",
-        justifyContent: "center",
-        alignItems: "center",
-        height: "70vh",
-        color: "#EE7623"
-        
-        },
-
-
-
-}))
+const useStyles = makeStyles((theme) => ({
+  root: {
+    paddingTop: 10,
+    height: "60vh",
+  },
+  tittle: {
+    color: theme.palette.text.button,
+  },
+}));
 
 const WelcomeSection = () => {
-    const classes = useStyles();
-    return (
-        <div id="home" className={classes.root}>      
-            <Box >
-                <Typography variant="h3" >EXPERIENCIA SKY VIEW </Typography>  
-            </Box>    
-                           
-            
-        </div>
-    )
-}
+  const classes = useStyles();
+  return (
+    <div id="home" className={classes.root}>
+      <Grid
+        container
+        spacing={0}
+        justifyContent="center"
+        alignItems="center"
+        direction="column"
+      >
+        <Typography variant="h3" className={classes.tittle}>
+          EXPERIENCIA SKY VIEW{" "}
+        </Typography>
 
-export default WelcomeSection
+        <Box mb={3}>
+          <Typography variant="h2">subtitulo del sky view </Typography>
+        </Box>
+        <Grid item xs={12}>
+          <img src={mapa} alt="mapa" height="350" />
+        </Grid>
+      </Grid>
+    </div>
+  );
+};
+
+export default WelcomeSection;
