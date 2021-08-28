@@ -1,5 +1,5 @@
 import React from "react";
-import { makeStyles, Grid } from "@material-ui/core";
+import { makeStyles, Grid, Typography, Box } from "@material-ui/core";
 import NavCard from "../../Atoms/Card";
 import comunidad from "../../../assets/icn_comunidad.png";
 import historia from "../../../assets/icn_historia.png";
@@ -27,21 +27,39 @@ const MundoSection = () => {
         direction="row"
         alignItems="center"
       >
+        <Box m={3}>
+          <Typography variant="h3">
+            {" "}
+            Descubre nuestros procesos navegando en nuestro mundo{" "}
+          </Typography>
+        </Box>
         <Grid container spacing={6} item xs={12}>
           <Grid item lg={2} md={4} sm={6} xs={12}>
             <NavCard image={historia} tittle="Historia" />
           </Grid>
           <Grid item lg={2} md={4} sm={6} xs={12}>
-            <NavCard image={oficinaCentral} tittle="Oficina Central" />
+            <NavCard
+              image={oficinaCentral}
+              tittle="Oficina"
+              subtittle="Central"
+            />
           </Grid>
           <Grid item lg={2} md={4} sm={6} xs={12}>
-            <NavCard image={crianza} tittle="Plantas Crianza" />
+            <NavCard image={crianza} tittle="Plantas" subtittle="Crianza" />
           </Grid>
           <Grid item lg={2} md={4} sm={6} xs={12}>
-            <NavCard image={faenadora} tittle="Plantas Faenadora"  />
+            <NavCard
+              image={faenadora}
+              tittle="Plantas "
+              subtittle="Faenadora"
+            />
           </Grid>
           <Grid item lg={2} md={4} sm={6} xs={12}>
-            <NavCard image={produccion} tittle="Produccion Responsable" />
+            <NavCard
+              image={produccion}
+              tittle="Produccion"
+              subtittle="Responsable"
+            />
           </Grid>
           <Grid item lg={2} md={4} sm={6} xs={12}>
             <NavCard image={comunidad} tittle="Comunidad" />

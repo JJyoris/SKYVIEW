@@ -46,13 +46,12 @@ const useStyles = makeStyles((theme) => ({
   appBarWrapper: {
     marginRight: theme.spacing(10),
     marginLeft: theme.spacing(10),
+    color: theme.palette.text.secondary
   },
   appbar:{
     backgroundColor:"transparent"
   },
-  appBarWrapper:{
-    color: theme.palette.text.secondary
-  }
+
   
 }));
 const Header = () => {

@@ -50,7 +50,7 @@ export const theme = createTheme({
     text: {
       primary: "#4D4D4D",
       secondary: "#002F87",
-      buttons: "#fff",
+      button: "#EE7623"
     },
   },
 });

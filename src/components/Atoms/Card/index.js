@@ -22,7 +22,7 @@ const useStyles = makeStyles((theme) => ({
 
 }));
 
-const NavCard = ({ image, tittle }) => {
+const NavCard = ({ image, tittle , subtittle }) => {
   const classes = useStyles();
   return (
     <>
@@ -35,7 +35,9 @@ const NavCard = ({ image, tittle }) => {
       <Box textAlign="center"  m={2} >
        
         <Typography >{tittle}</Typography>
+        <Typography >{subtittle}</Typography>
       </Box>
+       
     </>
   );
 };

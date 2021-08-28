@@ -1,5 +1,5 @@
 import React from 'react'
-import { makeStyles } from '@material-ui/core'
+import { Box, makeStyles, Typography } from '@material-ui/core'
 
 const useStyles = makeStyles((theme)=>({
     root:{
@@ -7,20 +7,22 @@ const useStyles = makeStyles((theme)=>({
         justifyContent: "center",
         alignItems: "center",
         height: "70vh",
+        color: "#EE7623"
+        
         },
-    toolbar: theme.mixins.toolbar
+
+
 
 }))
 
 const WelcomeSection = () => {
     const classes = useStyles();
     return (
-        <div id="home" className={classes.root}>
-            <div className={classes.toolbar}>
-                MAPA
-
-            </div>
-           
+        <div id="home" className={classes.root}>      
+            <Box >
+                <Typography variant="h3" >EXPERIENCIA SKY VIEW </Typography>  
+            </Box>    
+                           
             
         </div>
     )
