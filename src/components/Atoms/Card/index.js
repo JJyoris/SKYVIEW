@@ -10,13 +10,16 @@ import {
 
 const useStyles = makeStyles((theme) => ({
   root: {
-    maxWidth: "100%",
+    
     borderRadius: 30,
   },
   media: {
-    height: 130,
+    height: 120,
     width: "auto",
+  
   },
+
+
 }));
 
 const NavCard = ({ image, tittle }) => {
@@ -29,8 +32,9 @@ const NavCard = ({ image, tittle }) => {
         </CardActionArea>
       </Card>
 
-      <Box textAlign="center">
-        <Typography>{tittle}</Typography>
+      <Box textAlign="center"  m={2} >
+       
+        <Typography >{tittle}</Typography>
       </Box>
     </>
   );

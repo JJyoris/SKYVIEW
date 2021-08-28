@@ -1,8 +1,12 @@
 import React from "react";
-import { makeStyles, Grid, Box } from "@material-ui/core";
+import { makeStyles, Grid } from "@material-ui/core";
 import NavCard from "../../Atoms/Card";
-import farm from "../../../assets/images.jpg";
-import farm1 from "../../../assets/descargar.jpg";
+import comunidad from "../../../assets/icn_comunidad.png";
+import historia from "../../../assets/icn_historia.png";
+import crianza from "../../../assets/icn_plantacrianza.png";
+import faenadora from "../../../assets/icn_plantafaenadora.png";
+import produccion from "../../../assets/icn_produccionresponsable.png";
+import oficinaCentral from "../../../assets/icn_oficentral.png";
 
 const useStyles = makeStyles((theme) => ({
   root: {
@@ -23,24 +27,24 @@ const MundoSection = () => {
         direction="row"
         alignItems="center"
       >
-        <Grid container spacing={4} item xs={12}>
+        <Grid container spacing={6} item xs={12}>
           <Grid item lg={2} md={4} sm={6} xs={12}>
-            <NavCard image={farm1} tittle="titulo1" />
+            <NavCard image={historia} tittle="Historia" />
           </Grid>
           <Grid item lg={2} md={4} sm={6} xs={12}>
-            <NavCard image={farm1} tittle="titulo2" />
+            <NavCard image={oficinaCentral} tittle="Oficina Central" />
           </Grid>
           <Grid item lg={2} md={4} sm={6} xs={12}>
-            <NavCard image={farm1} tittle="titulo3" />
+            <NavCard image={crianza} tittle="Plantas Crianza" />
           </Grid>
           <Grid item lg={2} md={4} sm={6} xs={12}>
-            <NavCard image={farm1} tittle="titulo4" />
+            <NavCard image={faenadora} tittle="Plantas Faenadora"  />
           </Grid>
           <Grid item lg={2} md={4} sm={6} xs={12}>
-            <NavCard image={farm1} tittle="titulo5" />
+            <NavCard image={produccion} tittle="Produccion Responsable" />
           </Grid>
           <Grid item lg={2} md={4} sm={6} xs={12}>
-            <NavCard image={farm1} tittle="titulo6" />
+            <NavCard image={comunidad} tittle="Comunidad" />
           </Grid>
         </Grid>
       </Grid>

@@ -7,18 +7,13 @@ import {
   useMediaQuery,
   IconButton,
   Box,
-  Drawer,
-  Popper,
-  MenuItem,
-  Grow,
-  ClickAwayListener,
-  MenuList,
-  Paper,
+
 } from "@material-ui/core";
 import MenuIcon from "@material-ui/icons/Menu";
-import MoreHorizIcon from "@material-ui/icons/MoreHoriz";
+
 import { Link as Scroll } from "react-scroll";
 import DrawerMenu from "../../Molecules/DrawerMenu";
+import logo from "../../../assets/Logo-SKYVIEW.svg"
 
 const headerOptions = [
   {
@@ -44,6 +39,7 @@ const useStyles = makeStyles((theme) => ({
     marginRight: theme.spacing(10),
     cursor: "pointer",
   },
+
   logo: {
     flexGrow: 1,
   },
@@ -51,6 +47,12 @@ const useStyles = makeStyles((theme) => ({
     marginRight: theme.spacing(10),
     marginLeft: theme.spacing(10),
   },
+  appbar:{
+    backgroundColor:"transparent"
+  },
+  appBarWrapper:{
+    color: theme.palette.text.secondary
+  }
   
 }));
 const Header = () => {
@@ -59,7 +61,7 @@ const Header = () => {
   const anchorRef = useRef(null);
 
   const handleToggle = () => {
-    console.log("aqui");
+   
     setOpen(!open);
   };
 
@@ -78,7 +80,7 @@ const Header = () => {
       return (
         <Scroll to={href} smooth={true} key={label}>
           <Box ml={10}>
-            <Typography>{label}</Typography>
+            <Typography className={classes.header} variant="h1" >{label}</Typography>
           </Box>
         </Scroll>
       );
@@ -90,12 +92,16 @@ const Header = () => {
       <>
         <Toolbar className={classes.appBarWrapper}>
           <Scroll to="header" smooth={true} className={classes.logo}>
-            LOGO
+          <Box
+              component={"img"}
+              mt={3}
+              width={250}
+              src={logo}
+              alt=" logo"
+            />
           </Scroll>
           <div className={classes.options}>{getOptions()}</div>
-          <IconButton color="inherit">
-            <MoreHorizIcon />
-          </IconButton>
+
         </Toolbar>
       </>
     );
@@ -106,7 +112,13 @@ const Header = () => {
       <>
         <Toolbar className={classes.appbarWrapper}>
           <Scroll to="header" smooth={true} className={classes.logo}>
-            LOGO
+          <Box
+              component={"img"}
+              mt={3}
+              width={180}
+              src={logo}
+              alt=" logo"
+            />
           </Scroll>
           <IconButton color="inherit" onClick={handleToggle} ref={anchorRef}>
             <MenuIcon />
@@ -125,7 +137,7 @@ const Header = () => {
 
   return (
     <div id="header">
-      <AppBar elevation={0}>
+      <AppBar elevation={0} className={classes.appbar} >
         {isMobile ? displayMobile() : displayDesktop()}
       </AppBar>
     </div>

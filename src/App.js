@@ -3,12 +3,12 @@ import { ThemeProvider } from "@material-ui/core/styles";
 import { CssBaseline, createTheme } from "@material-ui/core/";
 import { Route, Switch, BrowserRouter } from "react-router-dom";
 import Home from "./components/Screens/Home";
+import { lightTheme } from "./config/ThemeConfig";
 
-const baseTheme = createTheme();
 
 function App() {
   return (
-    <ThemeProvider theme={baseTheme}>
+    <ThemeProvider theme={createTheme(lightTheme)}>
       <BrowserRouter>
         <CssBaseline>
           <Header />
