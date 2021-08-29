@@ -10,6 +10,7 @@ import {
 
 } from "@material-ui/core";
 import MenuIcon from "@material-ui/icons/Menu";
+import { Link as RouterLink , useLocation } from "react-router-dom";
 
 import { Link as Scroll } from "react-scroll";
 import DrawerMenu from "../../Molecules/DrawerMenu";
@@ -58,6 +59,7 @@ const Header = () => {
   const classes = useStyles();
   const [open, setOpen] = useState(false);
   const anchorRef = useRef(null);
+  const location = useLocation();
 
   const handleToggle = () => {
    
@@ -90,7 +92,7 @@ const Header = () => {
     return (
       <>
         <Toolbar className={classes.appBarWrapper}>
-          <Scroll to="header" smooth={true} className={classes.logo}>
+          <RouterLink to="/"  className={classes.logo}>
           <Box
               component={"img"}
               mt={3}
@@ -98,7 +100,7 @@ const Header = () => {
               src={logo}
               alt=" logo"
             />
-          </Scroll>
+          </RouterLink>
           <div className={classes.options}>{getOptions()}</div>
 
         </Toolbar>
@@ -133,6 +135,8 @@ const Header = () => {
       </>
     );
   };
+
+  if (location.pathname !== "/") return null;
 
   return (
     <div id="header">
