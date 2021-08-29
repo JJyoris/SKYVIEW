@@ -10,7 +10,7 @@ import oficinaCentral from "../../../assets/icn_oficentral.png";
 
 const useStyles = makeStyles((theme) => ({
   root: {
-    height: "30vh",
+   
     paddingLeft: 100,
     paddingRight: 100,
   },
@@ -33,35 +33,35 @@ const MundoSection = () => {
             Descubre nuestros procesos navegando en nuestro mundo{" "}
           </Typography>
         </Box>
-        <Grid container spacing={6} item xs={12}>
-          <Grid item lg={2} md={4} sm={6} xs={12}>
+        <Grid container spacing={4} item xs={12}>
+          <Grid item lg={2} md={4} sm={6} xs={6}>
             <NavCard image={historia} tittle="Historia" />
           </Grid>
-          <Grid item lg={2} md={4} sm={6} xs={12}>
+          <Grid item lg={2} md={4} sm={6} xs={6}>
             <NavCard
               image={oficinaCentral}
               tittle="Oficina"
               subtittle="Central"
             />
           </Grid>
-          <Grid item lg={2} md={4} sm={6} xs={12}>
+          <Grid item lg={2} md={4} sm={6} xs={6}>
             <NavCard image={crianza} tittle="Plantas" subtittle="Crianza" />
           </Grid>
-          <Grid item lg={2} md={4} sm={6} xs={12}>
+          <Grid item lg={2} md={4} sm={6} xs={6}>
             <NavCard
               image={faenadora}
               tittle="Plantas "
               subtittle="Faenadora"
             />
           </Grid>
-          <Grid item lg={2} md={4} sm={6} xs={12}>
+          <Grid item lg={2} md={4} sm={6} xs={6}>
             <NavCard
               image={produccion}
               tittle="Produccion"
               subtittle="Responsable"
             />
           </Grid>
-          <Grid item lg={2} md={4} sm={6} xs={12}>
+          <Grid item lg={2} md={4} sm={6} xs={6}>
             <NavCard image={comunidad} tittle="Comunidad" />
           </Grid>
         </Grid>

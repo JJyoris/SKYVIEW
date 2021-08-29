@@ -3,11 +3,12 @@ import { makeStyles, Grid  } from "@material-ui/core";
 import imageAgenda from "../../../assets/AgendaDeVisita.png";
 const useStyles = makeStyles((theme) => ({
   root: {
-    height: "60vh",
+   
     paddingTop:50
   },
   image: {
     maxWidth: "100%",
+    height:"auto"
   },
 }));
 const Scheduler = () => {
