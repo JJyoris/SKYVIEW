@@ -20,21 +20,21 @@ const CallCenter = ({ label, number, schedule }) => {
   const classes = useStyles();
   return (
     <>
-      {" "}
-      <Grid container direction="row" className={classes.root}>
-        <Grid item xs={12}>
-          <Typography variant="h3" className={classes.tittle}>
-            {label}
-          </Typography>
-        </Grid>
-        <Grid item xs={12}>
-          <IconText Icon={PhoneIcon} text={number}  />
-          <Typography className={classes.horario}>
-            HORARIO DE ATENCIÓN
-          </Typography>
-          <Typography> {schedule} </Typography>
-        </Grid>
-      </Grid>
+      <Box
+        width='100%'
+        display='flex'
+        flexDirection='column'
+        justifyContent='flex-start'
+        alignItems='flex-start'
+      >
+        <Typography variant='h3' className={classes.tittle}>
+          {label}
+        </Typography>
+
+        <IconText Icon={PhoneIcon} text={number} />
+        <Typography className={classes.horario}>HORARIO DE ATENCIÓN</Typography>
+        <Typography> {schedule} </Typography>
+      </Box>
     </>
   );
 };

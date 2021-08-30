@@ -5,13 +5,14 @@ const FormFields = ({ label, type, id, minRows }) => {
     <div>
 
           <TextField
+
             label={label}
             type={type}
             id={id}
             variant="outlined"
             multiline
             minRows={minRows}
-            style ={{width: '100%'}}
+            style ={{width: '100%', marginBottom: 10}}
           />
 
 
