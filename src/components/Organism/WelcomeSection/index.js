@@ -4,12 +4,24 @@ import mapa from "../../../assets/banner-mapa.png";
 
 const useStyles = makeStyles((theme) => ({
   root: {
+    
     paddingTop: 10,
-    height: "60vh",
+    height: "auto",
+    paddingBottom: 10,
+    paddingLeft: 20,
+    paddingRight: 20,
   },
   tittle: {
     color: theme.palette.text.button,
   },
+  img: {
+    
+    minHeight: 430,
+    width: "100%",
+    borderRadius: 30,
+    objectFit: 'cover',
+    objectPosition: 'bottom'
+  }
 }));
 
 const WelcomeSection = () => {
@@ -18,21 +30,30 @@ const WelcomeSection = () => {
     <div id="home" className={classes.root}>
       <Grid
         container
-        spacing={0}
         justifyContent="center"
         alignItems="center"
-        direction="column"
+        direction="row"
+       
       >
-        <Typography variant="h3" className={classes.tittle}>
-          EXPERIENCIA SKY VIEW{" "}
-        </Typography>
-
-        <Box mb={3}>
-          <Typography variant="h2">subtitulo del sky view </Typography>
-        </Box>
         <Grid item xs={12}>
-          <img src={mapa} alt="mapa" height="350" />
+
+          <Typography align="center" variant="h3" className={classes.tittle} gutterBottom>
+            
+            EXPERIENCIA SKY VIEW
+
+          </Typography>
+
+          <Typography align="center" variant="h2" gutterBottom>
+
+            subtitulo del sky view
+
+          </Typography>
         </Grid>
+
+        <Grid item xs={12}>
+          <img src={mapa} alt="mapa" className={classes.img} />
+        </Grid>
+      
       </Grid>
     </div>
   );

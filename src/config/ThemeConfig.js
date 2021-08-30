@@ -38,6 +38,7 @@ export const theme = createTheme({
     //Text Presentation
     h5: {
       fontFamily: "Montserrat",
+      fontWeight:700,
       fontSize: 45,
     },
     body1: {
