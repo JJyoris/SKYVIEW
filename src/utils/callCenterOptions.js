@@ -10,7 +10,7 @@ const callCenterOptions = [
     schedule: "Lunes a Viernes 8:30 a 18:00hrs Sábado 9:00 a 14:00hrs",
   },
   {
-    label: "MESA CENTRAL",
+    label: "LINEA DE ATENCION AL CLIENTE",
     number: "800 20 6000",
     schedule: "Lunes a Viernes 8:30 a 18:00hrs Sábado 9:00 a 14:00hrs",
   },

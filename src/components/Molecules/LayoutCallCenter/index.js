@@ -4,7 +4,7 @@ import PhoneIcon from "@material-ui/icons/Phone";
 import IconText from "../../Atoms/IconText";
 const useStyles = makeStyles((theme) => ({
   root: {
-    marginBottom: 10,
+    marginBottom: 40,
   },
 
   horario: {
@@ -26,7 +26,10 @@ const CallCenter = ({ label, number, schedule }) => {
         flexDirection='column'
         justifyContent='flex-start'
         alignItems='flex-start'
+        className={classes.root}
+        
       >
+
         <Typography variant='h3' className={classes.tittle}>
           {label}
         </Typography>

@@ -61,7 +61,7 @@ const Granja = () => {
                 </Grid>
               </Grid>
             </Grid>
-            <Grid item xs={0} md={1}></Grid>
+          
             <Grid item xs={12} md={6} justifyContent="center" alignItems="center">
               <ReactPlayer url="https://youtu.be/5PA4D9NyQTo"  width="700px" height="470px" />
             </Grid>
