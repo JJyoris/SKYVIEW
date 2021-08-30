@@ -10,7 +10,7 @@ const useStyles = makeStyles((theme) => ({
    
   },
   img: {
-    height: "600px",
+    height: "100%",
     width: "100%",
   
 
