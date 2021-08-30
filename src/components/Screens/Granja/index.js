@@ -10,7 +10,7 @@ const useStyles = makeStyles((theme)=>({
         height: 'auto'
       },
       image: {
-        maxWidth: "100%",
+        maxWidth: 400,
         height: "auto",
       },
       title: {
@@ -62,8 +62,8 @@ const Granja = () => {
               </Grid>
             </Grid>
             <Grid item xs={0} md={1}></Grid>
-            <Grid item xs={12} md={6}>
-              <ReactPlayer url="" />
+            <Grid item xs={12} md={6} justifyContent="center" alignItems="center">
+              <ReactPlayer url="https://youtu.be/5PA4D9NyQTo"  width="700px" height="470px" />
             </Grid>
           </Grid>
         </Box>
