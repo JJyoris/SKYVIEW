@@ -11,10 +11,13 @@ import {
 import { Link as RouterLink } from "react-router-dom";
 
 const useStyles = makeStyles((theme) => ({
-  root: {
+  root:{
+    borderRadius: 30,
+  },
+  img: {
     borderRadius: 30,
     height:130,
-    maxWidth: 160,
+   
     width: "100%",
   },
 }));
@@ -28,9 +31,10 @@ const NavCard = ({ image, tittle, subtittle, link }) => {
         component={RouterLink}
         to={link}
         elevation={0}
+        className={classes.root}
       >
         <Box display='flex' justifyContent='center' alignItems='center'>
-          <CardMedia image={image} className={classes.root} />
+          <CardMedia image={image} className={classes.img} />
         </Box>
       </CardActionArea>
 

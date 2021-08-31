@@ -39,12 +39,14 @@ const Granja = () => {
         alignItems='center'
       >
         <Box width='80%' minWidth={200}>
-          <Grid container direction='row' spacing={1}>
+          <Grid container direction='row' spacing={0}>
             <Grid item xs={12} md={5}>
               <Grid
                 container
                 direction='column'
                 spacing={5}
+                justifyContent='center'
+                alignItems='center'
                 className={classes.gridContainer}
               >
                 <Grid item>

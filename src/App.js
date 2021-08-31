@@ -10,6 +10,7 @@ import OficinaCentral from "./components/Screens/OficinaCentral";
 import Granja from "./components/Screens/Granja";
 import Planta from "./components/Screens/Planta";
 import Produccion from "./components/Screens/Produccion";
+import Timeline from "./components/Screens/Timeline";
 
 
 function App() {
@@ -31,6 +32,7 @@ function App() {
               <Route path="/granja" exact component={Granja} />
               <Route path="/planta" exact component={Planta} />
               <Route path="/produccion" exact component={Produccion} />
+              <Route path="/historia/timeline" exact component={Timeline} />
 
             </Switch>
           {/* </div> */}
