@@ -11,6 +11,7 @@ import Granja from "./components/Screens/Granja";
 import Planta from "./components/Screens/Planta";
 import Produccion from "./components/Screens/Produccion";
 import Timeline from "./components/Screens/Timeline";
+import Libertades from "./components/Screens/Libertades";
 
 
 function App() {
@@ -30,6 +31,7 @@ function App() {
               <Route path="/historia" exact component={Historia} />
               <Route path="/oficina" exact component={OficinaCentral} />
               <Route path="/granja" exact component={Granja} />
+              <Route path="/granja/libertades" exact component={Libertades} />
               <Route path="/planta" exact component={Planta} />
               <Route path="/produccion" exact component={Produccion} />
               <Route path="/historia/timeline" exact component={Timeline} />

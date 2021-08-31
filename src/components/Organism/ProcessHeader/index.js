@@ -77,6 +77,13 @@ const ProcessHeader = () => {
       url: "/granja",
       color: classes.granja,
       previous: "/",
+      next: "/granja/libertades",
+    },
+    {
+      label: "NUESTRAS GRANJAS",
+      url: "/granja/libertades",
+      color: classes.granja,
+      previous: "/granja",
       next: null,
     },
 

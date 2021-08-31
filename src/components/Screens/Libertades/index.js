@@ -1,8 +1,7 @@
-import { Grid , makeStyles, Box} from '@material-ui/core'
 import React from 'react'
+import libertades from "../../../assets/5_libertades.png"
 import ReactPlayer from 'react-player'
-import  alimentacion from '../../../assets/Alimentacion.png'
-import cuidados from '../../../assets/Cuidados.png'
+import { Grid, Box, makeStyles } from '@material-ui/core'
 
 const useStyles = makeStyles((theme)=>({
     root: {
@@ -32,10 +31,10 @@ const useStyles = makeStyles((theme)=>({
       },
 }))
 
-const Granja = () => {
+const Libertades = () => {
     const classes = useStyles();
     return (
-        <div id="granja"  className={classes.root}>
+        <div id="libertades"  className={classes.root}>
    <Box
         width='100%'
         display='flex'
@@ -43,7 +42,13 @@ const Granja = () => {
         alignItems='center'
       >
         <Box width='80%' minWidth={200}>
-          <Grid container direction='row' spacing={0}>
+          <Grid container direction='row' spacing={5}>
+
+          
+            <Grid item xs={12} md={6} justifyContent="center" alignItems="center">
+              <ReactPlayer url="https://youtu.be/MwFJN82kTUQ"  width="700px" height="470px" className={classes.video} />
+            </Grid>
+
             <Grid item xs={12} md={5}>
               <Grid
                 container
@@ -53,23 +58,15 @@ const Granja = () => {
                 alignItems='center'
                 className={classes.gridContainer}
               >
-                <Grid item>
-                 <img src={alimentacion} alt="alimentacion" className={classes.image} />
-        
-                </Grid>
 
                 <Grid item>
                   <img
-                    src={cuidados}
-                    alt='cuidados'
+                    src={libertades}
+                    alt='libertades'
                     className={classes.image}
                   />
                 </Grid>
               </Grid>
-            </Grid>
-          
-            <Grid item xs={12} md={6} justifyContent="center" alignItems="center">
-              <ReactPlayer url="https://youtu.be/5PA4D9NyQTo"  width="700px" height="470px" className={classes.video} />
             </Grid>
           </Grid>
         </Box>
@@ -79,4 +76,4 @@ const Granja = () => {
     )
 }
 
-export default Granja
+export default Libertades
