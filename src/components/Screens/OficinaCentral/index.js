@@ -1,11 +1,19 @@
 import React from 'react'
-import ReactPlayer from 'react-player'
+import Iframe from 'react-iframe'
 
 const OficinaCentral = () => {
+    
     return (
-        <div>
-            <ReactPlayer url="https://storage.net-fs.com/hosting/6457119/60/" />
-        </div>
+       
+        <Iframe  url="https://storage.net-fs.com/hosting/6457119/60/" 
+        height="100%"
+         width="100%"
+        id="OficinaCentralVR"
+       
+        display="initial"
+        position="absolute" 
+        styles={{top:-100 , zIndex:-1}}/>
+        
     )
 }
 
