@@ -8,7 +8,12 @@ import Historia from "./components/Screens/Historia";
 import ProcessHeader from "./components/Organism/ProcessHeader";
 import OficinaCentral from "./components/Screens/OficinaCentral";
 import Granja from "./components/Screens/Granja";
-import Planta from "./components/Screens/Planta";
+import Protocolos from './components/Organism/Planta/Protocolos'
+import Faenado from './components/Organism/Planta/Faenado'
+import Areas from './components/Organism/Planta/Areas'
+import Beneficios from './components/Organism/Planta/Beneficios'
+import Certificaciones from './components/Organism/Planta/Certificaciones'
+import Sigas from './components/Organism/Planta/Sigas'
 import Produccion from "./components/Screens/Produccion";
 import Timeline from "./components/Screens/Timeline";
 import Libertades from "./components/Screens/Libertades";
@@ -32,7 +37,14 @@ function App() {
               <Route path="/oficina" exact component={OficinaCentral} />
               <Route path="/granja" exact component={Granja} />
               <Route path="/granja/libertades" exact component={Libertades} />
-              <Route path="/planta" exact component={Planta} />
+              <Route path="/planta" exact component={Protocolos} />
+              <Route path="/planta/faenado" exact component={Faenado} />
+              <Route path="/planta/areas" exact component={Areas} />
+              <Route path="/planta/beneficios" exact component={Beneficios} />
+              <Route path="/planta/certificaciones" exact component={Certificaciones} />
+              <Route path="/planta/sigas" exact component={Sigas} />
+
+
               <Route path="/produccion" exact component={Produccion} />
               <Route path="/historia/timeline" exact component={Timeline} />
 

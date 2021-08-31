@@ -70,7 +70,47 @@ const ProcessHeader = () => {
       url: "/planta",
       color: classes.planta,
       previous: "/",
+      next: '/planta/faenado',
+    },
+    {
+      label: "PLANTAS INDUSTRIALES",
+      url: "/planta/faenado",
+      color: classes.planta,
+      previous: "/planta",
+      next: '/planta/areas',
+
+    },
+    {
+      label: "PLANTAS INDUSTRIALES",
+      url: "/planta/areas",
+      color: classes.planta,
+      previous: "/planta/faenado",
+      next: '/planta/beneficios',
+
+    },
+    {
+      label: "PLANTAS INDUSTRIALES",
+      url: "/planta/beneficios",
+      color: classes.planta,
+      previous: "/planta/areas",
+      next: '/planta/certificaciones',
+
+    },
+    {
+      label: "PLANTAS INDUSTRIALES",
+      url: "/planta/certificaciones",
+      color: classes.planta,
+      previous: "/planta/beneficios",
+      next: '/planta/sigas',
+
+    },
+    {
+      label: "PLANTAS INDUSTRIALES",
+      url: "/planta/sigas",
+      color: classes.planta,
+      previous: "/planta/certificaciones",
       next: null,
+
     },
     {
       label: "NUESTRAS GRANJAS",
