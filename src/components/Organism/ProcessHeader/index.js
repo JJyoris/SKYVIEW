@@ -63,21 +63,21 @@ const ProcessHeader = () => {
       url: "/comunidad",
       color: classes.comunidad,
       previous: "/",
-      next: "/historia/timeline",
+      next: null,
     },
     {
       label: "PLANTAS INDUSTRIALES",
       url: "/planta",
       color: classes.planta,
       previous: "/",
-      next: "/historia/timeline",
+      next: null,
     },
     {
       label: "NUESTRAS GRANJAS",
       url: "/granja",
       color: classes.granja,
       previous: "/",
-      next: "/historia/timeline",
+      next: null,
     },
 
     {
@@ -85,18 +85,21 @@ const ProcessHeader = () => {
       url: "/oficina",
       color: classes.oficina,
       previous: "/",
+      next:null,
     },
     {
       label: "PRODUCCION RESPONSABLE",
       url: "/produccion",
       color: classes.produccion,
       previous: "/",
+      next:null,
     },
     {
       label: "NUESTRA HISTORIA",
       url: "/historia/timeline",
       color: classes.historia,
       previous: "/historia",
+      next:null,
     },
   ];
 

@@ -26,6 +26,11 @@ const useStyles = makeStyles((theme)=>({
           justifyContent: 'center'
         },
       },
+      video:{
+        borderRadius:20,
+        overflow: "hidden",
+    
+      },
 }))
 
 const Granja = () => {
@@ -65,7 +70,7 @@ const Granja = () => {
             </Grid>
           
             <Grid item xs={12} md={6} justifyContent="center" alignItems="center">
-              <ReactPlayer url="https://youtu.be/5PA4D9NyQTo"  width="700px" height="470px" />
+              <ReactPlayer url="https://youtu.be/5PA4D9NyQTo"  width="700px" height="470px" className={classes.video} />
             </Grid>
           </Grid>
         </Box>

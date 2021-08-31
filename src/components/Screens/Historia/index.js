@@ -8,7 +8,7 @@ import { position } from "dom-helpers";
 
 const useStyles = makeStyles((theme) => ({
   root: {
-    paddingTop: 70,
+    paddingTop: 60,
     height: "auto",
   },
 
