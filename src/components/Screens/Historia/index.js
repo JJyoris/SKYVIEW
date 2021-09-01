@@ -70,6 +70,11 @@ const Historia = () => {
             width="750px"
             height="500px"
             className={classes.video}
+            config={{
+              youtube: {
+                playerVars: {controls: 2 },
+              },
+            }}
           />
         </Grid>
 
