@@ -152,7 +152,8 @@ const ProcessHeader = () => {
 
   if (location.pathname === "/") return null;
   return (
-    <AppBar elevation={0} position="sticky" className={classes.appbar}>
+
+    <AppBar elevation={0} position={location.pathname === "/oficina"? "fixed": "sticky"} className={classes.appbar}>
       <Toolbar>
         <RouterLink to="/" className={classes.logo}>
           <Box
