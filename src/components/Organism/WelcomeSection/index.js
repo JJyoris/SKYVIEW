@@ -1,7 +1,7 @@
 import React from "react";
 import { Grid, makeStyles, Typography, Box } from "@material-ui/core";
-import mapa from "../../../assets/banner-mapa.png";
-
+import MapAgroSuper from "../../Atoms/MapAgroSuper"
+import { TransformWrapper, TransformComponent } from "react-zoom-pan-pinch";
 const useStyles = makeStyles((theme) => ({
   root: {
     
@@ -21,7 +21,9 @@ const useStyles = makeStyles((theme) => ({
     borderRadius: 30,
     objectFit: 'cover',
     objectPosition: 'bottom'
-  }
+  },
+ 
+
 }));
 
 const WelcomeSection = () => {
@@ -50,8 +52,28 @@ const WelcomeSection = () => {
           </Typography>
         </Grid>
 
-        <Grid item xs={12}>
-          <img src={mapa} alt="mapa" className={classes.img} />
+        <Grid item xs={12}  >
+        <TransformWrapper
+        initialScale={1}
+        initialPositionX={200}
+        initialPositionY={100}
+      >
+        {({ zoomIn, zoomOut, resetTransform }) => (
+          <React.Fragment>
+            <div className="tools">
+              <button onClick={() => zoomIn()}>Zoom in </button>
+              <button onClick={() => zoomOut()}>Zoom out</button>
+              <button onClick={() => resetTransform()}>Reset</button>
+            </div>
+              <TransformComponent>
+              <MapAgroSuper/> 
+              
+            </TransformComponent>
+          </React.Fragment>
+        )}
+      </TransformWrapper>
+          
+          
         </Grid>
       
       </Grid>

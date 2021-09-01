@@ -24,7 +24,7 @@ const Contact = () => {
 
   const getFormOptions = () => {
     return formOptions.map(({ label, type, id }) => {
-      return label === "Mensaje *" ? (
+      return label === "Mensaje" ? (
         <FormFields label={label} type={type} id={id} multiline minRows={5} />
       ) : (
         <FormFields label={label} type={type} id={id} />
