@@ -83,7 +83,7 @@ const Scheduler = () => {
             <Grid item xs={12} md={6}>
               <img
                 src={IlustrationImg}
-                alt='agenda'
+                alt='Imagen agenda'
                 className={classes.image}
               />
             </Grid>

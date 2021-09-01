@@ -1,0 +1,21 @@
+/*Time to finalise the cloud shape*/
+body{
+	overflow-x: hidden;
+}
+
+
+#nube{
+	animation-name:  traslation;
+	animation-duration: 60s;
+	animation-timing-function: linear;
+	animation-iteration-count: infinite;
+	position: absolute;
+	z-index: 1;
+	
+}
+
+@keyframes traslation {
+	0%{right: 0px}
+	50%{right: 500px}
+	100%{right: 0px}
+}

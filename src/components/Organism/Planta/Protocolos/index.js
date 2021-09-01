@@ -79,6 +79,11 @@ const Protocolos = () => {
                   width='700px'
                   height='470px'
                   className={classes.video}
+                  config={{
+                    youtube: {
+                      playerVars: {controls: 2 },
+                    },
+                  }}
                 />
               </Box>
             </Grid>

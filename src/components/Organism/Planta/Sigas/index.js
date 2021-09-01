@@ -63,6 +63,11 @@ const Sigas = () => {
                 width='700px'
                 height='470px'
                 className={classes.video}
+                config={{
+                  youtube: {
+                    playerVars: {controls: 2 },
+                  },
+                }}
               />
             </Grid>
             <Grid item md={1}></Grid>
