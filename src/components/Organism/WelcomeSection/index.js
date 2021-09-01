@@ -52,20 +52,22 @@ const WelcomeSection = () => {
           </Typography>
         </Grid>
 
-        <Grid item xs={12}  >
+        <Grid item xs={10}   >
         <TransformWrapper
-        initialScale={1}
-        initialPositionX={200}
-        initialPositionY={100}
+        initialScale={1.5}
+        initialPositionX={-500}
+       
+        
       >
         {({ zoomIn, zoomOut, resetTransform }) => (
           <React.Fragment>
-            <div className="tools">
+            <div >
               <button onClick={() => zoomIn()}>Zoom in </button>
               <button onClick={() => zoomOut()}>Zoom out</button>
               <button onClick={() => resetTransform()}>Reset</button>
             </div>
-              <TransformComponent>
+              <TransformComponent width="500px">
+
               <MapAgroSuper/> 
               
             </TransformComponent>

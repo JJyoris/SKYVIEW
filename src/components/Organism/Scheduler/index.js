@@ -1,6 +1,6 @@
 import React from "react";
-import { makeStyles, Grid, Box, Typography } from "@material-ui/core";
-import SchedulerImg from "../../../assets/calendario.png";
+import { makeStyles, Grid, Box, Typography , Button } from "@material-ui/core";
+
 import IlustrationImg from "../../../assets/ilustracion.png";
 const useStyles = makeStyles((theme) => ({
   root: {
@@ -36,13 +36,16 @@ const Scheduler = () => {
         alignItems='center'
       >
         <Box width='80%' minWidth={200}>
-          <Grid container direction='row' spacing={1}>
+          <Grid container direction='row' spacing={1}
+                          justifyContent="center"
+                          alignItems="center">
             <Grid item xs={12} md={5}>
               <Grid
                 container
                 direction='column'
                 spacing={5}
                 className={classes.gridContainer}
+
               >
                 <Grid item>
                   <Typography
@@ -71,11 +74,9 @@ const Scheduler = () => {
                 </Grid>
 
                 <Grid item>
-                  <img
-                    src={SchedulerImg}
-                    alt='agenda'
-                    className={classes.image}
-                  />
+                <Button variant='contained' color='primary'>
+                  Agendar
+                </Button>
                 </Grid>
               </Grid>
             </Grid>

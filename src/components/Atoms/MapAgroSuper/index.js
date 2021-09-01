@@ -7,7 +7,7 @@ import "./index.css";
 const MapAgroSuper = () => {
   return (
     <div id="mapa">
-      <img src={nubes} id="nube" width="1500px"/>
+      <img src={nubes} id="nube" width="100%"/>
       <img src={mapa} width="100%" height="auto" />
     </div>
   );
