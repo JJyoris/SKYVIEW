@@ -1,5 +1,5 @@
 import React from "react";
-import { Grid, makeStyles, Typography, Box } from "@material-ui/core";
+import { Grid, makeStyles, Typography, Button } from "@material-ui/core";
 import MapAgroSuper from "../../Atoms/MapAgroSuper"
 import { TransformWrapper, TransformComponent } from "react-zoom-pan-pinch";
 const useStyles = makeStyles((theme) => ({
@@ -22,7 +22,9 @@ const useStyles = makeStyles((theme) => ({
     objectFit: 'cover',
     objectPosition: 'bottom'
   },
- 
+ wrapper:{
+
+ }
 
 }));
 
@@ -54,19 +56,20 @@ const WelcomeSection = () => {
 
         <Grid item xs={10}   >
         <TransformWrapper
+
         initialScale={1.5}
-        initialPositionX={-500}
+        initialPositionX={-400}
        
         
       >
         {({ zoomIn, zoomOut, resetTransform }) => (
           <React.Fragment>
             <div >
-              <button onClick={() => zoomIn()}>Zoom in </button>
-              <button onClick={() => zoomOut()}>Zoom out</button>
-              <button onClick={() => resetTransform()}>Reset</button>
+              <Button variant="contained" color="primary" size="small" onClick={() => zoomIn()}>Zoom in </Button>
+              <Button variant="contained" color="primary" size="small" onClick={() => zoomOut()}>Zoom out</Button>
+              <Button variant="contained" color="primary" size="small" onClick={() => resetTransform()}>Reset</Button>
             </div>
-              <TransformComponent width="500px">
+              <TransformComponent wrap>
 
               <MapAgroSuper/> 
               

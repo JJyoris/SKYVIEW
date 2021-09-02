@@ -1,21 +1,20 @@
 import React from 'react'
 import { Grid, Box, Typography, makeStyles } from "@material-ui/core";
 import CertificacionePicture from "../../../../assets/foto_slide-5.png";
-import CertificacionesImg from '../../../../assets/slide-5.png'
+import BorderWrapper from '../../../Atoms/BorderWrapper';
+
 
 
 const useStyles = makeStyles((theme) => ({
   root: {
-    backgroundImage: `url(${CertificacionePicture})`,
     paddingTop: 50,
-    backgroundRepeat: "no-repeat",
-    backgroundPosition: "center center",
-    backgroundSize: "cover",
-    backgroundAttachment: "fixed",
     height: "90vh",
-    width: "100%",
-
+  
 },
+background:{
+  height: "70vh",
+},
+
   image: {
     paddingLeft: 100,
     paddingRight: 100,
@@ -25,20 +24,7 @@ const useStyles = makeStyles((theme) => ({
   title: {
     color: theme.palette.text.button,
   },
-  subtitle: {
-    fontSize: 28,
-  },
-  gridContainer: {
-    [theme.breakpoints.down("md")]: {
-      flexDirection: "row",
-      alignItems: "center",
-      justifyContent: "center",
-    },
-  },
-  video: {
-    borderRadius: 20,
-    overflow: "hidden",
-  },
+
 }));
 
 
@@ -48,19 +34,39 @@ const Certificaciones = () => {
 
     return (
         <div className={classes.root}>
-            <Box
+        <BorderWrapper background={CertificacionePicture}>
+        <Box
+        className={classes.background}
         width='100%'
         display='flex'
-        justifyContent='center'
+        justifyContent='flex-start'
         alignItems='center'
+        flexDirection="row"
       >
-        <Box width='80%' minWidth={200}>
-            <Typography variant="h5" align="start" className={classes.title}>
+        <Box width='50%' minWidth={200}>
+        <Typography variant="h5" align="center" className={classes.title}>
                 Nuestras Certificaciones
             </Typography>
-            <img src={CertificacionesImg} className={classes.image} alt="areas"/>
+          <Grid container spacing={1} direction="row">
+          
+            <Grid item container md={7}>
+              <Grid item xs={6}>
+            {/* <img src={CertificacionHACCP} style={{height: 400}}/> */}
+            </Grid>
+            <Grid item xs={6}>
+            {/* <img src={CertificacionBRCFOOD} style={{width: '100%'}}/> */}
+            </Grid>
+            </Grid>
+
+          {/* <Grid item>
+              
+          </Grid> */}
+
+          </Grid>
+            
         </Box>
       </Box>
+      </BorderWrapper>
         </div>
     )
 }

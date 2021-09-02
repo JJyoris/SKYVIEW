@@ -8,7 +8,7 @@ const MapAgroSuper = () => {
   return (
     <div id="mapa">
       <img src={nubes} id="nube" width="100%"/>
-      <img src={mapa} width="100%" height="auto" />
+      <img src={mapa} width="100%"  />
     </div>
   );
 };

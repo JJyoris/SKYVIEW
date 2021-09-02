@@ -1,5 +1,5 @@
 import { makeStyles, Typography, Box, Grid } from "@material-ui/core";
-import SvgIcon from '@material-ui/core/SvgIcon';
+
 const useStyles = makeStyles((theme) => ({
   shapeCircle: {
     display: "flex",
@@ -15,6 +15,7 @@ const useStyles = makeStyles((theme) => ({
     boxShadow: "inset 0 0 0 1px  #fff",
   },
   container:{
+    padding: 30,
     display: 'flex',
     flexDirection:"column",
     justifyContent:"center",
@@ -29,7 +30,7 @@ const CircleArea = ({ Icon, title, backgroundColor }) => {
       <div className={classes.intertnalBox}>
      
             <Box width="100%" className={classes.container}>
-            <Icon style={{fontSize: 170, color: '#fff'}} />
+            <Icon style={{width: 110, color: '#fff'}} />
      
 
 
