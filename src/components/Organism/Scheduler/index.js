@@ -1,5 +1,5 @@
 import React from "react";
-import { makeStyles, Grid, Box, Typography , Button } from "@material-ui/core";
+import { makeStyles, Grid, Box, Typography , Button, Link } from "@material-ui/core";
 
 import IlustrationImg from "../../../assets/ilustracion.png";
 const useStyles = makeStyles((theme) => ({
@@ -77,8 +77,15 @@ const Scheduler = () => {
                 </Grid>
 
                 <Grid item>
-                <Button variant='contained' color='primary'>
-                  Agendar
+                <Button
+
+                variant='contained' 
+                color='primary'
+                href="https://agendamiento.reservo.cl/makereserva/agenda/K0iTaWC0V09YBW8N2D13cda664C3UM"
+                target="_blank"
+                rel="noopener"
+                rel="noreferrer"> 
+                AGENDAR
                 </Button>
                 </Grid>
               </Grid>
