@@ -1,5 +1,5 @@
 import React from "react";
-import { makeStyles, Box, Card } from "@material-ui/core";
+import { makeStyles, Box, Grid } from "@material-ui/core";
 import Slider from "react-slick";
 import processImage from "../../../utils/processImage";
 
@@ -10,9 +10,8 @@ const useStyles = makeStyles((theme) => ({
    
   },
   img: {
-    height: "100%",
-    width: "100%",
-  
+    width:"100%",
+    height:"60vh",
 
     [theme.breakpoints.down("md")]: {
       width: "260px",
@@ -25,12 +24,14 @@ const useStyles = makeStyles((theme) => ({
     },
   },
   slickContainer: {
-    marginRight: "35px",
-    marginLeft: "35px",
-    marginTop: "15px",
+    marginRight: "20px",
+    marginLeft: "20px",    
+    height:"100%"
+ 
   },
   slider:{
-      color:theme.palette.text.primary
+      color:theme.palette.text.primary,
+      marginTop: "10vh",
   }
 }));
 
@@ -38,11 +39,12 @@ const ProcessSlider = () => {
   const classes = useStyles();
 
   const settings = {
-    arrows: true,
+    arrows: false,
     dots: true,
     infinity: false,
     speed: 2000,
-    slidesToShow: 2,
+    slidesToShow: 3,
+    centerMode:true,
     slidesToScroll: 2,
     initialSlide: 0,
     autoplay: true,
@@ -50,19 +52,20 @@ const ProcessSlider = () => {
 
 
   return (
-    <Box className={classes.slickContainer}>
-      <Slider {...settings} className={classes.slider} >
-        {processImage.map(({ name, url }) => {
-          return (
-            <div key={name}>
-              <Card className={classes.root} elevation={0}>
-                <img src={url} alt={name} className={classes.img} />
-              </Card>
-            </div>
-          );
-        })}
-      </Slider>
-    </Box>
+    
+        <Slider {...settings} className={classes.slider} >
+          {processImage.map(({ name, url }) => {
+            return (
+              <div key={name}>
+                {/* <Card className={classes.root} elevation={0}> */}
+                  <img src={url} alt={name} className={classes.img} />
+                {/* </Card> */}
+              </div>
+            );
+          })}
+        </Slider>
+ 
+    
   );
 };
 

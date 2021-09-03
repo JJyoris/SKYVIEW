@@ -2,10 +2,11 @@ import React from "react";
 import libertades from "../../../assets/5_libertades.png";
 import ReactPlayer from "react-player";
 import { Grid, Box, makeStyles } from "@material-ui/core";
+import BorderWrapper from "../../Atoms/BorderWrapper"
 
 const useStyles = makeStyles((theme) => ({
   root: {
-    paddingTop: 50,
+   
     height: "auto",
   },
   image: {
@@ -35,13 +36,15 @@ const Libertades = () => {
   const classes = useStyles();
   return (
     <div id="libertades" className={classes.root}>
+      <BorderWrapper>
       <Box
         width="100%"
         display="flex"
         justifyContent="center"
         alignItems="center"
+        marginTop={5}
       >
-        <Box width="80%" minWidth={200}>
+        <Box width="90%" minWidth={200}>
           <Grid container direction="row" spacing={5}>
             <Grid
               item
@@ -84,6 +87,7 @@ const Libertades = () => {
           </Grid>
         </Box>
       </Box>
+      </BorderWrapper>
     </div>
   );
 };

@@ -5,6 +5,7 @@ import { Box, Grid, makeStyles } from "@material-ui/core";
 import { Link as RouterLink } from "react-router-dom";
 import flecha from "../../../assets/flecha.png";
 import logoEvolucion from "../../../assets/logos_evo-desktop.png";
+import BorderWrapper from "../../Atoms/BorderWrapper"
 
 const useStyles = makeStyles((theme) => ({
   root: {
@@ -33,9 +34,13 @@ const useStyles = makeStyles((theme) => ({
 const Historia = () => {
   const classes = useStyles();
   return (
+    
     <div id="historia" className={classes.root}>
+      <BorderWrapper style={{ paddingTop:5 }}>
+
+     
       <Grid container 
-        spacing={0}
+        
         justifyContent="center"
         alignItems="center"> 
         <Box
@@ -49,13 +54,13 @@ const Historia = () => {
       <Grid
         container
         direction="row"
-        spacing={0}
+        
         justifyContent="center"
         alignItems="center"
       >
           <Box
           component="img"
-          width="98%"
+          width="95%"
           height="18%"
           src={flecha}
           alt="flecha "
@@ -97,7 +102,10 @@ const Historia = () => {
           </RouterLink>
         </Grid>
       </Grid>
+      </BorderWrapper>
+      
     </div>
+   
   );
 };
 

@@ -1,9 +1,13 @@
 import React from 'react'
+import BorderWrapper from '../../Atoms/BorderWrapper'
 import ProcessSlider from '../../Molecules/ProcessSlider'
 
 const Timeline = () => {
     return (      
-        <ProcessSlider/> 
+        <BorderWrapper>
+             <ProcessSlider/> 
+        </BorderWrapper>
+       
  
     )
 }

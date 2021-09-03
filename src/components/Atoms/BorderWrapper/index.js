@@ -5,7 +5,7 @@ const BorderWrapper = ({ borderColor, children, background }) => {
     <div
       style={{
         marginRight: 30,
-        height: "80vh",
+        height: "100%",
         marginLeft: 30,
         padding: 30,
         border: `2px solid ${borderColor ? borderColor : "black"}`,

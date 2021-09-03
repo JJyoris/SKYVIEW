@@ -3,10 +3,11 @@ import React from "react";
 import ReactPlayer from "react-player";
 import alimentacion from "../../../assets/Alimentacion.png";
 import cuidados from "../../../assets/Cuidados.png";
+import BorderWrapper from "../../Atoms/BorderWrapper"
 
 const useStyles = makeStyles((theme) => ({
   root: {
-    paddingTop: 50,
+    
     height: "auto",
   },
   image: {
@@ -36,11 +37,13 @@ const Granja = () => {
   const classes = useStyles();
   return (
     <div id="granja" className={classes.root}>
+      <BorderWrapper> 
       <Box
         width="100%"
         display="flex"
         justifyContent="center"
         alignItems="center"
+        marginTop={5}
       >
         <Box width="80%" minWidth={200}>
           <Grid container direction="row" spacing={0}>
@@ -93,6 +96,7 @@ const Granja = () => {
           </Grid>
         </Box>
       </Box>
+      </BorderWrapper> 
     </div>
   );
 };
