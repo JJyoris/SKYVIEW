@@ -2,12 +2,13 @@ import React from 'react'
 import { Grid, Box, Typography, makeStyles } from "@material-ui/core";
 import CertificacionePicture from "../../../../assets/foto_slide-5.png";
 import BorderWrapper from '../../../Atoms/BorderWrapper';
-
+import Img1 from '../../../../assets/brc-1 (1).svg';
+import Img2 from '../../../../assets/brc-2 (1).svg'
 
 
 const useStyles = makeStyles((theme) => ({
   root: {
-    paddingTop: 50,
+
     height: "90vh",
   
 },
@@ -39,28 +40,28 @@ const Certificaciones = () => {
         className={classes.background}
         width='100%'
         display='flex'
-        justifyContent='flex-start'
-        alignItems='center'
-        flexDirection="row"
+        justifyContent='center'
+        marginTop={5}
+
       >
-        <Box width='50%' minWidth={200}>
-        <Typography variant="h5" align="center" className={classes.title}>
+        <Box width='80%' minWidth={200}>
+        
+          <Grid container spacing={3} direction="row" justifyContent="flex-start">
+          <Grid item xs={6}>
+          <Typography variant="h5" align="center" className={classes.title}>
                 Nuestras Certificaciones
             </Typography>
-          <Grid container spacing={1} direction="row">
-          
-            <Grid item container md={7}>
-              <Grid item xs={6}>
-            {/* <img src={CertificacionHACCP} style={{height: 400}}/> */}
+          </Grid>
+            <Grid item container spacing={5} md={8}>
+              <Grid item xs={4}>
+              <img src={Img2} width="100%" />
             </Grid>
-            <Grid item xs={6}>
-            {/* <img src={CertificacionBRCFOOD} style={{width: '100%'}}/> */}
+            <Grid item xs={3}>
+            
+            <img src={Img1} width="100%" />
             </Grid>
             </Grid>
 
-          {/* <Grid item>
-              
-          </Grid> */}
 
           </Grid>
             

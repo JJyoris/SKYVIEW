@@ -10,7 +10,7 @@ import {ReactComponent as Icn4} from '../../../../assets/icn4.svg'
 import Cerdo from '../../../../assets/cerdo.svg'
 const useStyles = makeStyles((theme) => ({
   root: {
-    paddingTop: 50,
+
     height: "90vh",
     width: "100%",
   },

@@ -2,10 +2,10 @@ import React from "react";
 import { Grid, Box, Typography, makeStyles } from "@material-ui/core";
 import FaenadoImg from "../../../../assets/slide-2.png";
 import ReactPlayer from "react-player";
+import BorderWrapper from "../../../Atoms/BorderWrapper";
 
 const useStyles = makeStyles((theme) => ({
   root: {
-    paddingTop: 50,
     height: "auto",
   },
   image: {
@@ -36,14 +36,16 @@ const Faenado = () => {
 
   return (
     <div className={classes.root}>
+      <BorderWrapper>
       <Box
         width="100%"
         display="flex"
         justifyContent="center"
         alignItems="center"
+        marginTop={5}
       >
-        <Box width="80%" minWidth={200}>
-          <Grid container direction="row" spacing={0}>
+        <Box width="90%" minWidth={200}>
+          <Grid container direction="row" spacing={5}>
             <Grid
               item
               xs={12}
@@ -93,6 +95,7 @@ const Faenado = () => {
           </Grid>
         </Box>
       </Box>
+      </BorderWrapper>
     </div>
   );
 };
