@@ -11,7 +11,7 @@ import BorderWrapper from "../../../Atoms/BorderWrapper";
 const useStyles = makeStyles((theme) => ({
   root: {
     height: "90vh",
-    paddingTop: 50,
+
     
   },
   background:{
