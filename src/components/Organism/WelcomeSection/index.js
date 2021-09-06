@@ -14,14 +14,7 @@ const useStyles = makeStyles((theme) => ({
   tittle: {
     color: theme.palette.text.button,
   },
-  img: {
-    
-    minHeight: 430,
-    width: "100%",
-    borderRadius: 30,
-    objectFit: 'cover',
-    objectPosition: 'bottom'
-  },
+
  wrapper:{
 
  }
@@ -57,9 +50,11 @@ const WelcomeSection = () => {
         <Grid item xs={10}   >
         <TransformWrapper
 
-        initialScale={1.5}
-        initialPositionX={-400}
-       
+        initialScale={4}
+        initialPositionX={-1800}
+        minScale={3}
+        
+      
         
       >
         {({ zoomIn, zoomOut, resetTransform }) => (
@@ -69,10 +64,13 @@ const WelcomeSection = () => {
               <Button variant="contained" color="primary" size="small" onClick={() => zoomOut()}>Zoom out</Button>
               <Button variant="contained" color="primary" size="small" onClick={() => resetTransform()}>Reset</Button>
             </div>
-              <TransformComponent wrap>
+              <TransformComponent 
+               contentStyle={{height:"600px"}}
+                >
+              
 
               <MapAgroSuper/> 
-              
+        
             </TransformComponent>
           </React.Fragment>
         )}
