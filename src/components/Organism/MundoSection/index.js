@@ -1,12 +1,12 @@
 import React from "react";
 import { makeStyles, Grid, Typography, Box } from "@material-ui/core";
 import NavCard from "../../Atoms/NavCard";
-import comunidad from "../../../assets/icn_comunidad.png";
-import historia from "../../../assets/icn_historia.png";
-import crianza from "../../../assets/icn_plantacrianza.png";
-import faenadora from "../../../assets/icn_plantafaenadora.png";
-import produccion from "../../../assets/icn_produccionresponsable.png";
-import oficinaCentral from "../../../assets/icn_oficentral.png";
+import comunidad from "../../../assets/btn-comunidad.png";
+import historia from "../../../assets/btn-nuestra_historia.png";
+import crianza from "../../../assets/btn-nuestras_granjas.png";
+import faenadora from "../../../assets//btn-plantas_industriales.png";
+import produccion from "../../../assets/btn-producción_responsable.png";
+import oficinaCentral from "../../../assets/btn-oficina_central.png";
 
 const useStyles = makeStyles((theme) => ({
   root: {
