@@ -1,0 +1,45 @@
+/*Time to finalise the cloud shape*/
+body{
+	overflow-x: hidden;
+}
+#mapa{
+	position: relative;
+}
+
+#nube{
+	animation-name:  traslation;
+	animation-duration: 60s;
+	animation-timing-function: linear;
+	animation-iteration-count: infinite;
+	position: absolute;
+	
+	
+}
+.modal{
+	display: flex;
+	align-items: center;
+	justify-content: center;
+}
+.icon-button{
+	top: 80px;
+	left: 370px;
+	
+}
+.btn-map{
+	animation: changeColor 4s;
+	animation-iteration-count: infinite;
+}
+
+@keyframes changeColor {
+	0% {color: #fff;}
+ 	50% {color: green;}
+	100%{color: #fff;}
+}
+
+
+
+@keyframes traslation {
+	0%{right: 0px}
+	50%{right: 500px}
+	100%{right: 0px}
+}

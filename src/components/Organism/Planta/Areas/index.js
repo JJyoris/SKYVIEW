@@ -24,7 +24,7 @@ const Areas = () => {
   const classes = useStyles();
   return (
     <div className={classes.root}>
-      <BorderWrapper background={AreaPicture}>
+      <BorderWrapper background={AreaPicture} borderColor='#f96f5a'>
       <Box
       className={classes.background}
         width='100%'

@@ -36,7 +36,7 @@ const Historia = () => {
   return (
     
     <div id="historia" className={classes.root}>
-      <BorderWrapper style={{ paddingTop:5 }}>
+      <BorderWrapper style={{ paddingTop:5 }} borderColor='#7e9e47'>
 
      
       <Grid container 

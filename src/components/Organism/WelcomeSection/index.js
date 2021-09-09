@@ -1,6 +1,6 @@
 import React from "react";
 import { Grid, makeStyles, Typography, Button } from "@material-ui/core";
-import MapAgroSuper from "../../Atoms/MapAgroSuper"
+import MapAgroSuper from "../../Molecules/MapAgroSuper"
 import { TransformWrapper, TransformComponent } from "react-zoom-pan-pinch";
 const useStyles = makeStyles((theme) => ({
   root: {
@@ -52,7 +52,9 @@ const WelcomeSection = () => {
 
         initialScale={4}
         initialPositionX={-1800}
-        minScale={3}
+        minScale={3.2}
+        wrapperStyle={{height:"100%"}}
+
         
       
         
@@ -65,7 +67,7 @@ const WelcomeSection = () => {
               <Button variant="contained" color="primary" size="small" onClick={() => resetTransform()}>Reset</Button>
             </div>
               <TransformComponent 
-               contentStyle={{height:"600px"}}
+               contentStyle={{height:"500px"}}
                 >
               
 

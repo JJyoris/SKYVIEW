@@ -35,7 +35,7 @@ const Certificaciones = () => {
 
     return (
         <div className={classes.root}>
-        <BorderWrapper background={CertificacionePicture}>
+        <BorderWrapper background={CertificacionePicture} borderColor='#f96f5a'>
         <Box
         className={classes.background}
         width='100%'

@@ -4,7 +4,7 @@ import ProcessSlider from '../../Molecules/ProcessSlider'
 
 const Timeline = () => {
     return (      
-        <BorderWrapper>
+        <BorderWrapper borderColor='#7e9e47'>
              <ProcessSlider/> 
         </BorderWrapper>
        

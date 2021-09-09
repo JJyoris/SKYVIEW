@@ -38,7 +38,7 @@ const Protocolos = () => {
 
   return (
     <div className={classes.root}>
-      <BorderWrapper>
+      <BorderWrapper borderColor='#f96f5a'>
         <Box
           width='100%'
           display='flex'

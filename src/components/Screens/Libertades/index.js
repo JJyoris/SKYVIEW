@@ -36,7 +36,7 @@ const Libertades = () => {
   const classes = useStyles();
   return (
     <div id="libertades" className={classes.root}>
-      <BorderWrapper>
+      <BorderWrapper  borderColor='#b8de6a'>
       <Box
         width="100%"
         display="flex"
