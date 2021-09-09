@@ -139,6 +139,34 @@ const ProcessHeader = () => {
       url: "/produccion",
       color: classes.produccion,
       previous: "/",
+      next:'/produccion/bioriles',
+    },
+    {
+      label: "PRODUCCION RESPONSABLE",
+      url: "/produccion/bioriles",
+      color: classes.produccion,
+      previous: "/produccion",
+      next:'/produccion/carbono',
+    },
+    {
+      label: "PRODUCCION RESPONSABLE",
+      url: "/produccion/carbono",
+      color: classes.produccion,
+      previous: "/produccion/bioriles",
+      next:'/produccion/eficiencia',
+    },
+    {
+      label: "PRODUCCION RESPONSABLE",
+      url: "/produccion/eficiencia",
+      color: classes.produccion,
+      previous: "/produccion/carbono",
+      next:'/produccion/agua',
+    },
+    {
+      label: "PRODUCCION RESPONSABLE",
+      url: "/produccion/agua",
+      color: classes.produccion,
+      previous: "/produccion/eficiencia",
       next:null,
     },
     {
@@ -166,7 +194,7 @@ const ProcessHeader = () => {
           />
         </RouterLink>
         {headerProcessOptions.map(({ label, url, color, previous, next }) => {
-          console.log(next);
+          
           return (
             <>
               {location.pathname === url ? (

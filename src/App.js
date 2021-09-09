@@ -14,10 +14,13 @@ import Areas from './components/Organism/Planta/Areas'
 import Beneficios from './components/Organism/Planta/Beneficios'
 import Certificaciones from './components/Organism/Planta/Certificaciones'
 import Sigas from './components/Organism/Planta/Sigas'
-import Produccion from "./components/Screens/Produccion";
+import Produccion from "./components/Organism/ProduccionResponsable/Tratamiento";
 import Timeline from "./components/Screens/Timeline";
 import Libertades from "./components/Screens/Libertades";
-
+import BioRiles from './components/Organism/ProduccionResponsable/BioRiles';
+import HuellaCarbono from './components/Organism/ProduccionResponsable/HuellaCarbono';
+import EficienciaEnergetica from './components/Organism/ProduccionResponsable/EficienciaEnergetica'
+import Agua from "./components/Organism/ProduccionResponsable/Agua";
 
 function App() {
   return (
@@ -46,6 +49,10 @@ function App() {
 
 
               <Route path="/produccion" exact component={Produccion} />
+              <Route path="/produccion/bioriles" exact component={BioRiles} />
+              <Route path="/produccion/carbono" exact component={HuellaCarbono} />
+              <Route path="/produccion/eficiencia" exact component={EficienciaEnergetica} />
+              <Route path="/produccion/agua" exact component={Agua} />
               <Route path="/historia/timeline" exact component={Timeline} />
 
             </Switch>

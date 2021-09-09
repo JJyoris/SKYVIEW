@@ -14,30 +14,86 @@ const useStyles = makeStyles((theme) => ({
     margin: "auto",
     boxShadow: "inset 0 0 0 1px  #fff",
   },
-  container:{
+  container: {
     padding: 30,
-    display: 'flex',
-    flexDirection:"column",
-    justifyContent:"center",
-     alignItems:"center"
-  }
+    display: "flex",
+    flexDirection: "column",
+    justifyContent: "center",
+    alignItems: "center",
+  },
+  shapeCircleSmall: {
+    display: "flex",
+    width: 190,
+    height: 190,
+    borderRadius: "50%",
+  },
+  intertnalBoxSmall: {
+    borderRadius: "50%",
+    width: 170,
+    height: 170,
+    margin: "auto",
+    boxShadow: "inset 0 0 0 1px  #fff",
+  },
+  shapeCircleExtraSmall: {
+    display: "flex",
+    width: 160,
+    height: 160,
+    borderRadius: "50%",
+  },
+  intertnalBoxExtraSmall: {
+    borderRadius: "50%",
+    width: 140,
+    height: 140,
+    margin: "auto",
+    boxShadow: "inset 0 0 0 1px  #fff",
+  },
 }));
 
-const CircleArea = ({ Icon, title, backgroundColor }) => {
+const CircleArea = ({ Icon, title, backgroundColor, small, extraSmall }) => {
   const classes = useStyles();
-  return (
-    <div className={classes.shapeCircle} style={{backgroundColor: backgroundColor}}>
+  return extraSmall ? (
+    <div
+      className={classes.shapeCircleExtraSmall}
+      style={{ backgroundColor: backgroundColor }}
+    >
+      <div className={classes.intertnalBoxExtraSmall}>
+        <Box width='100%' className={classes.container}>
+          <Icon style={{ width: 100, color: "#fff" }} />
+
+          <Typography style={{ color: "#fff" }} variant='h2'>
+            {title}
+          </Typography>
+        </Box>
+      </div>
+    </div>
+  ) : small ? (
+    <div
+      className={classes.shapeCircleSmall}
+      style={{ backgroundColor: backgroundColor }}
+    >
+      <div className={classes.intertnalBoxSmall}>
+        <Box width='100%' className={classes.container}>
+          <Icon style={{ width: 125, color: "#fff" }} />
+
+          <Typography style={{ color: "#fff" }} variant='h2'>
+            {title}
+          </Typography>
+        </Box>
+      </div>
+    </div>
+  ) : (
+    <div
+      className={classes.shapeCircle}
+      style={{ backgroundColor: backgroundColor }}
+    >
       <div className={classes.intertnalBox}>
-     
-            <Box width="100%" className={classes.container}>
-            <Icon style={{width: 110, color: '#fff'}} />
-     
+        <Box width='100%' className={classes.container}>
+          <Icon style={{ width: 110, color: "#fff" }} />
 
-
-            <Typography style={{color: '#fff'}} variant='h2'>
-              {title}
-            </Typography>
-            </Box>
+          <Typography style={{ color: "#fff" }} variant='h2'>
+            {title}
+          </Typography>
+        </Box>
       </div>
     </div>
   );
