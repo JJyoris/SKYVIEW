@@ -46,7 +46,7 @@ const WelcomeSection = () => {
         <TransformWrapper
           initialScale={1}
           minScale={1}
-          wrapperStyle={{ height: "300px" }}
+          // wrapperStyle={{ height: "auto" }}
         >
           {({ zoomIn, zoomOut, resetTransform }) => (
             <React.Fragment>
