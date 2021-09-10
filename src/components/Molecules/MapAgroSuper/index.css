@@ -21,8 +21,9 @@ body{
 	justify-content: center;
 }
 .icon-button{
-	top: 80px;
-	left: 370px;
+	top: 0%;
+	left: 50%;
+	position: absolute;
 	
 }
 .btn-map{
