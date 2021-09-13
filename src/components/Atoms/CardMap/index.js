@@ -10,7 +10,7 @@ import {
   makeStyles,
   Grid,
   Box,
-  Modal
+  Modal,withStyles
 } from "@material-ui/core";
 import ScheduleIcon from "@material-ui/icons/Schedule";
 import image from "../../../assets/img-nh.png";
@@ -24,8 +24,20 @@ const useStyles = makeStyles((theme) => ({
     color: theme.palette.primary,
   },
   button:{
-      marginBottom:4  }
+      marginBottom:4 ,
+      color: theme.palette.text.button,
+     },
 }));
+
+const StyledButton = withStyles({
+  root: {
+
+    color: '#EE7623',
+  },
+  label: {
+    textTransform: 'capitalize',
+  },
+})(Button);
 
 const CardMap = ({open, handleClose}) => {
   const classes = useStyles();
@@ -58,12 +70,12 @@ const CardMap = ({open, handleClose}) => {
           </Typography>
         </CardContent>
       </CardActionArea>
-      <CardActions pt={0} >
+      <CardActions pt={0} className={classes.footer} >
         <Grid container  alignItems="center" className={classes.button}>
         <ScheduleIcon />
-        <Button size="small" color="primary">
+        <StyledButton size="small" >
           Agenda tu visita
-        </Button>
+        </StyledButton>
         </Grid>
       </CardActions>
     </Card>

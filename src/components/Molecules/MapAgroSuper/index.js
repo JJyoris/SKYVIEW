@@ -22,18 +22,19 @@ const MapAgroSuper = () => {
 
 
   return (
-    <div container>
+    <div container >
     {/* <div id="mapa"> */}
       <img src={nubes} alt="nubes" id="nube" width="100%"/>
-
-      <img src={mapa} style={{height: "70vh"}} alt="Mapa agrosuper"   />
-
       <IconButton  color="primary"  size="large"  className="icon-button"  onClick={handleOpen} >
         <RadioButtonCheckedOutlinedIcon  style={{fontSize:30}}  className="btn-map"/>
       </IconButton>
 
        <CardMap open={open} handleClose={handleClose}/>
 
+
+      <img src={mapa} style={{height: "70vh"}} alt="Mapa agrosuper"  />
+
+  
 
 
     {/* </div> */}

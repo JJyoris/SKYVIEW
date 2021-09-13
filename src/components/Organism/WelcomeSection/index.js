@@ -44,8 +44,8 @@ const WelcomeSection = () => {
         </Grid>
         {/* <Grid item xs={10}> */}
         <TransformWrapper
-          initialScale={1}
-          minScale={1}
+          initialScale={1.2}
+          minScale={1.2}
           // wrapperStyle={{ height: "auto" }}
         >
           {({ zoomIn, zoomOut, resetTransform }) => (

@@ -21,11 +21,12 @@ body{
 	justify-content: center;
 }
 .icon-button{
-	top: 0%;
-	left: 50%;
-	position: absolute;
+	top: 250px;
+	left: 1100px;
 	
 }
+
+
 .btn-map{
 	animation: changeColor 4s;
 	animation-iteration-count: infinite;
