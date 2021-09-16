@@ -6,10 +6,10 @@ import cuidados from "../../../assets/Cuidados.png";
 import BorderWrapper from "../../Atoms/BorderWrapper"
 
 const useStyles = makeStyles((theme) => ({
-  root: {
+  // root: {
     
-    height: "auto",
-  },
+  //   height: "auto",
+  // },
   image: {
     maxWidth: 400,
     height: "auto",

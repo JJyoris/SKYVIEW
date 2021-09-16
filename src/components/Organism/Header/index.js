@@ -29,10 +29,10 @@ const headerOptions = [
     label: "AGENDA",
     href: "agenda",
   },
-  {
-    label: "CONTACTO",
-    href: "contacto",
-  },
+  // {
+  //   label: "CONTACTO",
+  //   href: "contacto",
+  // },
 ];
 const useStyles = makeStyles((theme) => ({
   options: {

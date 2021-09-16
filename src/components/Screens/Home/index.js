@@ -10,7 +10,7 @@ const Home = () => {
       <WelcomeSection />
       <MundoSection />
       <Scheduler />
-      <Contact />
+      {/* <Contact /> */}
     </div>
   );
 };

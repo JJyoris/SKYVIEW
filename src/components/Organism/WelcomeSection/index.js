@@ -1,25 +1,32 @@
 import React from "react";
-import { Grid, makeStyles, Typography, Box, Button } from "@material-ui/core";
+import { Grid, makeStyles, Typography,  Button } from "@material-ui/core";
 import MapAgroSuper from "../../Molecules/MapAgroSuper";
 import { TransformWrapper, TransformComponent } from "react-zoom-pan-pinch";
 const useStyles = makeStyles((theme) => ({
   root: {
     paddingTop: 10,
-    paddingBottom: 10,
+
     paddingLeft: 100,
     paddingRight: 100,
+    [theme.breakpoints.down("md")]: {
+      paddingLeft: 0,
+      paddingRight: 0,
+    },
   },
   tittle: {
     color: theme.palette.text.button,
   },
 
   containerButtons: {
-    position: "absolute",
+    position: "relative",
     zIndex: 2,
-    transform: "translate(30px, 70px)",
+    transform: "translate(30px, 60px)",
   },
   button: {
     marginRight: "10px",
+  },
+  wrapper:{
+    borderRadius:"20px"
   },
 }));
 
@@ -42,11 +49,13 @@ const WelcomeSection = () => {
             subtitulo del sky view
           </Typography>
         </Grid>
-        {/* <Grid item xs={10}> */}
+   
         <TransformWrapper
           initialScale={1.2}
           minScale={1.2}
-          // wrapperStyle={{ height: "auto" }}
+          initialPositionX={-2000}
+          initialPositionY={-100}
+          // wrapperClass={ classes.wrapper }
         >
           {({ zoomIn, zoomOut, resetTransform }) => (
             <React.Fragment>
@@ -79,15 +88,16 @@ const WelcomeSection = () => {
                   Reset
                 </Button>
               </div>
-              <TransformComponent>
+              <TransformComponent
+                contentStyle={{ transformOrigin:"0% 0% "}}
+              >
+                
                 <MapAgroSuper />
               </TransformComponent>
             </React.Fragment>
           )}
         </TransformWrapper>
 
-        {/* </Box> */}
-        {/* </Grid> */}
       </Grid>
     </div>
   );

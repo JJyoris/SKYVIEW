@@ -4,7 +4,7 @@ import { Grid, Box, Typography, IconButton } from "@material-ui/core";
 import { ReactComponent as IconPR11 } from "../../../assets/PR-icn11.svg";
 import { ReactComponent as IconPR12 } from "../../../assets/PR-icn12.svg";
 import { ReactComponent as IconPR13 } from "../../../assets/PR-icn13.svg";
-import { Link as RouterLink, useLocation } from "react-router-dom";
+import { Link as RouterLink } from "react-router-dom";
 const ProduccionResponsableFooter = () => {
   return (
     <div>
