@@ -38,7 +38,7 @@ const EficienciaEnergetica = () => {
 
   return (
     <div>
-      <BorderWrapper borderColor='#66D8E3'>
+      <BorderWrapper borderColor='#34b29a'>
         <Box
           width='100%'
           display='flex'
