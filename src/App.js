@@ -21,6 +21,11 @@ import BioRiles from './components/Organism/ProduccionResponsable/BioRiles';
 import HuellaCarbono from './components/Organism/ProduccionResponsable/HuellaCarbono';
 import EficienciaEnergetica from './components/Organism/ProduccionResponsable/EficienciaEnergetica'
 import Agua from "./components/Organism/ProduccionResponsable/Agua";
+import Emprendimiento from "./components/Organism/Comunidad/Emprendimiento";
+import Educacion from "./components/Organism/Comunidad/Educacion";
+import VidaEquilibrada from "./components/Organism/Comunidad/VidaEquilibrada";
+import Voluntario from "./components/Organism/Comunidad/Voluntario";
+import Proposito from "./components/Organism/Comunidad/Proposito";
 
 function App() {
   return (
@@ -46,6 +51,11 @@ function App() {
               <Route path="/planta/beneficios" exact component={Beneficios} />
               <Route path="/planta/certificaciones" exact component={Certificaciones} />
               <Route path="/planta/sigas" exact component={Sigas} />
+              <Route path="/comunidad" exact component={Emprendimiento}/>
+              <Route path="/comunidad/educacion" exact component={Educacion}/>
+              <Route path="/comunidad/vida" exact component={VidaEquilibrada}/>
+              <Route path="/comunidad/voluntario" exact component={Voluntario}/>
+              <Route path="/comunidad/proposito" exact component={Proposito}/>
 
 
               <Route path="/produccion" exact component={Produccion} />
