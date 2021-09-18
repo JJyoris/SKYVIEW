@@ -6,7 +6,7 @@ import historia from "../../../assets/BOTON_NUESTRA_HISTORIA.png";
 import crianza from "../../../assets/BOTON_NUESTRAS_GRANJAS.png";
 import faenadora from "../../../assets/BOTON_PLANTAS_INDUSTRIALES.png";
 import produccion from "../../../assets/BOTON_PRODUCCION_RESPONSABLE.png";
-import oficinaCentral from "../../../assets/BOTON_PRODUCCION_RESPONSABLE.png";
+import oficinaCentral from "../../../assets/BOTON_OFICINA_CENTRAL.png";
 
 const useStyles = makeStyles((theme) => ({
   root: {
