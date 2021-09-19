@@ -9,15 +9,26 @@ import produccion from "../../../assets/BOTON_PRODUCCION_RESPONSABLE.png";
 import oficinaCentral from "../../../assets/BOTON_OFICINA_CENTRAL.png";
 
 const useStyles = makeStyles((theme) => ({
-  root: {
-    
+  line: {
+    height: 50,
+    width: "100%",
+    background: "linear-gradient(to right,#fde7d0, #fde7d0)",
+    position: "absolute",
+    marginTop:120,
+    //  borderRadius:50,
+    zIndex: -1,
   },
+  dots:{
+    color:"#ee7623"
+  }
+
 }));
 
 const MundoSection = () => {
   const classes = useStyles();
   return (
-    <div id='mundo-as' className={classes.root}>
+    <div id='mundo-as'>
+       <div className={classes.line}> </div>
       <Box
         width='100%'
         display='flex'
@@ -42,7 +53,7 @@ const MundoSection = () => {
                 <NavCard image={historia} tittle='Historia' link='/historia' />                
               </Grid>
               <Box  lg md={4} sm={6} xs={12} mt={8} >
-               <Typography variant='h4'>. . . . </Typography>
+               <Typography variant='h4' className={classes.dots}>. . . . </Typography>
                </Box>
              <Grid item  lg md={4} sm={6} xs={12}>
                 <NavCard
@@ -53,7 +64,7 @@ const MundoSection = () => {
                 />
               </Grid>
               <Box lg md={4} sm={6} xs={12} mt={8}>
-               <Typography variant='h4'>. . . . </Typography>
+               <Typography variant='h4'  className={classes.dots}>. . . . </Typography>
                </Box>
               <Grid item lg md={4} sm={6} xs={12} mt={8}>
                 <NavCard
@@ -64,7 +75,7 @@ const MundoSection = () => {
                 />
               </Grid>
               <Box lg md={4} sm={6} xs={12} mt={8} >
-               <Typography variant='h4'>. . . . </Typography>
+               <Typography variant='h4'  className={classes.dots}>. . . . </Typography>
                </Box>
               <Grid item  lg md={4} sm={6} xs={12}>
                 <NavCard
@@ -75,7 +86,7 @@ const MundoSection = () => {
                 />
               </Grid>
               <Box lg md={4} sm={6} xs={12} mt={8} >
-               <Typography variant='h4'>. . . . </Typography>
+               <Typography variant='h4'  className={classes.dots} >. . . . </Typography>
                </Box>
               <Grid item  lg md={4} sm={6} xs={12}>
                 <NavCard
@@ -86,7 +97,7 @@ const MundoSection = () => {
                 />
               </Grid>
               <Box lg md={4} sm={6} xs={12}  mt={8}>
-               <Typography variant='h4'>. . . . </Typography>
+               <Typography variant='h4'  className={classes.dots} >. . . . </Typography>
                </Box>
               <Grid item lg md={4} sm={6} xs={12}  >
                 <NavCard
