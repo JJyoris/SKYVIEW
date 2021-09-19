@@ -60,6 +60,48 @@ body{
 	position: relative;
 }
 
+/* NOTEBOOKS - ICONS MAP */
+@media only screen and (max-width: 1280px) {
+	.icon-button-historia{
+		top: 380px;
+		left: 1280px;
+		display: flex;
+		position: relative;
+	}
+
+	.icon-button-oficina{
+		top: 565px;
+		left: 1090px;
+		display: flex;
+		position: relative;
+	}
+
+	.icon-button-comunidad{
+		top: 430px;
+		left: 2250px;
+		display: flex;
+		position: relative;
+	}
+	.icon-button-produccion{
+		top: 430px;
+		left: 3310px;
+		display: flex;
+		position: relative;
+	}
+	.icon-button-granjas{
+		top: 450px;
+		left: 620px;
+		display: flex;
+		position: relative;
+	}
+	.icon-button-plantas{
+		top: 420px;
+		left: 3950px;
+		display: flex;
+		position: relative;
+	}
+}
+
 /* TABLETS - ICONS MAP */
 @media only screen and (max-width: 768px) {
     .icon-button-historia{
@@ -103,7 +145,7 @@ body{
     }
 }
 
-/* MOBILE 6/7/8 - ICONS MAP*/
+/* MOBILE 6/7/8 PLUS - ICONS MAP*/
 @media only screen and (max-width: 414px) {
 	.icon-button-historia{
         top: 320px;
@@ -143,6 +185,48 @@ body{
 
     }
 }
+
+/* MOBILE X - ICONS MAP*/
+@media only screen and (max-width: 375px) {
+	.icon-button-historia{
+        top: 350px;
+        left: 1140px;
+        display: flex;
+        position: relative;
+    }
+	.icon-button-oficina{
+        top: 515px;
+        left: 960px;
+        display: flex;
+        position: relative;
+    }
+	.icon-button-comunidad{
+        top: 390px;
+        left: 2017px;
+        display: flex;
+        position: relative;
+    }
+	.icon-button-produccion{
+        top: 390px;
+        left: 2980px;
+        display: flex;
+        position: relative;
+    }
+	.icon-button-granjas{
+        top: 420px;
+        left: 570px;
+        display: flex;
+        position: relative;
+    }
+	.icon-button-plantas{
+        top: 380px;
+        left: 3560px;
+        display: flex;
+        position: relative;
+
+    }
+}
+
 
 .btn-map-historia{
 	animation: changeColor 3s;
