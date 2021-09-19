@@ -1,129 +1,211 @@
 /*Time to finalise the cloud shape*/
-body{
-	overflow-x: hidden;
+body {
+  overflow-x: hidden;
 }
-#mapa{
-	position: relative;
-}
-
-#nube{
-	animation-name:  traslation;
-	animation-duration: 60s;
-	animation-timing-function: linear;
-	animation-iteration-count: infinite;
-	position: absolute;
-	
-	
-}
-.modal{
-	display: flex;
-	align-items: center;
-	justify-content: center;
-
-}
-.icon-button-historia{
-	top: 515px;
-	left: 1332px;
-	
+#mapa {
+  position: relative;
 }
 
-.icon-button-oficina{
-	top: 615px;
-	left: 1332px;
-	
+#nube {
+  animation-name: traslation;
+  animation-duration: 60s;
+  animation-timing-function: linear;
+  animation-iteration-count: infinite;
+  position: absolute;
+}
+.modal {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.icon-button-historia {
+  top: 400px;
+  left: 1350px;
+  display: flex;
+  position: relative;
 }
 
-.icon-button-comunidad{
-	top: 615px;
-	left: 1232px;
-	
-}
-.icon-button-produccion{
-	top: 515px;
-	left: 1232px;
-	
-}
-.icon-button-granjas{
-	top: 415px;
-	left: 1332px;
-	
-}
-.icon-button-plantas{
-	top: 515px;
-	left: 1432px;
-	
+.icon-button-oficina {
+  top: 590px;
+  left: 1170px;
+  display: flex;
+  position: relative;
 }
 
-.btn-map-historia{
-	animation: changeColor 3s;
-	animation-iteration-count: infinite;
+.icon-button-comunidad {
+  top: 449px;
+  left: 2380px;
+  display: flex;
+  position: relative;
+}
+.icon-button-produccion {
+  top: 449px;
+  left: 3490px;
+  display: flex;
+  position: relative;
+}
+.icon-button-granjas {
+  top: 480px;
+  left: 700px;
+  display: flex;
+  position: relative;
+}
+.icon-button-plantas {
+  top: 439px;
+  left: 4150px;
+  display: flex;
+  position: relative;
 }
 
-.btn-map-planta{
-	animation:changeColorPi 3s;
-	animation-iteration-count: infinite;
-}
-.btn-map-produccion{
-	animation:changeColorPr 3s;
-	animation-iteration-count: infinite;
+@media screen and (max-width: 720px) {
+  .icon-button-historia {
+    top: 360px;
+    left: 1150px;
+    display: flex;
+    position: relative;
+  }
+
+  .icon-button-oficina {
+    top: 530px;
+    left: 940px;
+    display: flex;
+    position: relative;
+  }
+
+  .icon-button-comunidad {
+    top: 370px;
+    left: 2030px;
+    display: flex;
+    position: relative;
+  }
+  .icon-button-produccion {
+    top: 320px;
+    left: 2970px;
+    display: flex;
+    position: relative;
+  }
+  .icon-button-granjas {
+    top: 410px;
+    left: 550px;
+    display: flex;
+    position: relative;
+  }
+  .icon-button-plantas {
+    top: 380px;
+    left: 3550px;
+    display: flex;
+    position: relative;
+  }
 }
 
-.btn-map-comunidad{
-	animation:changeColorC 3s;
-	animation-iteration-count: infinite;
+.btn-map-historia {
+  animation: changeColor 3s;
+  animation-iteration-count: infinite;
 }
 
-.btn-map-oficina{
-	animation:changeColorO 3s;
-	animation-iteration-count: infinite;
+.btn-map-planta {
+  animation: changeColorPi 3s;
+  animation-iteration-count: infinite;
+}
+.btn-map-produccion {
+  animation: changeColorPr 3s;
+  animation-iteration-count: infinite;
 }
 
-.btn-map-granjas{
-	animation:changeColorGr 3s;
-	animation-iteration-count: infinite;
+.btn-map-comunidad {
+  animation: changeColorC 3s;
+  animation-iteration-count: infinite;
 }
 
+.btn-map-oficina {
+  animation: changeColorO 3s;
+  animation-iteration-count: infinite;
+}
+
+.btn-map-granjas {
+  animation: changeColorGr 3s;
+  animation-iteration-count: infinite;
+}
 
 @keyframes changeColorGr {
-	0% {color: #fff;}
- 	50% {color: #b8de6a;}
-	100%{color: #fff;}
+  0% {
+    color: #fff;
+  }
+  50% {
+    color: #b8de6a;
+  }
+  100% {
+    color: #fff;
+  }
 }
 
 @keyframes changeColorO {
-	0% {color: #fff;}
- 	50% {color: #22d7d9;}
-	100%{color: #fff;}
+  0% {
+    color: #fff;
+  }
+  50% {
+    color: #22d7d9;
+  }
+  100% {
+    color: #fff;
+  }
 }
 @keyframes changeColorC {
-	0% {color: #fff;}
- 	50% {color: #459fc7;}
-	100%{color: #fff;}
+  0% {
+    color: #fff;
+  }
+  50% {
+    color: #459fc7;
+  }
+  100% {
+    color: #fff;
+  }
 }
 
 @keyframes changeColorPr {
-	0% {color: #fff;}
- 	50% {color: #34b29a;}
-	100%{color: #fff;}
+  0% {
+    color: #fff;
+  }
+  50% {
+    color: #34b29a;
+  }
+  100% {
+    color: #fff;
+  }
 }
 
 @keyframes changeColorPi {
-	0% {color: #fff;}
- 	50% {color: #f96f5a;}
-	100%{color: #fff;}
+  0% {
+    color: #fff;
+  }
+  50% {
+    color: #f96f5a;
+  }
+  100% {
+    color: #fff;
+  }
 }
-
 
 @keyframes changeColor {
-	0% {color: #fff;}
- 	50% {color: #7e9e47;}
-	100%{color: #fff;}
+  0% {
+    color: #fff;
+  }
+  50% {
+    color: #7e9e47;
+  }
+  100% {
+    color: #fff;
+  }
 }
 
-
-
 @keyframes traslation {
-	0%{right: 0px}
-	50%{right: 500px}
-	100%{right: 0px}
+  0% {
+    right: 0px;
+  }
+  50% {
+    right: 500px;
+  }
+  100% {
+    right: 0px;
+  }
 }

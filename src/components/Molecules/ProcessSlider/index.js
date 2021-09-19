@@ -1,5 +1,5 @@
 import React from "react";
-import { makeStyles, Box, Grid } from "@material-ui/core";
+import { makeStyles} from "@material-ui/core";
 import Slider from "react-slick";
 import processImage from "../../../utils/processImage";
 
@@ -9,9 +9,9 @@ const useStyles = makeStyles((theme) => ({
     backgroundColor: "transparent",
    
   },
-  img: {
+   img: {
     width:"100%",
-    height:"60vh",
+ 
 
     [theme.breakpoints.down("md")]: {
       width: "260px",
@@ -23,12 +23,7 @@ const useStyles = makeStyles((theme) => ({
       height: "200px",
     },
   },
-  slickContainer: {
-    marginRight: "20px",
-    marginLeft: "20px",    
-    height:"100%"
- 
-  },
+
   slider:{
       color:theme.palette.text.primary,
       marginTop: "10vh",
@@ -41,7 +36,7 @@ const ProcessSlider = () => {
   const settings = {
     arrows: false,
     dots: true,
-    infinity: false,
+    infinity: true,
     speed: 2000,
     slidesToShow: 3,
     centerMode:true,
@@ -57,9 +52,9 @@ const ProcessSlider = () => {
           {processImage.map(({ name, url }) => {
             return (
               <div key={name}>
-                {/* <Card className={classes.root} elevation={0}> */}
+           
                   <img src={url} alt={name} className={classes.img} />
-                {/* </Card> */}
+               
               </div>
             );
           })}

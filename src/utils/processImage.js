@@ -9,6 +9,7 @@ import proceso8 from "../assets/f8.png"
 import proceso9 from "../assets/f9.png"
 import proceso10 from "../assets/f10.png"
 import proceso11 from "../assets/f11.png"
+import proceso12 from "../assets/f12.png"
 
 const processImage = [
     {
@@ -55,6 +56,10 @@ const processImage = [
         name:"f11",
         url:proceso11
     },
+    {
+        name:"f12",
+        url:proceso12
+    }
 
 ]
 
