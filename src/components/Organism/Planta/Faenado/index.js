@@ -38,11 +38,12 @@ const Faenado = () => {
     <div className={classes.root}>
       <BorderWrapper borderColor='#f96f5a'>
       <Box
-        width="100%"
+        width="80%"
         display="flex"
         justifyContent="center"
         alignItems="center"
-        marginTop={5}
+        marginTop={15}
+        marginLeft={17}
       >
         <Box width="90%" minWidth={200}>
           <Grid container direction="row" spacing={5}>
@@ -52,17 +53,14 @@ const Faenado = () => {
               md={6}
               justifyContent="center"
               alignItems="center"
+            
             >
               <ReactPlayer
-                url="https://www.youtube.com/watch?v=nyuMFyOzWZA"
-                width="700px"
-                height="470px"
+                url="https://skyviewagrosuper.com/videos/plantas_industriales/Multimedia1%20Faena.mp4"
+                width="720px"
+                height="auto"
                 className={classes.video}
-                config={{
-                  youtube: {
-                    playerVars: { controls: 2 },
-                  },
-                }}
+                controls
               />
             </Grid>
             <Grid item md={1}></Grid>

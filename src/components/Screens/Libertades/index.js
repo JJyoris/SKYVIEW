@@ -6,7 +6,6 @@ import BorderWrapper from "../../Atoms/BorderWrapper"
 
 const useStyles = makeStyles((theme) => ({
   root: {
-   
     height: "auto",
   },
   image: {
@@ -22,6 +21,7 @@ const useStyles = makeStyles((theme) => ({
   gridContainer: {
     [theme.breakpoints.down("md")]: {
       flexDirection: "row",
+      display:"flex",
       alignItems: "center",
       justifyContent: "center",
     },
@@ -38,31 +38,29 @@ const Libertades = () => {
     <div id="libertades" className={classes.root}>
       <BorderWrapper  borderColor='#b8de6a'>
       <Box
-        width="100%"
+        width="85%"
         display="flex"
         justifyContent="center"
         alignItems="center"
-        marginTop={5}
+        marginTop={15}
+        marginLeft={20}
       >
         <Box width="90%" minWidth={200}>
-          <Grid container direction="row" spacing={5}>
+          <Grid container direction="row" spacing={5} display="flex" justifyContent="center" alignItems="center">
             <Grid
               item
               xs={12}
               md={6}
+              display="flex"
               justifyContent="center"
               alignItems="center"
             >
               <ReactPlayer
-                url="https://youtu.be/MwFJN82kTUQ"
+                url="https://skyviewagrosuper.com/videos/nuestras_granjas/Bienestar%20Animal.mp4"
                 width="700px"
                 height="470px"
                 className={classes.video}
-                config={{
-                  youtube: {
-                    playerVars: { controls: 2 },
-                  },
-                }}
+                controls
               />
             </Grid>
 
@@ -70,7 +68,7 @@ const Libertades = () => {
               <Grid
                 container
                 direction="column"
-                spacing={5}
+                spacing={3}
                 justifyContent="center"
                 alignItems="center"
                 className={classes.gridContainer}

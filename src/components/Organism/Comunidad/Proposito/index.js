@@ -37,7 +37,10 @@ const useStyles = makeStyles((theme) => ({
   },
   gridIcons: {
     marginBottom: 40,
-   
+  },
+  video: {
+    borderRadius: 20,
+    overflow: "hidden",
   },
 }));
 
@@ -45,7 +48,7 @@ const Proposito = () => {
   const classes = useStyles();
   return (
     <BorderWrapper borderColor="#459fc7">
-      <Box height="90%" width="90%" >
+      <Box height="90%" width="90%" marginLeft={10} marginTop={3}>
         <Grid container className={classes.grid} >
           <Grid className={classes.grid} item xs={5} container direction="column">
             <Typography variant="h5" component="h1" className={classes.tittle}>
@@ -87,7 +90,7 @@ const Proposito = () => {
             </Grid>
 
             <Typography variant="h1" >
-              <Box lineHeight={2} textAlign="center" fontSize={17} margin="10px 50px">
+              <Box lineHeight={2} textAlign="center" fontSize={17} margin="10px 90px 10px 40px">
                 Porque alimentar es mucho más que nutrirse, es hacer que las
                 cosas pasen, es llenarse de buenas emociones y experiencias, es
                 ver la vida de forma positiva y alegre. Y queremos que tú seas
@@ -104,6 +107,7 @@ const Proposito = () => {
               width="100%"
               height="auto"
               controls
+              className={classes.video}
             />
           </Grid>
         </Grid>

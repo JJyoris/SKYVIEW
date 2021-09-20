@@ -44,7 +44,7 @@ const Protocolos = () => {
           display='flex'
           justifyContent='center'
           alignItems='center'
-          marginTop={5}
+          marginTop={12}
         >
           <Box width='90%' minWidth={200}>
             <Grid container direction='row' spacing={5}>
@@ -84,15 +84,11 @@ const Protocolos = () => {
                   alignItems='center'
                 >
                   <ReactPlayer
-                    url='https://www.youtube.com/watch?v=lPxq_m2qLBQ'
-                    width='700px'
-                    height='470px'
+                    url='https://skyviewagrosuper.com/videos/plantas_industriales/Agrosuper%20-%20Medidas%20de%20Seguridad%20FHD_V05.mp4'
+                    width='720px'
+                    height='auto'
                     className={classes.video}
-                    config={{
-                      youtube: {
-                        playerVars: { controls: 2 },
-                      },
-                    }}
+                    controls
                   />
                 </Grid>
               </Grid>

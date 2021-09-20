@@ -43,7 +43,7 @@ const Granja = () => {
         display="flex"
         justifyContent="center"
         alignItems="center"
-        marginTop={5}
+        marginTop={15}
       >
         <Box width="80%" minWidth={200}>
           <Grid container direction="row" spacing={0}>
@@ -82,15 +82,11 @@ const Granja = () => {
               alignItems="center"
             >
               <ReactPlayer
-                url="https://youtu.be/5PA4D9NyQTo"
+                url="https://skyviewagrosuper.com/videos/nuestras_granjas/Testimonial%20Noelia%20AS_17082021%20(1).mp4"
                 width="700px"
                 height="470px"
                 className={classes.video}
-                config={{
-                  youtube: {
-                    playerVars: { controls: 2 },
-                  },
-                }}
+                controls
               />
             </Grid>
           </Grid>

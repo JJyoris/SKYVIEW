@@ -14,9 +14,11 @@ const useStyles = makeStyles((theme) => ({
        color: "#2e58a6",
        textAlign: 'center',
        fontSize: 23,
-    }
-  
-
+    },
+    video: {
+      borderRadius: 20,
+      overflow: "hidden",
+    },
   }));
 
 const Emprendimiento = () => {
@@ -35,7 +37,7 @@ const Emprendimiento = () => {
             width="530px"
             height="300px"
             controls
-            
+            className={classes.video}
           />
         </Grid>
         <Grid item xs={6} container  item alignItems="center" justifyContent="center" >
@@ -57,6 +59,7 @@ const Emprendimiento = () => {
             width="530px"
             height="300px"
             controls
+            className={classes.video}
           />
         </Grid>
 

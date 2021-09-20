@@ -62,15 +62,11 @@ const Sigas = () => {
                 que toma las mejores prácticas de distintas formas.
               </Typography>
               <ReactPlayer
-                url='https://www.youtube.com/watch?v=nyuMFyOzWZA'
+                url='http://skyviewagrosuper.com/videos/plantas_industriales/SIGAS_ON2.mp4'
                 width='700px'
-                height='470px'
+                height='auto'
                 className={classes.video}
-                config={{
-                  youtube: {
-                    playerVars: {controls: 2 },
-                  },
-                }}
+                controls
               />
             </Grid>
             <Grid item md={1}></Grid>
