@@ -60,6 +60,47 @@ body{
 	position: relative;
 }
 
+
+@media only screen and (max-width: 1600px) {
+	.icon-button-historia{
+		top: 320px;
+		left: 1150px;
+		display: flex;
+		position: relative;
+	}
+
+	.icon-button-oficina{
+		top: 465px;
+		left: 900px;
+		display: flex;
+		position: relative;
+	}
+
+	.icon-button-comunidad{
+		top: 360px;
+		left: 1950px;
+		display: flex;
+		position: relative;
+	}
+	.icon-button-produccion{
+		top: 380px;
+		left: 2850px;
+		display: flex;
+		position: relative;
+	}
+	.icon-button-granjas{
+		top: 400px;
+		left: 520px;
+		display: flex;
+		position: relative;
+	}
+	.icon-button-plantas{
+		top: 360px;
+		left: 3450px;
+		display: flex;
+		position: relative;
+	}
+}
 /* NOTEBOOKS - ICONS MAP */
 @media only screen and (max-width: 1280px) {
 	.icon-button-historia{
