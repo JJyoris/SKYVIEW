@@ -9,7 +9,12 @@ import icn3 from  "../../../../assets/icn_3.png";
 const useStyles = makeStyles((theme) => ({
   grid: {
     height: "100%",
+    display: "flex",
+    justifyContent:"center",
+    alignItems:"center",
+    margin: "0 auto 0 auto",
   },
+
   tittle: {
     color: "#28396f",
     textAlign: "center",
@@ -32,6 +37,7 @@ const useStyles = makeStyles((theme) => ({
   },
   gridIcons: {
     marginBottom: 40,
+   
   },
 }));
 
@@ -39,9 +45,9 @@ const Proposito = () => {
   const classes = useStyles();
   return (
     <BorderWrapper borderColor="#459fc7">
-      <Box height="90%">
-        <Grid container className={classes.grid}>
-          <Grid item xs={5} container direction="column">
+      <Box height="90%" width="90%" >
+        <Grid container className={classes.grid} >
+          <Grid className={classes.grid} item xs={5} container direction="column">
             <Typography variant="h5" component="h1" className={classes.tittle}>
               Alimentar
             </Typography>
@@ -56,7 +62,7 @@ const Proposito = () => {
             >
               todos los días
             </Typography>
-            <Grid container item className={classes.gridIcons}>
+            <Grid container item className={classes.gridIcons} >
               <Grid item container alignItems="center" xs={4}>
                 <img src={icn1} className={classes.icon} />
                 <Typography className={classes.icontext} style={{color: "#007ec7",}} variant="h3">
@@ -81,7 +87,7 @@ const Proposito = () => {
             </Grid>
 
             <Typography variant="h1" >
-              <Box lineHeight={2} textAlign="center" fontSize={17} >
+              <Box lineHeight={2} textAlign="center" fontSize={17} margin="10px 50px">
                 Porque alimentar es mucho más que nutrirse, es hacer que las
                 cosas pasen, es llenarse de buenas emociones y experiencias, es
                 ver la vida de forma positiva y alegre. Y queremos que tú seas
@@ -94,14 +100,10 @@ const Proposito = () => {
 
           <Grid item xs={7}>
             <ReactPlayer
-              url="https://www.youtube.com/watch?v=nyuMFyOzWZA"
+              url="https://skyviewagrosuper.com/videos/comunidad/Manifiesto_ON4-B.mp4"
               width="100%"
-              height="100%"
-              config={{
-                youtube: {
-                  playerVars: { controls: 2 },
-                },
-              }}
+              height="auto"
+              controls
             />
           </Grid>
         </Grid>
