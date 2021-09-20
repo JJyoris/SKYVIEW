@@ -130,7 +130,7 @@ const ProcessHeader = () => {
       url: "/planta/certificaciones",
       color: classes.planta,
       previous: "/planta/beneficios",
-      next: '/planta/sigas',
+      next: null,
 
     },
     {
@@ -138,7 +138,7 @@ const ProcessHeader = () => {
       url: "/planta/sigas",
       color: classes.planta,
       previous: "/planta/certificaciones",
-      next: null,
+      next: "/planta/certificaciones",
 
     },
     {

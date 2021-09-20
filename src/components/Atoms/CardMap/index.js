@@ -39,16 +39,34 @@ const StyledButton = withStyles({
     textTransform: "capitalize",
   },
 })(Button);
+const currentCard ={
+  historia:"historia",
+   
+  oficina: "oficina",
 
-const CardMap = ({ open, handleClose, body, label, image , link}) => {
+  granjas: "granjas",
+
+ plantas: "plantas",
+
+ produccion: "produccion" ,
+
+  comunidad :"comunidad"
+
+}
+
+
+const CardMap = ({ open, handleClose, body, label, image , link , id }) => {
   const classes = useStyles();
+
+
+  
   return (
     <Modal open={open} onClose={handleClose} className="modal">
       <Card className={classes.root}>
         <CardActionArea component={RouterLink} to={link}>
           <CardMedia component="img" alt={label} image={image} title={label} />
           <CardContent>
-            <Typography gutterBottom variant="h3" component="h2">
+            <Typography gutterBottom variant="h3" component="h2"  className={currentCard[id]}>
               {label}
             </Typography>
             <Typography variant="h2" className={classes.content} component="p">
