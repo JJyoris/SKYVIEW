@@ -1,7 +1,18 @@
+import { useState } from "react";
 import React from "react";
-import { Grid, makeStyles, Typography,  Button , Box} from "@material-ui/core";
+import {
+  Grid,
+  makeStyles,
+  Typography,
+  Button,
+  Box,
+  Modal,
+  withStyles,
+} from "@material-ui/core";
+import ReactPlayer from "react-player";
 import MapAgroSuper from "../../Molecules/MapAgroSuper";
 import { TransformWrapper, TransformComponent } from "react-zoom-pan-pinch";
+import { TrendingUpRounded } from "@material-ui/icons";
 const useStyles = makeStyles((theme) => ({
   root: {
     paddingTop: 10,
@@ -24,95 +35,135 @@ const useStyles = makeStyles((theme) => ({
   button: {
     marginRight: "10px",
   },
-  wrapper:{
-    borderRadius:"20px"
+  exitButton:{
+    position: 'relative',
+    float: "right",
+    zIndex:1,
   },
-  block:{
-    width:"100%",
+  wrapper: {
+    borderRadius: "20px",
+  },
+  block: {
+    width: "100%",
     height: "60%",
     background: "linear-gradient(to bottom, #fde7d0, #e1d6e7)",
     position: "absolute",
     zIndex: -1,
-
-  }
+  },
 }));
 
 const WelcomeSection = () => {
   const classes = useStyles();
+  const [open, setOpen] = useState(true);
+
+  const handleClose = () => {
+    setOpen(false);
+  };
+  const StyledButton = withStyles({
+    root: {
+      color: "#FFF",
+      borderColor: "#FFF",
+    },
+    label: {
+      textTransform: "capitalize",
+    },
+  })(Button);
+
   return (
     <>
-    <div className={classes.block}></div>
-    <div id="home" className={classes.root}>
-      
-      <Grid container>
-        <Grid item xs={12}>
-          <Typography
-            align="center"
-            variant="h3"
-            className={classes.tittle}
-            gutterBottom
+      <div className={classes.block}></div>
+      <div id="home" className={classes.root}>
+        <Modal open={open} onClose={handleClose} className="modal">
+          <div style={{ borderRadius: 10, outline: 0 , width:"80%"}}>
+            <ReactPlayer
+              url="https://skyviewagrosuper.com/videos/intro-skyview.mp4"
+              
+              width="100%"
+              height="100%"
+              playing={true}
+              loop={true}
+              controls={true}
+            />
+            <StyledButton variant="outlined" onClick={handleClose} size="small" className={classes.exitButton}>
+              {" "}
+              Saltar video{" "}
+            </StyledButton>
+          </div>
+        </Modal>
+
+        <Grid container>
+          <Grid item xs={12}>
+            <Typography
+              align="center"
+              variant="h3"
+              className={classes.tittle}
+              gutterBottom
+            >
+              EXPERIENCIA SKY VIEW
+            </Typography>
+
+            <Typography align="center" variant="h2" gutterBottom>
+              <Box lineHeight={1.5}>
+                Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
+                eiusmod tempor incididunt ut labore et dolore magna aliqua.
+                Porttitor eget dolor morbi non arcu risus quis varius quam.
+                Pellentesque habitant morbi tristique senectus et netus. Lorem
+                ipsum dolor sit amet consectetur adipiscing elit ut aliquam. Nec
+                feugiat nisl pretium fusce id velit. Est ullamcorper eget nulla
+                facilisi. Mattis rhoncus urna neque viverra. Vel facilisis
+                volutpat est velit egestas dui id ornare arcu.
+              </Box>
+            </Typography>
+          </Grid>
+
+          <TransformWrapper
+            initialScale={1.2}
+            minScale={1.2}
+            initialPositionX={-2000}
+            initialPositionY={-100}
+            // wrapperClass={ classes.wrapper }
           >
-            EXPERIENCIA SKY VIEW
-          </Typography>
-
-          <Typography align="center" variant="h2" gutterBottom>
-          <Box lineHeight={1.5} >
-          Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Porttitor eget dolor morbi non arcu risus quis varius quam. Pellentesque habitant morbi tristique senectus et netus. Lorem ipsum dolor sit amet consectetur adipiscing elit ut aliquam. Nec feugiat nisl pretium fusce id velit. Est ullamcorper eget nulla facilisi. Mattis rhoncus urna neque viverra. Vel facilisis volutpat est velit egestas dui id ornare arcu.
-          </Box>
-          </Typography>
-          
+            {({ zoomIn, zoomOut, resetTransform }) => (
+              <React.Fragment>
+                <div className={classes.containerButtons}>
+                  <Button
+                    variant="contained"
+                    color="primary"
+                    size="small"
+                    onClick={() => zoomIn()}
+                    className={classes.button}
+                  >
+                    Zoom in{" "}
+                  </Button>
+                  <Button
+                    variant="contained"
+                    color="primary"
+                    size="small"
+                    onClick={() => zoomOut()}
+                    className={classes.button}
+                  >
+                    Zoom out
+                  </Button>
+                  <Button
+                    variant="contained"
+                    color="primary"
+                    size="small"
+                    onClick={() => resetTransform()}
+                    className={classes.button}
+                  >
+                    Reset
+                  </Button>
+                </div>
+                <TransformComponent
+                  contentStyle={{ transformOrigin: "0% 0% " }}
+                >
+                  <MapAgroSuper />
+                </TransformComponent>
+              </React.Fragment>
+            )}
+          </TransformWrapper>
         </Grid>
-   
-        <TransformWrapper
-          initialScale={1.2}
-          minScale={1.2}
-          initialPositionX={-2000}
-          initialPositionY={-100}
-          // wrapperClass={ classes.wrapper }
-        >
-          {({ zoomIn, zoomOut, resetTransform }) => (
-            <React.Fragment>
-              <div className={classes.containerButtons}>
-                <Button
-                  variant="contained"
-                  color="primary"
-                  size="small"
-                  onClick={() => zoomIn()}
-                  className={classes.button}
-                >
-                  Zoom in{" "}
-                </Button>
-                <Button
-                  variant="contained"
-                  color="primary"
-                  size="small"
-                  onClick={() => zoomOut()}
-                  className={classes.button}
-                >
-                  Zoom out
-                </Button>
-                <Button
-                  variant="contained"
-                  color="primary"
-                  size="small"
-                  onClick={() => resetTransform()}
-                  className={classes.button}
-                >
-                  Reset
-                </Button>
-              </div>
-              <TransformComponent
-                contentStyle={{ transformOrigin:"0% 0% "}}
-              >
-                
-                <MapAgroSuper />
-              </TransformComponent>
-            </React.Fragment>
-          )}
-        </TransformWrapper>
-
-      </Grid>
-    </div>
+      </div>
     </>
   );
 };
