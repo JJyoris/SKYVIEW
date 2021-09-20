@@ -1,4 +1,4 @@
-import { useState } from "react";
+import { useState, useMemo } from "react";
 import React from "react";
 import {
   Grid,
@@ -54,7 +54,11 @@ const useStyles = makeStyles((theme) => ({
 
 const WelcomeSection = () => {
   const classes = useStyles();
-  const [open, setOpen] = useState(true);
+  const [open, setOpen] = useState(false);
+
+  useMemo(() => {
+     setOpen(true);
+  }, []);
 
   const handleClose = () => {
     setOpen(false);
@@ -77,7 +81,7 @@ const WelcomeSection = () => {
           <div style={{ borderRadius: 10, outline: 0 , width:"80%"}}>
             <ReactPlayer
               url="https://skyviewagrosuper.com/videos/intro-skyview.mp4"
-              
+              volume="0.2"
               width="100%"
               height="100%"
               playing={true}
@@ -155,7 +159,7 @@ const WelcomeSection = () => {
                   </Button>
                 </div>
                 <TransformComponent
-                  contentStyle={{ transformOrigin: "0% 0% " }}
+                  contentStyle={{ transformOrigin: "0% 0% " , borderRadius:10}}
                 >
                   <MapAgroSuper />
                 </TransformComponent>

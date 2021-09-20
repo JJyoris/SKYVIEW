@@ -126,7 +126,7 @@ const ProcessHeader = () => {
 
     },
     {
-      label: "PLANTAS INDUSTRIALES",
+      label: "NUESTRAS CERTIFICACIONES",
       url: "/planta/certificaciones",
       color: classes.planta,
       previous: "/planta/beneficios",
