@@ -15,6 +15,26 @@ body{
 	
 	
 }
+
+.historia{
+    color:#779743
+}
+.oficina{
+    color:#44d2d5
+}
+.granjas{
+    color:#b2db63
+}
+.plantas{
+    color:#f06650
+}
+.produccion{
+    color:#48ae95
+}
+.comunidad{
+    color:#4b95c0
+}
+
 .modal{
 	display: flex;
 	align-items: center;

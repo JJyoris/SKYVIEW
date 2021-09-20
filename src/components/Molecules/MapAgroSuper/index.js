@@ -22,6 +22,7 @@ const MapAgroSuper = () => {
     setOpen(false);
   };
 
+
   return (
     <div >
          <IconButton
@@ -102,9 +103,11 @@ const MapAgroSuper = () => {
         />
       </IconButton>
       
-      {cardMapContent.map(({label, body, image, link })=>{
+      {cardMapContent.map(({label, body, image, link , id })=>{
+      
+        
         return label === selectedId ? 
-        (<CardMap open={open} handleClose={handleClose} image={image} label={label} body={body} link={link}/>)
+        (<CardMap open={open} handleClose={handleClose} image={image} label={label} body={body} link={link} id={id}/>)
         : null 
       })}   
      
