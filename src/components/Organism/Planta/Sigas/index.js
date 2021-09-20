@@ -4,6 +4,7 @@ import SigasImg from "../../../../assets/img-2.png";
 import ReactPlayer from "react-player";
 import BorderWrapper from "../../../Atoms/BorderWrapper";
 import SigasLogo from '../../../../assets/logo-SIGAS.png'
+
 const useStyles = makeStyles((theme) => ({
   root: {
 
@@ -73,7 +74,6 @@ const Sigas = () => {
                 controls
               />
             </Grid>
-            <Grid item md={1}></Grid>
             <Grid item xs={12} md={5}>
               <Grid
                 container
@@ -89,7 +89,8 @@ const Sigas = () => {
                   <img src={SigasImg} alt='Sigas' className={classes.image} />
                 </Grid>
 
-                <Grid item></Grid>
+                <Grid item>
+                </Grid>
               </Grid>
             </Grid>
           </Grid>
