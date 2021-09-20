@@ -14,7 +14,7 @@ const useStyles = makeStyles((theme) => ({
   },
 
   video: {
-    borderRadius: 20,
+
     overflow: "hidden",
   },
   flecha: {
@@ -71,15 +71,12 @@ const Historia = () => {
 
         <Grid item xs={8} md={5}>
           <ReactPlayer
-            url="https://youtu.be/9PCbia4Rp_c"
+            url="https://skyviewagrosuper.com/videos/nuestra_historia/Video%20Intro%20Historia.mp4"
             width="750px"
             height="500px"
+            controls
             className={classes.video}
-            config={{
-              youtube: {
-                playerVars: {controls: 2 },
-              },
-            }}
+            
           />
         </Grid>
 
