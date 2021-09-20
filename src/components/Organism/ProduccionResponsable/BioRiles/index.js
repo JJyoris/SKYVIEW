@@ -79,20 +79,17 @@ const BioRiles = () => {
                   <div className={classes.videoContainer}>
                     {" "}
                     <ReactPlayer
-                      url='https://www.youtube.com/watch?v=nyuMFyOzWZA'
-                      width='350px'
+                      url='https://skyviewagrosuper.com/videos/produccion_responsable/BIOESTABILIZADO%20BAJA.mp4'
+                      width='auto'
                       height='190px'
                       className={classes.video}
-                      config={{
-                        youtube: {
-                          playerVars: { controls: 2 },
-                        },
-                      }}
+                      playing
+                      loop
                     />
                   </div>
 
                   <Typography align='start' variant='h1'>
-                    <Box lineHeight={2}>
+                    <Box lineHeight={2} marginTop={2}>
                       Lorem ipsum dolor sit amet, consectetur adipiscing elit.
                       Nunc vitae elit ornare, mollis turpis fringilla, gravida
                       sem. Phasellus id efficitur risus, nec imperdiet ipsum.
@@ -125,19 +122,16 @@ const BioRiles = () => {
                   </Typography>
                   <div className={classes.videoContainer}>
                     <ReactPlayer
-                      url='https://www.youtube.com/watch?v=nyuMFyOzWZA'
-                      width='350px'
+                      url='https://skyviewagrosuper.com/videos/produccion_responsable/RILES%20BAJA.mp4'
+                      width='auto'
                       height='190px'
                       className={classes.video}
-                      config={{
-                        youtube: {
-                          playerVars: { controls: 2 },
-                        },
-                      }}
+                      playing
+                      loop
                     />
                   </div>
                   <Typography align='start' variant='h1'>
-                    <Box lineHeight={2}>
+                    <Box lineHeight={2} marginTop={2}>
                       Lorem ipsum dolor sit amet, consectetur adipiscing elit.
                       Nunc vitae elit ornare, mollis turpis fringilla, gravida
                       sem. Phasellus id efficitur risus, nec imperdiet ipsum.
@@ -170,19 +164,16 @@ const BioRiles = () => {
                   </Typography>
                   <div className={classes.videoContainer}>
                     <ReactPlayer
-                      url='https://www.youtube.com/watch?v=nyuMFyOzWZA'
-                      width='350px'
+                      url='https://skyviewagrosuper.com/videos/produccion_responsable/BIOMASA%20BAJA.mp4'
+                      width='auto'
                       height='190px'
                       className={classes.video}
-                      config={{
-                        youtube: {
-                          playerVars: { controls: 2 },
-                        },
-                      }}
+                      playing
+                      loop
                     />
                   </div>
                   <Typography align='start' variant='h1'>
-                    <Box lineHeight={2}>
+                    <Box lineHeight={2} marginTop={2}>
                       Lorem ipsum dolor sit amet, consectetur adipiscing elit.
                       Nunc vitae elit ornare, mollis turpis fringilla, gravida
                       sem. Phasellus id efficitur risus, nec imperdiet ipsum.
@@ -196,6 +187,7 @@ const BioRiles = () => {
                 container
                 direction='row'
                 justifyContent='center'
+                
                 // alignItems='center'
                 md={12}
               >
