@@ -1,17 +1,17 @@
 import React from "react";
 import { Grid, Box, Typography, makeStyles } from "@material-ui/core";
-import SigasImg from "../../../../assets/slide-6.png";
+import SigasImg from "../../../../assets/img-2.png";
 import ReactPlayer from "react-player";
 import BorderWrapper from "../../../Atoms/BorderWrapper";
-
+import SigasLogo from '../../../../assets/logo-SIGAS.png'
 const useStyles = makeStyles((theme) => ({
   root: {
 
     height: "auto",
   },
   image: {
-    width: "100%",
-    height: "auto",
+   
+    height: "65vh",
   },
   title: {
     color: theme.palette.text.button,
@@ -31,6 +31,10 @@ const useStyles = makeStyles((theme) => ({
     borderRadius: 20,
     overflow: "hidden",
   },
+  logo: {
+    width: 200,
+
+  }
 }));
 
 const Sigas = () => {
@@ -44,7 +48,7 @@ const Sigas = () => {
         display='flex'
         justifyContent='center'
         alignItems='center'
-        marginTop={5}
+        marginTop={1}
       >
         <Box width='90%' minWidth={200}>
           <Grid container direction='row' spacing={0}>
@@ -79,8 +83,10 @@ const Sigas = () => {
                 alignItems='center'
                 className={classes.gridContainer}
               >
-                <Grid item>
-                  <img src={SigasImg} alt='sigas' className={classes.image} />
+                <Grid container item justifyContent="flex-end">
+                  <Box component="img" src={SigasLogo} alt="Sigas Logo" justifyContent="flex-end" width="200px" />
+                  {/* <img src={SigasLogo} alt="Sigas" className={classes.logo} /> */}
+                  <img src={SigasImg} alt='Sigas' className={classes.image} />
                 </Grid>
 
                 <Grid item></Grid>

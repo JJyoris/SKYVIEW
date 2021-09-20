@@ -8,19 +8,13 @@ import {ReactComponent as Icn2} from '../../../../assets/icn2.svg'
 import {ReactComponent as Icn3} from '../../../../assets/icn3.svg'
 import {ReactComponent as Icn4} from '../../../../assets/icn4.svg'
 import Cerdo from '../../../../assets/cerdo.svg'
+import Img1 from '../../../../assets/foto.png'
 const useStyles = makeStyles((theme) => ({
   root: {
 
     height: "90vh",
     width: "100%",
   },
-  image: {
-    position: 'absolute',
-    top: 580,
-     height:250
-  },
-  
-
 }));
 
 const Beneficios = () => {
@@ -28,15 +22,16 @@ const Beneficios = () => {
 
   return (
     <div className={classes.root}>
-      <BorderWrapper borderColor='#f96f5a'>
+      <BorderWrapper background={Img1}  borderColor='#f96f5a'>
       <Box
         width='100%'
         display='flex'
         justifyContent='center'
         alignItems='center'
+        
       >
         
-        <Box width='90%' minWidth={250}>
+        <Box width='100%' minWidth={250}>
           <Typography
             variant='h5'
             align='start'
@@ -46,9 +41,9 @@ const Beneficios = () => {
             Beneficios de la Carne de Cerdo
           </Typography>
           
-          <Grid container spacing={3} justifyContent="center" alignItems="center">
+          <Grid flexDirection="row" container spacing={3} justifyContent="center" alignItems="center">
 
-            <Grid item lg={3} md={4} sm={6} xs={12}>
+            <Grid item lg={12} xs={12}>
             <RectangleArea
             Icon={Icn1}
             title='Carne baja en sodio'
@@ -57,7 +52,7 @@ const Beneficios = () => {
           />
 
             </Grid>
-            <Grid item  lg={3} md={4} sm={6} xs={12}>
+            <Grid item  lg={12} xs={12}>
             <RectangleArea
             Icon={Icn2}
             title='Excelente fuente de fosforo'
@@ -65,7 +60,7 @@ const Beneficios = () => {
             color='#FD7F2D'
           />
             </Grid>
-            <Grid item  lg={3} md={4} sm={6} xs={12}>
+            <Grid item  lg={12} xs={12}>
             <RectangleArea
             Icon={Icn3}
             title='Su perfil aminoacido revela buena fuente de proteinas'
@@ -73,7 +68,7 @@ const Beneficios = () => {
             color='#837EE8'
           />
             </Grid>
-            <Grid item lg={3} md={4} sm={6} xs={12}>
+            <Grid item lg={12} xs={12}>
             <RectangleArea
             Icon={Icn4}
             title='Cortes extra magros'
@@ -81,7 +76,7 @@ const Beneficios = () => {
             color='#4989FA'
           />
             </Grid>
-            <img src={Cerdo} className={classes.image} alt="Cerdo"/>
+  
           </Grid>
 
          
