@@ -22,40 +22,40 @@ body{
 
 }
 .icon-button-historia{
-	top: 380px;
-	left: 1260px;
+	top: 400px;
+	left: 1350px;
 	display: flex;
 	position: relative;
 }
 
 .icon-button-oficina{
 	top: 565px;
-	left: 1070px;
+	left: 1200px;
 	display: flex;
 	position: relative;
 }
 
 .icon-button-comunidad{
-	top: 430px;
-	left: 2225px;
+	top: 460px;
+	left: 2380px;
 	display: flex;
 	position: relative;
 }
 .icon-button-produccion{
-	top: 430px;
-	left: 3280px;
+	top: 380px;
+	left: 3480px;
 	display: flex;
 	position: relative;
 }
 .icon-button-granjas{
-	top: 454px;
-	left: 650px;
+	top: 470px;
+	left: 680px;
 	display: flex;
 	position: relative;
 }
 .icon-button-plantas{
-	top: 415px;
-	left: 3900px;
+	top: 440px;
+	left: 4150px;
 	display: flex;
 	position: relative;
 }
