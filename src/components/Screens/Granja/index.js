@@ -40,10 +40,11 @@ const Granja = () => {
       <BorderWrapper borderColor='#b8de6a'> 
       <Box
         width="100%"
+        height="100%"
         display="flex"
         justifyContent="center"
         alignItems="center"
-        marginTop={15}
+        // marginTop={15}
       >
         <Box width="80%" minWidth={200}>
           <Grid container direction="row" spacing={0}>

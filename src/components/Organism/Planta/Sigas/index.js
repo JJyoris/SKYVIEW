@@ -11,6 +11,7 @@ const useStyles = makeStyles((theme) => ({
     height: "auto",
   },
   image: {
+    zIndex:-1,
    
     height: "65vh",
   },
@@ -49,10 +50,10 @@ const Sigas = () => {
         display='flex'
         justifyContent='center'
         alignItems='center'
-        marginTop={1}
+      
       >
         <Box width='90%' minWidth={200}>
-          <Grid container direction='row' spacing={0}>
+          <Grid container direction='row' spacing={5}>
             <Grid
               item
               xs={12}
@@ -85,12 +86,11 @@ const Sigas = () => {
               >
                 <Grid container item justifyContent="flex-end">
                   <Box component="img" src={SigasLogo} alt="Sigas Logo" justifyContent="flex-end" width="200px" />
-                  {/* <img src={SigasLogo} alt="Sigas" className={classes.logo} /> */}
+                  
                   <img src={SigasImg} alt='Sigas' className={classes.image} />
                 </Grid>
 
-                <Grid item>
-                </Grid>
+
               </Grid>
             </Grid>
           </Grid>

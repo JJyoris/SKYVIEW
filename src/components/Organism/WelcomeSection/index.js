@@ -12,7 +12,7 @@ import {
 import ReactPlayer from "react-player";
 import MapAgroSuper from "../../Molecules/MapAgroSuper";
 import { TransformWrapper, TransformComponent } from "react-zoom-pan-pinch";
-import { TrendingUpRounded } from "@material-ui/icons";
+
 const useStyles = makeStyles((theme) => ({
   root: {
     paddingTop: 10,
@@ -57,6 +57,7 @@ const WelcomeSection = () => {
   const [open, setOpen] = useState(false);
 
   useMemo(() => {
+    console.log("lo hizo");
      setOpen(true);
   }, []);
 
@@ -81,7 +82,7 @@ const WelcomeSection = () => {
           <div style={{ borderRadius: 10, outline: 0 , width:"80%"}}>
             <ReactPlayer
               url="https://skyviewagrosuper.com/videos/intro-skyview.mp4"
-              volume="0.2"
+              volume={0.2}
               width="100%"
               height="100%"
               playing={true}
