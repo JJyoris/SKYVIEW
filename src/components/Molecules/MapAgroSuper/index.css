@@ -319,22 +319,48 @@ body{
 }
 
 
-
+  /* GRANJAS  */
+@-webkit-keyframes changeColorGr {
+	0% {-webkit-color: #fff;}
+ 	50% {-webkit-color: #b8de6a;}
+	100%{-webkit-color: #fff;}
+}
 @keyframes changeColorGr {
 	0% {color: #fff;}
  	50% {color: #b8de6a;}
 	100%{color: #fff;}
 }
-
+/* OFICINA CENTRAL  */
+@-webkit-keyframes changeColorO {
+	0% {-webkit-color: #fff;}
+ 	50% {-webkit-color: #22d7d9;}
+	100%{-webkit-color: #fff;}
+}
 @keyframes changeColorO {
 	0% {color: #fff;}
  	50% {color: #22d7d9;}
 	100%{color: #fff;}
 }
+
+/* COMUNIDAD  */
+
+@-webkit-keyframes changeColorC {
+	0% {-webkit-color: #fff;}
+ 	50% {-webkit-color: #22d7d9;}
+	100%{-webkit-color: #fff;}
+}
 @keyframes changeColorC {
 	0% {color: #fff;}
- 	50% {color: #459fc7;}
+ 	50% {color: #22d7d9;}
 	100%{color: #fff;}
+}
+
+/* PRODUCCION RESPONSABLE  */
+
+@-webkit-keyframes changeColorPr {
+	0% {-webkit-color: #fff;}
+ 	50% {-webkit-color: #34b29a;}
+	100%{-webkit-color: #fff;}
 }
 
 @keyframes changeColorPr {
@@ -342,14 +368,24 @@ body{
  	50% {color: #34b29a;}
 	100%{color: #fff;}
 }
-
+/* PLANTAS INDUSTRIALES */
+@-webkit-keyframes changeColorPr {
+	0% {-webkit-color: #fff;}
+ 	50% {-webkit-color: #f96f5a;}
+	100%{-webkit-color: #fff;}
+}
 @keyframes changeColorPi {
 	0% {color: #fff;}
  	50% {color: #f96f5a;}
 	100%{color: #fff;}
 }
 
-
+/* HISTORIA  */
+@-webkit-keyframes changeColor {
+	0% {-webkit-color: #fff;}
+ 	50% {-webkit-color: #7e9e47;}
+	100%{-webkit-color: #fff;}
+}
 @keyframes changeColor {
 	0% {color: #fff;}
  	50% {color: #7e9e47;}
@@ -357,7 +393,7 @@ body{
 }
 
 
-
+/* NUBES  */
 @keyframes traslation {
 	0%{right: 0px}
 	50%{right: 500px}

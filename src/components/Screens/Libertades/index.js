@@ -38,12 +38,12 @@ const Libertades = () => {
     <div id="libertades" className={classes.root}>
       <BorderWrapper  borderColor='#b8de6a'>
       <Box
-        width="85%"
+        width="100%"
+        height="100%"
         display="flex"
         justifyContent="center"
         alignItems="center"
-        marginTop={15}
-        marginLeft={20}
+
       >
         <Box width="90%" minWidth={200}>
           <Grid container direction="row" spacing={5} display="flex" justifyContent="center" alignItems="center">

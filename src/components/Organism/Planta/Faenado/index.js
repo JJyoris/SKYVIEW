@@ -38,12 +38,13 @@ const Faenado = () => {
     <div className={classes.root}>
       <BorderWrapper borderColor='#f96f5a'>
       <Box
-        width="80%"
+        width="100%"
+        height="100%"
         display="flex"
         justifyContent="center"
         alignItems="center"
-        marginTop={15}
-        marginLeft={17}
+        // marginTop={15}
+        // marginLeft={17}
       >
         <Box width="90%" minWidth={200}>
           <Grid container direction="row" spacing={5}>

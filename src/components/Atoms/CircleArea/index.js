@@ -21,6 +21,13 @@ const useStyles = makeStyles((theme) => ({
     justifyContent: "center",
     alignItems: "center",
   },
+  containerXS: {
+    padding: 10,
+    display: "flex",
+    flexDirection: "column",
+    justifyContent: "center",
+    alignItems: "center",
+  },
   shapeCircleSmall: {
     display: "flex",
     width: 190,
@@ -36,14 +43,14 @@ const useStyles = makeStyles((theme) => ({
   },
   shapeCircleExtraSmall: {
     display: "flex",
-    width: 160,
-    height: 160,
+    width: 110,
+    height: 110,
     borderRadius: "50%",
   },
   intertnalBoxExtraSmall: {
     borderRadius: "50%",
-    width: 140,
-    height: 140,
+    width: 90,
+    height: 90,
     margin: "auto",
     boxShadow: "inset 0 0 0 1px  #fff",
   },
@@ -57,8 +64,8 @@ const CircleArea = ({ Icon, title, backgroundColor, small, extraSmall }) => {
       style={{ backgroundColor: backgroundColor }}
     >
       <div className={classes.intertnalBoxExtraSmall}>
-        <Box width='100%' className={classes.container}>
-          <Icon style={{ width: 100, color: "#fff" }} />
+        <Box width='100%'  className={classes.containerXS}>
+          <Icon style={{ width: 70, color: "#fff" }} />
 
           <Typography style={{ color: "#fff" }} variant='h2'>
             {title}

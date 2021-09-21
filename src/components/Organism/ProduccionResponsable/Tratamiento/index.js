@@ -22,6 +22,7 @@ const useStyles = makeStyles((theme) => ({
     borderRadius: 20,
     overflow: "hidden",
   },
+ 
 }));
 
 const ProcesosTratamiento = () => {
@@ -31,11 +32,12 @@ const ProcesosTratamiento = () => {
       <BorderWrapper borderColor='#34b29a'>
         <Box
           width='100%'
+          height="100%"
           display='flex'
           justifyContent='center'
           alignItems='center'
         >
-          <Box width='100%' minWidth={400}>
+          <Box width='100%'   minWidth={400}>
             <Grid container direction='row' spacing={1}>
               <Grid
                 item
@@ -67,19 +69,19 @@ const ProcesosTratamiento = () => {
                   </Typography>
                 </Grid>
                 <Grid item container direction='column' justifyContent="center" alignItems="center"  md={4}>
-                  <CircleArea Icon={PRIcon1} backgroundColor='#ED7422' small />
+                  <CircleArea Icon={PRIcon1} backgroundColor='#ED7422' extraSmall />
                   <Typography variant='h2' gutterBottom>
                     Gestion de Olores
                   </Typography>
                 </Grid>
                 <Grid item container direction='column' justifyContent="center" alignItems="center" md={4}>
-                  <CircleArea Icon={PRIcon2} backgroundColor='#F96F5A' small />
+                  <CircleArea Icon={PRIcon2} backgroundColor='#F96F5A' extraSmall />
                   <Typography variant='h2' gutterBottom>
                     Huella de Carbono
                   </Typography>
                 </Grid>
                 <Grid item container direction='column' justifyContent="center" alignItems="center" md={4}>
-                  <CircleArea Icon={PRIcon3} backgroundColor='#3B65CC' small />
+                  <CircleArea Icon={PRIcon3} backgroundColor='#3B65CC' extraSmall />
                   <Typography variant='h2' gutterBottom>
                     Eficiencia Energetica
                   </Typography>
@@ -97,7 +99,7 @@ const ProcesosTratamiento = () => {
                       <CircleArea
                         Icon={PRIcon4}
                         backgroundColor='#BF71B8'
-                        small
+                        extraSmall
                       />
                       <Typography variant='h2' align='center' gutterBottom>
                         Mejoramiento
@@ -135,7 +137,7 @@ const ProcesosTratamiento = () => {
                       <CircleArea
                         Icon={PRIcon5}
                         backgroundColor='#746FBD'
-                        small
+                        extraSmall
                       />
                       <Typography align='center' variant='h2' gutterBottom>
                         Reutilizacion

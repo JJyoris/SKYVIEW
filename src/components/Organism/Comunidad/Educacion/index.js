@@ -50,7 +50,7 @@ const Educacion = () => {
             </Grid>
             <Grid item xs={5} container direction="column">
               <Typography variant="h5" className={classes.tittle}>
-                Colegio Los Cipres
+                Colegio Los Cipreses
               </Typography>
               <Typography variant="h1">
                 {" "}
@@ -63,8 +63,8 @@ const Educacion = () => {
               </Typography>
               <img
                 src={colegioLosCipres}
-                alt="Colegio los cipres"
-                tittle="Colegio Los cipres"
+                alt="Colegio los Cipreses"
+                tittle="Colegio Los Cipreses"
               />
             </Grid>
             <Grid item xs={3}>

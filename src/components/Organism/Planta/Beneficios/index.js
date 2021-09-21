@@ -21,17 +21,19 @@ const Beneficios = () => {
   const classes = useStyles();
 
   return (
-    <div className={classes.root}>
+    <div>
       <BorderWrapper background={Img1}  borderColor='#f96f5a'>
       <Box
         width='100%'
+        height="100%"
         display='flex'
         justifyContent='center'
         alignItems='center'
         
+        
       >
         
-        <Box width='100%' minWidth={250}>
+        <Box width='100%' minWidth={250} mb={1}>
           <Typography
             variant='h5'
             align='start'

@@ -22,6 +22,7 @@ const useStyles = makeStyles((theme) => ({
     position: "absolute",
     top: 210,
     left: 32,
+    zIndex:-1
   },
   title: {
     color: theme.palette.text.button,
@@ -38,19 +39,19 @@ const Certificaciones = () => {
   return (
     <div className={classes.root}>
       <BorderWrapper borderColor="#f96f5a">
-        <Box width="100%" display="flex" justifyContent="center" marginTop={5}>
+        <Box width="100%" display="flex" justifyContent="center">
           <Box width="95%" minWidth={200}>
             <Grid
               container
-              spacing={1}
+              spacing={5}
               direction="row"
               justifyContent="flex-start"
               alignItems="center"
             >
-              <Grid item xs={5}>
+              <Grid item xs={6}>
                 <img src={Img1} className={classes.image} alt="Sigas" />
               </Grid>
-              <Grid item container spacing={1} xs={7}>
+              <Grid item container spacing={1} xs={6}>
                 <Grid item xs={4}>
                   <img src={Dat1} alt="sigas" />
                   <Typography varaint="h3" align="center">
