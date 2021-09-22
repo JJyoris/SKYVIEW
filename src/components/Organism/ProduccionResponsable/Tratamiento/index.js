@@ -10,6 +10,8 @@ import { ReactComponent as PRIcon4 } from "../../../../assets/PR-icn4.svg";
 import { ReactComponent as PRIcon5 } from "../../../../assets/PR-icn5.svg";
 import { ReactComponent as PRIcon6 } from "../../../../assets/PR-icn6.svg";
 import { ReactComponent as PRIcon7 } from "../../../../assets/PR-icn7.svg";
+import produccion from "../../../../assets/PRODUCCIÓN RESPONSABLE.jpg";
+import bioabono from "../../../../assets/bioabono.png";
 
 const useStyles = makeStyles((theme) => ({
   // root: {
@@ -22,160 +24,73 @@ const useStyles = makeStyles((theme) => ({
     borderRadius: 20,
     overflow: "hidden",
   },
-  tittle:{
-    fontSize:35
-   }
-  
- 
+  gridContainer: {
+    [theme.breakpoints.down("md")]: {
+      flexDirection: "row",
+      alignItems: "center",
+      justifyContent: "center",
+    },
+  },
+  tittle: {
+    fontSize: 28,
+    color:"#728292"
+  },
+  subtittle: {
+    fontSize: 22,
+    color:"#728292"
+  },
 }));
 
 const ProcesosTratamiento = () => {
   const classes = useStyles();
   return (
     <div className={classes.root}>
-      <BorderWrapper borderColor='#34b29a'>
+      <BorderWrapper borderColor="#34b29a">
         <Box
-          width='100%'
+          width="100%"
           height="100%"
-          display='flex'
-          justifyContent='center'
-          alignItems='center'
+          display="flex"
+          justifyContent="center"
+          alignItems="center"
         >
-          <Box width='100%'   minWidth={400}>
-            <Grid container direction='row' spacing={1}>
+          <Box width="90%" minWidth={200}>
+            <Grid
+              container
+              direction="row"
+              spacing={5}
+              justifyContent="center"
+              alignItems="center"
+            >
+              <Grid item xs={12} md={6}>
+                <Grid
+                  container
+                  direction="column"
+                  spacing={5}
+                  justifyContent="center"
+                  alignItems="center"
+                  className={classes.gridContainer}
+                >
+                  <img src={produccion} alt="produccion" width="100%" />
+                </Grid>
+              </Grid>
               
               <Grid
                 item
-                container 
-                direction="column"
+                container
                 xs={12}
                 md={6}
-                justifyContent='center'
-                alignItems='center'
+                justifyContent="center"
+                alignItems="center"
               >
-                <ReactPlayer
-                  url='https://www.youtube.com/watch?v=nyuMFyOzWZA'
-                  width='700px'
-                  height='470px'
-                  className={classes.video}
-                  config={{
-                    youtube: {
-                      playerVars: { controls: 2 },
-                    },
-                  }}
-                />
+                <Typography variant="h3" className={classes.tittle}>
+                  Impacto positivo en el medio ambiente
+                </Typography>
+                <Typography variant="h4" gutterBottom className={classes.subtittle}>
+                  gracias a diferentes procesos de tratamiento
+                </Typography>
+                <img src={bioabono} width="80%"></img>
               </Grid>
-            
-
-              <Grid item md={6} container justifyContent='center' spacing={2}>
-                <Grid item>
-                  <Typography variant='h5' align='center' className={classes.tittle}>
-                    Impacto positivo en el entorno
-                  </Typography>
-                  <Typography variant='h4' align='center' gutterBottom>
-                    gracias a diferentes procesos de tratamiento
-                  </Typography>
-                </Grid>
-                <Grid item container direction='column' justifyContent="center" alignItems="center"  md={4}>
-                  <CircleArea Icon={PRIcon1} backgroundColor='#ED7422' extraSmall />
-                  <Typography variant='h2' gutterBottom>
-                    Gestion de Olores
-                  </Typography>
-                </Grid>
-                <Grid item container direction='column' justifyContent="center" alignItems="center" md={4}>
-                  <CircleArea Icon={PRIcon2} backgroundColor='#F96F5A' extraSmall />
-                  <Typography variant='h2' gutterBottom>
-                    Huella de Carbono
-                  </Typography>
-                </Grid>
-                <Grid item container direction='column' justifyContent="center" alignItems="center" md={4}>
-                  <CircleArea Icon={PRIcon3} backgroundColor='#3B65CC' extraSmall />
-                  <Typography variant='h2' gutterBottom>
-                    Eficiencia Energetica
-                  </Typography>
-                </Grid>
-
-                <Grid item>
-                  <Grid item container direction='column'>
-                    <div
-                      style={{
-                        backgroundColor: "#BF71B850",
-                        borderRadius: 130,
-                        padding: 2,
-                      }}
-                    >
-                      <CircleArea
-                        Icon={PRIcon4}
-                        backgroundColor='#BF71B8'
-                        extraSmall
-                      />
-                      <Typography variant='h2' align='center' gutterBottom>
-                        Mejoramiento
-                      </Typography>
-                      <Typography variant='h2' align='center' gutterBottom>
-                        de Suelos
-                      </Typography>
-                      <Box
-                        display='flex'
-                        justifyContent='center'
-                        alignItems='center'
-                        mt={10}
-                      >
-                        <CircleArea
-                          Icon={PRIcon6}
-                          backgroundColor='#BF71B8'
-                          extraSmall
-                        />
-                      </Box>
-                    </div>
-                    <Typography variant='h2' align='center' gutterBottom>
-                      Biocarbono
-                    </Typography>
-                  </Grid>
-                </Grid>
-
-                <Grid item>
-                  <Grid item container direction='column'>
-                    <div
-                      style={{
-                        backgroundColor: "#746fbd50",
-                        borderRadius: 130,
-                        padding: 1,
-                      }}
-                    >
-                      <CircleArea
-                        Icon={PRIcon5}
-                        backgroundColor='#746FBD'
-                        extraSmall
-                      />
-                      <Typography align='center' variant='h2' gutterBottom>
-                        Reutilizacion
-                      </Typography>
-                      <Typography align='center' variant='h2' gutterBottom>
-                        de Agua
-                      </Typography>
-                      <Box
-                        display='flex'
-                        justifyContent='center'
-                        alignItems='center'
-                        mt={10}
-                      >
-                        <CircleArea
-                          Icon={PRIcon7}
-                          backgroundColor='#746FBD'
-                          extraSmall
-                        />
-                      </Box>
-                    </div>
-                    <Typography variant='h2' align='center' gutterBottom>
-                      Limpieza 
-                    </Typography>
-                    <Typography variant='h2' align='center' gutterBottom>
-                    y Riego
-                    </Typography>
-                  </Grid>
-                </Grid>
-              </Grid>
+              
             </Grid>
           </Box>
         </Box>

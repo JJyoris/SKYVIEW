@@ -80,8 +80,8 @@ const MundoSection = () => {
               <Grid item  lg md={4} sm={6} xs={12}>
                 <NavCard
                   image={faenadora}
-                  tittle='Plantas '
-                  subtittle='Faenadora'
+                  tittle='Plantas'
+                  subtittle=' Industriales '
                   link='/planta'
                 />
               </Grid>

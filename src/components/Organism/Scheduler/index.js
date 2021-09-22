@@ -65,12 +65,7 @@ const Scheduler = () => {
                   </Typography>
                   <Typography align='start' variant='h1'>
                     <Box lineHeight={2}>
-                    Lorem ipsum dolor sit amet, consectetur adipiscing elit.
-                    Nunc vitae elit ornare, mollis turpis fringilla, gravida
-                    sem. Phasellus id efficitur risus, nec imperdiet ipsum.
-                    Fusce aliquet sem quam, ac commodo ex sagittis id. Ut diam
-                    diam, luctus vel sapien vitae, pulvinar lacinia ipsum. Cras
-                    eu neque a lorem placerat rhoncus nec convallis nisi.
+                    Disfruta la experiencia Skyview virtual. Agenda aquí tu visita y una coordinadora guía te conducirá en un recorrido personalizado, donde te acompañará y responderá todas tus preguntas
                     </Box>
 
                   </Typography>
