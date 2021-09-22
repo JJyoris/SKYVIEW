@@ -16,7 +16,7 @@ const OficinaCentral = () => {
     }
   return (
     <BorderWrapper borderColor="#22d7d9" >
-        < OficinaIframe />
+        {/* < OficinaIframe /> */}
      
     </BorderWrapper>
   );
