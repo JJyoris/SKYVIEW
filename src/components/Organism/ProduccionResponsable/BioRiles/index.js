@@ -13,9 +13,9 @@ import { ReactComponent as IconPR10 } from "../../../../assets/PR-icn10.svg";
 import ProduccionResponsableFooter from "../../../Molecules/ProduccionResponsableFooter";
 import ReactPlayer from "react-player";
 const useStyles = makeStyles((theme) => ({
-  root: {
-    height: "90vh",
-  },
+  // root: {
+  //   height: "90vh",
+  // },
   background: {
     height: "70vh",
   },
@@ -38,10 +38,11 @@ const useStyles = makeStyles((theme) => ({
 const BioRiles = () => {
   const classes = useStyles();
   return (
-    <div className={classes.root}>
+    <div >
       <BorderWrapper borderColor='#34b29a'>
         <Box
           width='100%'
+          height="100%"
           display='flex'
           justifyContent='center'
           alignItems='center'
@@ -66,7 +67,7 @@ const BioRiles = () => {
                   className={classes.itemContainer}
                   style={{
                     width: 300,
-                    height: 600,
+                    height: "100%",
                     backgroundColor: "#F5E8D2",
                     padding: 10,
                   }}
@@ -110,7 +111,7 @@ const BioRiles = () => {
                   className={classes.itemContainer}
                   style={{
                     width: 300,
-                    height: 600,
+                    height: "100%",
                     backgroundColor: "#A2E7F7",
                     padding: 10,
                   }}
@@ -152,7 +153,7 @@ const BioRiles = () => {
                   className={classes.itemContainer}
                   style={{
                     width: 300,
-                    height: 600,
+                    height: "100%",
                     backgroundColor: "#FADCCF",
                     padding: 10,
                   }}

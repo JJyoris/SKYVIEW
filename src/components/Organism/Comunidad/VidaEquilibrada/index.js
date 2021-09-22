@@ -21,6 +21,10 @@ const useStyles = makeStyles((theme) => ({
     borderRadius:50,
     zIndex: -1,
   },
+  video:{
+    borderRadius: 20,
+    overflow: "hidden",
+  },
 }));
 
 const VidaEquilibrada = () => {
@@ -39,13 +43,11 @@ const VidaEquilibrada = () => {
           <Grid container spacing={1} item>
             <Grid item xs={4}>
               <ReactPlayer
-                url="https://www.youtube.com/watch?v=nyuMFyOzWZA"
+                url="https://skyviewagrosuper.com/videos/comunidad/Super%20Sano%20Baja.mp4"
                 width="100%"
-                config={{
-                  youtube: {
-                    playerVars: { controls: 2 },
-                  },
-                }}
+                loop={true}
+                playing={true}
+                className={classes.video}
               />
             </Grid>
             <Grid item xs={5} container direction="column">

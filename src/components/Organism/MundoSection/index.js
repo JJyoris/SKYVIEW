@@ -91,7 +91,7 @@ const MundoSection = () => {
               <Grid item  lg md={4} sm={6} xs={12}>
                 <NavCard
                   image={produccion}
-                  tittle='Produccion Responsable'
+                  tittle='Producción Responsable'
                   subtittle=''
                   link='/produccion'
                 />

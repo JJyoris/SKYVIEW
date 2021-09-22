@@ -2,9 +2,10 @@ import React from "react";
 import BorderWrapper from "../../../Atoms/BorderWrapper";
 import { Box, Grid, makeStyles, Typography } from "@material-ui/core";
 import ReactPlayer from "react-player";
-import icn1 from "../../../../assets/icn_1.png";
-import icn2 from  "../../../../assets/icn_2.png";
-import icn3 from  "../../../../assets/icn_3.png";
+import alimentacion from "../../../../assets/img-lobueno.png"
+// import icn1 from "../../../../assets/icn_1.png";
+// import icn2 from  "../../../../assets/icn_2.png";
+// import icn3 from  "../../../../assets/icn_3.png";
 
 const useStyles = makeStyles((theme) => ({
   grid: {
@@ -49,9 +50,10 @@ const Proposito = () => {
   return (
     <BorderWrapper borderColor="#459fc7">
       <Box height="90%" width="90%" marginLeft={10} marginTop={3}>
-        <Grid container className={classes.grid} >
+        <Grid container className={classes.grid}  spacing={5}>
           <Grid className={classes.grid} item xs={5} container direction="column">
-            <Typography variant="h5" component="h1" className={classes.tittle}>
+            <img src={alimentacion} alt="alimentacion" tittle="Alimentar lo bueno todos los dias" width="100%"/>
+            {/* <Typography variant="h5" component="h1" className={classes.tittle}>
               Alimentar
             </Typography>
 
@@ -87,10 +89,10 @@ const Proposito = () => {
                   siempre mejor
                 </Typography>
               </Grid>
-            </Grid>
+            </Grid>*/}
 
             <Typography variant="h1" >
-              <Box lineHeight={2} textAlign="center" fontSize={17} margin="10px 90px 10px 40px">
+              <Box lineHeight={2} textAlign="center" fontSize={17} margin="0px 40px" >
                 Porque alimentar es mucho más que nutrirse, es hacer que las
                 cosas pasen, es llenarse de buenas emociones y experiencias, es
                 ver la vida de forma positiva y alegre. Y queremos que tú seas
@@ -98,7 +100,7 @@ const Proposito = () => {
                 detalle, es fundamental para seguir cumpliendo con nuestro
                 propósito día a día.
               </Box>
-            </Typography>
+            </Typography> 
           </Grid>
 
           <Grid item xs={7}>

@@ -7,28 +7,31 @@ const useStyles = makeStyles((theme) => ({
   grid: {
     height: "100%",
   },
+  video: {
+    borderRadius: 20,
+    overflow: "hidden",
+  },
 }));
 
 const Voluntario = () => {
   const classes = useStyles();
   return (
     <BorderWrapper borderColor="#459fc7">
-      <Box height="100%">
-        <Grid container className={classes.grid} spacing={3}>
-          <Grid item xs={6}>
+      <Box height="100%" width="100%" >
+        <Grid container className={classes.grid} spacing={3} justifyContent="center"  alignItems="center">
+          <Grid item xs={7} container direction="column" alignItems="center" justifyContent="center">
             <ReactPlayer
-              url="https://www.youtube.com/watch?v=nyuMFyOzWZA"
-              width="100%"
+              url="https://skyviewagrosuper.com/videos/comunidad/Manifiesto_ON4-B.mp4"
+              width="90%"
               height="100%"
-              config={{
-                youtube: {
-                  playerVars: { controls: 2 },
-                },
-              }}
+              className={classes.video}
+
             />
           </Grid>
-          <Grid item xs={6}>
-              <img src={voluntarios} atl="voluntarios As" tittle="voluntarios AS "></img>
+          <Grid item xs={5} container direction="column" alignItems="center" justifyContent="center">
+            
+              <img src={voluntarios} atl="voluntarios As" tittle="voluntarios AS" width="70%"></img>
+             
           </Grid>
         </Grid>
       </Box>
