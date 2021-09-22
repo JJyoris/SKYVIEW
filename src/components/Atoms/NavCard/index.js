@@ -42,8 +42,8 @@ const NavCard = ({ image, tittle, subtittle, link }) => {
 
       <CardContent>
         <Box textAlign='center' mt={2}>
-          <Typography>{tittle}</Typography>
-          <Typography>{subtittle}</Typography>
+          <Typography variant="h1">{tittle}</Typography>
+          <Typography variant="h1">{subtittle}</Typography>
         </Box>
       </CardContent>
       

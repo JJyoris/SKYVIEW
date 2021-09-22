@@ -53,13 +53,12 @@ const Sigas = () => {
       
       >
         <Box width='90%' minWidth={200}>
-          <Grid container direction='row' spacing={5}>
+          <Grid container direction='row' spacing={5} justifyContent="center" alignItems="center">
             <Grid
               item
               xs={12}
               md={6}
-              justifyContent='center'
-              alignItems='center'
+
             >
               <Typography variant='h3' align='start' className={classes.title}>
                 Sistema integrado propio de Agrosuper
@@ -67,13 +66,16 @@ const Sigas = () => {
               <Typography variant='h4' align='start' className={classes.title} gutterBottom>
                 que toma las mejores prácticas de distintas formas.
               </Typography>
+              
               <ReactPlayer
                 url='http://skyviewagrosuper.com/videos/plantas_industriales/SIGAS_ON2.mp4'
-                width='700px'
-                height='auto'
+                width='100%'
+                height="auto"
+                
                 className={classes.video}
                 controls
               />
+             
             </Grid>
             <Grid item xs={12} md={5}>
               <Grid
