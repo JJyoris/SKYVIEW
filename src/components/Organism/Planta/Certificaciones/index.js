@@ -28,7 +28,7 @@ const useStyles = makeStyles((theme) => ({
     color: theme.palette.text.button,
   },
   footer:{
-    fontSize:18,
+    fontSize:17,
     color:"#203a75"
   }
 }));
@@ -37,7 +37,7 @@ const Certificaciones = () => {
   const classes = useStyles();
 
   return (
-    <div className={classes.root}>
+    <div>
       <BorderWrapper borderColor="#f96f5a">
         <Box width="100%" display="flex" justifyContent="center">
           <Box width="95%" minWidth={200}>
@@ -51,16 +51,16 @@ const Certificaciones = () => {
               <Grid item xs={6}>
                 <img src={Img1} className={classes.image} alt="Sigas" />
               </Grid>
-              <Grid item container spacing={1} xs={6}>
+              <Grid item container spacing={3} xs={6}>
                 <Grid item xs={4}>
-                  <img src={Dat1} alt="sigas" />
+                  <img src={Dat1} alt="sigas" width="100%"  />
                   <Typography varaint="h3" align="center">
                     Sistema propio, pero auditado y certificado por un organismo
                     externo, validado internacionalmente.
                   </Typography>
                 </Grid>
                 <Grid item xs={4}>
-                  <img src={Dat2} alt="sigas" />
+                  <img src={Dat2} alt="sigas"  width="100%"/>
                   <Typography varaint="h3" align="center">
                     Nos certifica DQS (Sociedad Alemana deCalidad) conformado
                     por el DIN (Instituto Alemán de Normalización) y la división
@@ -68,7 +68,7 @@ const Certificaciones = () => {
                   </Typography>
                 </Grid>
                 <Grid item xs={4}>
-                  <img src={Dat3} alt="sigas" />
+                  <img src={Dat3} alt="sigas" width="100%" />
                   <Typography varaint="h3" align="center">
                     Al certificarnos nos permiten el uso de los GC Marks, que
                     son una acreditación de la Union Europea respecto a las
@@ -95,7 +95,7 @@ const Certificaciones = () => {
                 </Grid>
                 <Typography variant="h3" className={classes.footer}>
                   
-                  Cumplir con todas estas normads es muy importante porque
+                  Cumplir con todas estas normas es muy importante porque
                   certifica nuestra calidad 2.0 y nos abre las puertas a
                   mercados internacionales con regulaciones mucho más estrictas.
                 </Typography>

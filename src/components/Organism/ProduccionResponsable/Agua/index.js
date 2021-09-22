@@ -28,6 +28,7 @@ const useStyles = makeStyles((theme) => ({
   },
   title: {
     color: "#34B29A",
+    fontSize:35
 
   },
   subtitle:{
@@ -45,6 +46,7 @@ const Agua = () => {
         <Box
           width='100%'
           display='flex'
+          height="100%"
           justifyContent='center'
           alignItems='center'
         >

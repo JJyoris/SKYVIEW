@@ -126,7 +126,7 @@ const WelcomeSection = () => {
             minScale={1.2}
             initialPositionX={-2000}
             initialPositionY={-100}
-            // wrapperClass={ classes.wrapper }
+            wrapperStyle={{borderRadius:"50px"}}
           >
             {({ zoomIn, zoomOut, resetTransform }) => (
               <React.Fragment>
@@ -160,7 +160,7 @@ const WelcomeSection = () => {
                   </Button>
                 </div>
                 <TransformComponent
-                  contentStyle={{ transformOrigin: "0% 0% " , borderRadius:10}}
+                  
                 >
                   <MapAgroSuper />
                 </TransformComponent>

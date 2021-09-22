@@ -12,9 +12,9 @@ import { ReactComponent as PRIcon6 } from "../../../../assets/PR-icn6.svg";
 import { ReactComponent as PRIcon7 } from "../../../../assets/PR-icn7.svg";
 
 const useStyles = makeStyles((theme) => ({
-  root: {
-    height: "90vh",
-  },
+  // root: {
+  //   height: "90vh",
+  // },
   background: {
     height: "70vh",
   },
@@ -22,6 +22,10 @@ const useStyles = makeStyles((theme) => ({
     borderRadius: 20,
     overflow: "hidden",
   },
+  tittle:{
+    fontSize:35
+   }
+  
  
 }));
 
@@ -39,8 +43,11 @@ const ProcesosTratamiento = () => {
         >
           <Box width='100%'   minWidth={400}>
             <Grid container direction='row' spacing={1}>
+              
               <Grid
                 item
+                container 
+                direction="column"
                 xs={12}
                 md={6}
                 justifyContent='center'
@@ -58,10 +65,11 @@ const ProcesosTratamiento = () => {
                   }}
                 />
               </Grid>
+            
 
               <Grid item md={6} container justifyContent='center' spacing={2}>
                 <Grid item>
-                  <Typography variant='h5' align='center'>
+                  <Typography variant='h5' align='center' className={classes.tittle}>
                     Impacto positivo en el entorno
                   </Typography>
                   <Typography variant='h4' align='center' gutterBottom>
@@ -93,7 +101,7 @@ const ProcesosTratamiento = () => {
                       style={{
                         backgroundColor: "#BF71B850",
                         borderRadius: 130,
-                        padding: 5,
+                        padding: 2,
                       }}
                     >
                       <CircleArea
@@ -111,6 +119,7 @@ const ProcesosTratamiento = () => {
                         display='flex'
                         justifyContent='center'
                         alignItems='center'
+                        mt={10}
                       >
                         <CircleArea
                           Icon={PRIcon6}
@@ -131,7 +140,7 @@ const ProcesosTratamiento = () => {
                       style={{
                         backgroundColor: "#746fbd50",
                         borderRadius: 130,
-                        padding: 5,
+                        padding: 1,
                       }}
                     >
                       <CircleArea
@@ -149,6 +158,7 @@ const ProcesosTratamiento = () => {
                         display='flex'
                         justifyContent='center'
                         alignItems='center'
+                        mt={10}
                       >
                         <CircleArea
                           Icon={PRIcon7}
@@ -158,7 +168,10 @@ const ProcesosTratamiento = () => {
                       </Box>
                     </div>
                     <Typography variant='h2' align='center' gutterBottom>
-                      Limpieza y Riego
+                      Limpieza 
+                    </Typography>
+                    <Typography variant='h2' align='center' gutterBottom>
+                    y Riego
                     </Typography>
                   </Grid>
                 </Grid>

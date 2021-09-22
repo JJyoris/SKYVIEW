@@ -24,7 +24,7 @@ const useStyles = makeStyles((theme) => ({
     overflow: "hidden",
   },
   titleContainer: {
-    marginTop:75,
+    
     marginBottom:20,
     backgroundColor: "#66D8E350",
     width: "fit-content",
@@ -35,6 +35,7 @@ const useStyles = makeStyles((theme) => ({
   },
   title: {
     color: "#34B29A",
+    fontSize:35
 
   },
 }));
@@ -46,25 +47,28 @@ const HuellaCarbono = () => {
       <BorderWrapper borderColor='#34b29a'>
         <Box
           width='100%'
+          height="100%"
           display='flex'
           justifyContent='center'
           alignItems='center'
         >
-          <Box width='100%' minWidth={400}>
+          <Box width='100%' height="100%" minWidth={400}>
           <Typography className={classes.title} variant='h5'>Huella de Carbono</Typography>
             <Grid
               container
-              spacing={5}
+              spacing={0}
               direction='row'
               justifyContent='center'
               alignItems='center'
             >
-              <Grid item container spacing={1}justifyContent='center'>
+              <Grid item container spacing={1} justifyContent='center'>
                 <Grid item md={5}>
                   <Box component='img' height='60vh' src={IlustracionCarbono} />
                 </Grid>
-                <Grid item md={6}>
-                  <List disablePadding>
+                <Grid item md={6} >  
+                <Box  justifyContent='center' alignItems="center" display="flex" height="100%">
+
+                  <List disablePadding >
                     <div className={classes.titleContainer}>
                       <ListItem>
                         <ListItemIcon>
@@ -85,7 +89,7 @@ const HuellaCarbono = () => {
                       CO2 equivalente.
                     </Typography>
                     </Box>
-                    <div className={classes.titleContainer}>
+                    <div className={classes.titleContainer} style={{marginTop:65}}>
                       <ListItem>
                         <ListItemIcon>
                           <RadioButtonUncheckedIcon
@@ -106,7 +110,7 @@ const HuellaCarbono = () => {
                       distribución y disposición final de residuos.
                     </Typography>
                     </Box>
-                    <div className={classes.titleContainer}>
+                    <div className={classes.titleContainer} style={{marginTop:65}}>
                       <ListItem>
                         <ListItemIcon>
                           <RadioButtonUncheckedIcon
@@ -128,6 +132,8 @@ const HuellaCarbono = () => {
                     </Typography>
                     </Box>
                   </List>
+                  </Box>
+           
                 </Grid>
               </Grid>
               <Grid

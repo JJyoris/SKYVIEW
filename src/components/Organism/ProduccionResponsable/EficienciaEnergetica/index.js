@@ -30,6 +30,7 @@ const useStyles = makeStyles((theme) => ({
   },
   title: {
     color: "#34B29A",
+    fontSize:35
   },
 }));
 
@@ -41,6 +42,7 @@ const EficienciaEnergetica = () => {
       <BorderWrapper borderColor='#34b29a'>
         <Box
           width='100%'
+          height="100%"
           display='flex'
           justifyContent='center'
           alignItems='center'
