@@ -66,7 +66,7 @@ const ProcessHeader = () => {
       next: "/comunidad/educacion",
     },
     {
-      label: "EDUCACION",
+      label: "EDUCACIÓN",
       url: "/comunidad/educacion",
       color: classes.comunidad,
       previous: "/comunidad",
@@ -81,7 +81,7 @@ const ProcessHeader = () => {
     },
  
     {
-      label: "VOLUNTARIO AS ",
+      label: "VOLUNTARIADO COLABORADORES",
       url: "/comunidad/voluntario",
       color: classes.comunidad,
       previous: "/comunidad/vida",
@@ -122,7 +122,7 @@ const ProcessHeader = () => {
       url: "/planta/beneficios",
       color: classes.planta,
       previous: "/planta/areas",
-      next: '/planta/certificaciones',
+      next: '/planta/sigas',
 
     },
     {
@@ -130,15 +130,15 @@ const ProcessHeader = () => {
       url: "/planta/certificaciones",
       color: classes.planta,
       previous: "/planta/beneficios",
-      next: "/planta/sigas",
+      next: null,
 
     },
     {
       label: "PLANTAS INDUSTRIALES",
       url: "/planta/sigas",
       color: classes.planta,
-      previous: "/planta/certificaciones",
-      next: null,
+      previous: "/planta/beneficios",
+      next: "/planta/certificaciones",
 
     },
     {
@@ -164,35 +164,35 @@ const ProcessHeader = () => {
       next:null,
     },
     {
-      label: "PRODUCCION RESPONSABLE",
+      label: "PRODUCCIÓN RESPONSABLE",
       url: "/produccion",
       color: classes.produccion,
       previous: "/",
       next:'/produccion/bioriles',
     },
     {
-      label: "PRODUCCION RESPONSABLE",
+      label: "PRODUCCIÓN RESPONSABLE",
       url: "/produccion/bioriles",
       color: classes.produccion,
       previous: "/produccion",
       next:'/produccion/carbono',
     },
     {
-      label: "PRODUCCION RESPONSABLE",
+      label: "PRODUCCIÓN RESPONSABLE",
       url: "/produccion/carbono",
       color: classes.produccion,
       previous: "/produccion/bioriles",
       next:'/produccion/eficiencia',
     },
     {
-      label: "PRODUCCION RESPONSABLE",
+      label: "PRODUCCIÓN RESPONSABLE",
       url: "/produccion/eficiencia",
       color: classes.produccion,
       previous: "/produccion/carbono",
       next:'/produccion/agua',
     },
     {
-      label: "PRODUCCION RESPONSABLE",
+      label: "PRODUCCIÓN RESPONSABLE",
       url: "/produccion/agua",
       color: classes.produccion,
       previous: "/produccion/eficiencia",

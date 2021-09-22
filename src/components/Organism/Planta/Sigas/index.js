@@ -20,7 +20,8 @@ const useStyles = makeStyles((theme) => ({
     fontSize: 25,
   },
   subtitle: {
-    fontSize: 28,
+    fontSize: 22,
+    color: theme.palette.text.button,
   },
   gridContainer: {
     [theme.breakpoints.down("md")]: {
@@ -63,7 +64,7 @@ const Sigas = () => {
               <Typography variant='h3' align='start' className={classes.title}>
                 Sistema integrado propio de Agrosuper
               </Typography>
-              <Typography variant='h4' align='start' className={classes.title} gutterBottom>
+              <Typography variant='h4' align='start' className={classes.subtitle} gutterBottom>
                 que toma las mejores prácticas de distintas formas.
               </Typography>
               
