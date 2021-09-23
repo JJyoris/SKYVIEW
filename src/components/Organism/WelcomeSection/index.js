@@ -89,7 +89,7 @@ const WelcomeSection = () => {
               width="100%"
               height="100%"
               playing={true}
-              loop={true}
+              loop={false}
               controls={true}
             />
             <StyledButton variant="outlined" onClick={handleClose} size="small" className={classes.exitButton}>

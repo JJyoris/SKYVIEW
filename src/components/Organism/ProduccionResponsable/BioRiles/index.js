@@ -91,11 +91,10 @@ const BioRiles = () => {
                   </div>
 
                   <Typography align='start' variant='h1' className={classes.text}>
-                    <Box lineHeight={1.5} marginTop={2}>
-                      Lorem ipsum dolor sit amet, consectetur adipiscing elit.
-                      Nunc vitae elit ornare, mollis turpis fringilla, gravida
-                      sem. Phasellus id efficitur risus, nec imperdiet ipsum.
-                      Fusce aliquet sem quam.
+                    <Box lineHeight={1.5} marginTop={2} marginBottom={4}>
+                      Es un tipo de enmienda orgánica, que beneficia el sistema suelo-planta.
+                      La mejora de las propiedades físicas del suelo favorece el desarrollo de la cubierta vegetal,
+                      evitando la erosión y reactivando la actividad microbiana.
                     </Box>
                   </Typography>
                 </div>
@@ -133,11 +132,10 @@ const BioRiles = () => {
                     />
                   </div>
                   <Typography align='start' variant='h1'>
-                    <Box lineHeight={1.5} marginTop={2} className={classes.text}>
-                      Lorem ipsum dolor sit amet, consectetur adipiscing elit.
-                      Nunc vitae elit ornare, mollis turpis fringilla, gravida
-                      sem. Phasellus id efficitur risus, nec imperdiet ipsum.
-                      Fusce aliquet sem quam.
+                    <Box lineHeight={1.5} marginTop={2} marginBottom={2} className={classes.text}>
+                    Los Residuos Industriales Líquidos, también conocidos como Riles,
+                    son aguas de desecho resultantes del proceso, actividad o los servicios de las industrias,
+                    y que pueden traer consigo altas concentraciones de elementos contaminantes.
                     </Box>
                   </Typography>
                 </div>
@@ -176,10 +174,9 @@ const BioRiles = () => {
                   </div>
                   <Typography align='start' variant='h1'>
                     <Box lineHeight={1.5} marginTop={2} className={classes.text}>
-                      Lorem ipsum dolor sit amet, consectetur adipiscing elit.
-                      Nunc vitae elit ornare, mollis turpis fringilla, gravida
-                      sem. Phasellus id efficitur risus, nec imperdiet ipsum.
-                      Fusce aliquet sem quam.
+                    La biomasa es el subproducto o residuo generado en las actividad agroalimentaria con potencial energético.
+                    Esa energía química queda almacenada en forma de materia orgánica; y puede recuperarse quemándola
+                    directamente o transformándola en combustible.
                     </Box>
                   </Typography>
                 </div>

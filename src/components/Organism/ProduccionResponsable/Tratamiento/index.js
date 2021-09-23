@@ -1,8 +1,7 @@
+import { Box, Grid, makeStyles, Typography } from "@material-ui/core";
 import React from "react";
-import { makeStyles, Box, Grid, Typography } from "@material-ui/core";
 import ReactPlayer from "react-player";
-import BorderWrapper from "../../../Atoms/BorderWrapper";
-import CircleArea from "../../../Atoms/CircleArea";
+import bioabono from "../../../../assets/bioabono.png";
 import { ReactComponent as PRIcon1 } from "../../../../assets/PR-icn1.svg";
 import { ReactComponent as PRIcon2 } from "../../../../assets/PR-icn2.svg";
 import { ReactComponent as PRIcon3 } from "../../../../assets/PR-icn3.svg";
@@ -11,7 +10,8 @@ import { ReactComponent as PRIcon5 } from "../../../../assets/PR-icn5.svg";
 import { ReactComponent as PRIcon6 } from "../../../../assets/PR-icn6.svg";
 import { ReactComponent as PRIcon7 } from "../../../../assets/PR-icn7.svg";
 import produccion from "../../../../assets/produccion_responsable.jpg";
-import bioabono from "../../../../assets/bioabono.png";
+import BorderWrapper from "../../../Atoms/BorderWrapper";
+import CircleArea from "../../../Atoms/CircleArea";
 
 const useStyles = makeStyles((theme) => ({
 
@@ -30,11 +30,11 @@ const useStyles = makeStyles((theme) => ({
     },
   },
   tittle: {
-    fontSize: 28,
+    fontSize: 24,
     color:"#728292"
   },
   subtittle: {
-    fontSize: 22,
+    fontSize: 18,
     color:"#728292"
   },
 }));
@@ -86,7 +86,7 @@ const ProcesosTratamiento = () => {
                 <Typography variant="h4" gutterBottom className={classes.subtittle}>
                   gracias a diferentes procesos de tratamiento
                 </Typography>
-                <img src={bioabono} width="80%"></img>
+                <img src={bioabono} width="90%"></img>
               </Grid>
               
             </Grid>

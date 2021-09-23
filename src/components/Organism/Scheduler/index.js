@@ -12,10 +12,11 @@ const useStyles = makeStyles((theme) => ({
     height: "auto",
   },
   title: {
+    fontSize: 30,
     color: theme.palette.text.button,
   },
   subtitle: {
-    fontSize: 28,
+    fontSize: 24,
   },
   gridContainer: {
     [theme.breakpoints.down("md")]: {
@@ -64,10 +65,14 @@ const Scheduler = () => {
                     GUIADA A NUESTRO MUNDO AS
                   </Typography>
                   <Typography align='start' variant='h1'>
-                    <Box lineHeight={2}>
-                    Disfruta la experiencia Skyview virtual. Agenda aquí tu visita y una coordinadora guía te conducirá en un recorrido personalizado, donde te acompañará y responderá todas tus preguntas
+                    <Box lineHeight={1.5}>
+                    Disfruta la experiencia Skyview virtual.
                     </Box>
-
+                  </Typography>
+                  <Typography align='start' variant='h1' >
+                    <Box lineHeight={1.5} marginTop="5px">
+                    Agenda aquí tu visita y una coordinadora guía te conducirá en un recorrido personalizado, donde te acompañará y responderá todas tus preguntas.
+                    </Box>
                   </Typography>
                 </Grid>
 
