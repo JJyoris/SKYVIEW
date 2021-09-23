@@ -69,8 +69,8 @@ const MundoSection = () => {
               <Grid item lg md={4} sm={6} xs={12} mt={8}>
                 <NavCard
                   image={crianza}
-                  tittle='Plantas '
-                  subtittle='Crianza'
+                  tittle='Nuestras '
+                  subtittle='Granjas'
                   link='/granja'
                 />
               </Grid>

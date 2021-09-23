@@ -55,9 +55,9 @@ const Educacion = () => {
               <Typography variant="h5" className={classes.tittle}>
                 Colegio Los Cipreses
               </Typography>
-              <Typography variant="h1">
+              <Typography variant="h1" >
                 {" "}
-                <Box lineHeight={2}>
+                <Box lineHeight={1.5} >
                   {" "}
                   La educación es una preocupación central para nuestra empresa,
                   por lo cual el año 2002 creamos el Colegio Los Cipreses a
@@ -68,10 +68,11 @@ const Educacion = () => {
                 src={colegioLosCipres}
                 alt="Colegio los Cipreses"
                 tittle="Colegio Los Cipreses"
+                width="110%"
               />
             </Grid>
             <Grid item xs={3}>
-              <img src={promedio} alt="Promedio PTU" tittle="Promedio PTU" />
+              <img src={promedio} alt="Promedio PTU" tittle="Promedio PTU"  width="100%" />
             </Grid>
           </Grid>
         </Grid>

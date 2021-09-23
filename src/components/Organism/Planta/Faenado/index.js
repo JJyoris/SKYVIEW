@@ -9,14 +9,15 @@ const useStyles = makeStyles((theme) => ({
     height: "auto",
   },
   image: {
-    width: "100%",
-    height: "35vh",
+    width: "70%",
+    height: "auto",
   },
-  title: {
-    color: theme.palette.text.button,
+  tittle: {
+    
+    fontSize: 35,
   },
   subtitle: {
-    fontSize: 28,
+    fontSize: 20,
   },
   gridContainer: {
     [theme.breakpoints.down("md")]: {
@@ -43,8 +44,8 @@ const Faenado = () => {
         display="flex"
         justifyContent="center"
         alignItems="center"
-        // marginTop={15}
-        // marginLeft={17}
+       
+
       >
         <Box width="90%" minWidth={200}>
           <Grid container direction="row" spacing={5}>
@@ -58,37 +59,37 @@ const Faenado = () => {
             >
               <ReactPlayer
                 url="https://skyviewagrosuper.com/videos/plantas_industriales/Multimedia1%20Faena.mp4"
-                width="720px"
+                width="100%"
                 height="auto"
                 className={classes.video}
                 controls
               />
             </Grid>
             <Grid item md={1}></Grid>
-            <Grid item xs={12} md={5}>
+            <Grid item xs={12} md={5} container                 justifyContent="center"
+                alignItems="center" >
               <Grid
                 container
                 direction="column"
                 spacing={5}
-                justifyContent="center"
-                alignItems="center"
+
                 className={classes.gridContainer}
               >
-                <Grid item>
-                  <img
+                <Grid item container justifyContent="center" >
+                  <img 
                     src={FaenadoImg}
                     alt="faenado"
                     className={classes.image}
                   />
-                  <Typography variant="h5" align="center">
+                  <Typography variant="h5" align="center" className={classes.tittle}>
                     Área de Faenado
                   </Typography>
-                  <Typography variant="h4" align="center" gutterBottom>
+                  <Typography variant="h4" align="center" gutterBottom  className={classes.subtitle}>
                     Explicación de nuestros procesos actuales
                   </Typography>
                 </Grid>
 
-                <Grid item></Grid>
+            
               </Grid>
             </Grid>
           </Grid>

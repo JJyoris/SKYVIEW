@@ -13,9 +13,7 @@ import { ReactComponent as IconPR10 } from "../../../../assets/PR-icn10.svg";
 import ProduccionResponsableFooter from "../../../Molecules/ProduccionResponsableFooter";
 import ReactPlayer from "react-player";
 const useStyles = makeStyles((theme) => ({
-  // root: {
-  //   height: "90vh",
-  // },
+
   background: {
     height: "70vh",
   },
@@ -33,6 +31,9 @@ const useStyles = makeStyles((theme) => ({
     boxShadow:
       "rgba(0, 0, 0, 0.19) 0px 10px 20px, rgba(0, 0, 0, 0.23) 0px 6px 6px",
   },
+  text:{
+    fontSize:14
+  }
 }));
 
 const BioRiles = () => {
@@ -89,8 +90,8 @@ const BioRiles = () => {
                     />
                   </div>
 
-                  <Typography align='start' variant='h1'>
-                    <Box lineHeight={2} marginTop={2}>
+                  <Typography align='start' variant='h1' className={classes.text}>
+                    <Box lineHeight={1.5} marginTop={2}>
                       Lorem ipsum dolor sit amet, consectetur adipiscing elit.
                       Nunc vitae elit ornare, mollis turpis fringilla, gravida
                       sem. Phasellus id efficitur risus, nec imperdiet ipsum.
@@ -132,7 +133,7 @@ const BioRiles = () => {
                     />
                   </div>
                   <Typography align='start' variant='h1'>
-                    <Box lineHeight={2} marginTop={2}>
+                    <Box lineHeight={1.5} marginTop={2} className={classes.text}>
                       Lorem ipsum dolor sit amet, consectetur adipiscing elit.
                       Nunc vitae elit ornare, mollis turpis fringilla, gravida
                       sem. Phasellus id efficitur risus, nec imperdiet ipsum.
@@ -174,7 +175,7 @@ const BioRiles = () => {
                     />
                   </div>
                   <Typography align='start' variant='h1'>
-                    <Box lineHeight={2} marginTop={2}>
+                    <Box lineHeight={1.5} marginTop={2} className={classes.text}>
                       Lorem ipsum dolor sit amet, consectetur adipiscing elit.
                       Nunc vitae elit ornare, mollis turpis fringilla, gravida
                       sem. Phasellus id efficitur risus, nec imperdiet ipsum.

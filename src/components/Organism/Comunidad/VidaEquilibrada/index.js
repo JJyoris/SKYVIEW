@@ -56,19 +56,20 @@ const VidaEquilibrada = () => {
               </Typography>
               <Typography variant="h1">
                 {" "}
-                <Box lineHeight={2}>
+                <Box lineHeight={1.5}>
                   La educación es una preocupación central para nuestra empresa,
                   por lo cual el año 2002 creamos el Colegio Los Cipreses a
                   través de la Fundación Agrosuper.{" "}
                 </Box>{" "}
               </Typography>
-              <img src={superSano} alt="Super sano" tittle="Super Sano" />
+              <img src={superSano} alt="Super sano" tittle="Super Sano" width="110%" />
             </Grid>
             <Grid item xs={3}>
               <img
                 src={disminucion}
                 alt="Disminucion de calorias"
                 tittle="Disminucion de calorias"
+                width="100%"
               />
             </Grid>
           </Grid>

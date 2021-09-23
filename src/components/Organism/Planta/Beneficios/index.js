@@ -15,6 +15,9 @@ const useStyles = makeStyles((theme) => ({
     height: "90vh",
     width: "100%",
   },
+  tittle:{
+    fontSize:30
+  }
 }));
 
 const Beneficios = () => {
@@ -28,8 +31,7 @@ const Beneficios = () => {
         height="100%"
         display='flex'
         justifyContent='center'
-        alignItems='center'
-        
+        alignItems='center'       
         
       >
         
@@ -37,7 +39,7 @@ const Beneficios = () => {
           <Typography
             variant='h5'
             align='start'
-            className={classes.title}
+            className={classes.tittle}
             gutterBottom
           >
             Beneficios de la Carne de Cerdo

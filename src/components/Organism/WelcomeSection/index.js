@@ -1,4 +1,4 @@
-import { useState, useMemo } from "react";
+import { useState, useEffect } from "react";
 import React from "react";
 import {
   Grid,
@@ -55,11 +55,14 @@ const useStyles = makeStyles((theme) => ({
 const WelcomeSection = () => {
   const classes = useStyles();
   const [open, setOpen] = useState(false);
+ 
 
-  useMemo(() => {
-    console.log("lo hizo");
-     setOpen(true);
-  }, []);
+ useEffect(() => {
+  //  effect
+  //  return () => {
+  //    cleanup
+  //  }
+ }, [])
 
   const handleClose = () => {
     setOpen(false);
@@ -108,28 +111,28 @@ const WelcomeSection = () => {
             </Typography>
             <Box margin="0px 50px">
             <Typography align="center" variant="h2" gutterBottom>
-              <Box lineHeight={1.5}>
+              <Box lineHeight={1}>
               Skyview virtual es un espacio abierto para conocer en profundidad Agrosuper.
               </Box>
             </Typography>
             <Typography align="center" variant="h2" gutterBottom>
-              <Box lineHeight={1.5} mb={3}>
+              <Box lineHeight={1} mb={2}>
               Porque somos la empresa productora de proteína más grande de Chile y tenemos mucho que contar.           </Box>
             </Typography>
             
             <Typography align="center" variant="h2" gutterBottom>
-              <Box lineHeight={1.5} mb={3}>
+              <Box lineHeight={1} mb={2}>
               Agenda tu visita guiada con nuestras coordinadoras para conocer con mas detalle todo lo que hacemos.              </Box>
             </Typography>
          
                       
           <Typography align="center" variant="h2" gutterBottom>
-              <Box lineHeight={1.5}>
+              <Box lineHeight={1}>
               Te invitamos a este viaje para que conozcas lo que somos cómo trabajamos y qué nos mueve. 
                 </Box>
             </Typography>
             <Typography align="center" variant="h2" gutterBottom>
-              <Box lineHeight={1.5}>
+              <Box lineHeight={1}>
                Porque “Alimentar lo bueno de la vida todos los días” está en nuestro ADN y queremos compartirlo contigo.
                 </Box>
             </Typography>

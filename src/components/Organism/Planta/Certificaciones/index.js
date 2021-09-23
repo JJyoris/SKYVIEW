@@ -17,19 +17,20 @@ const useStyles = makeStyles((theme) => ({
   },
 
   image: {
-    width: 750,
+    width: "50%",
     height: "auto",
     position: "absolute",
-    top: 210,
+    top: "25%",
     left: 32,
-    zIndex:-1
+    // zIndex:-1
   },
   title: {
-    color: theme.palette.text.button,
+    fontSize:13,
   },
   footer:{
-    fontSize:17,
-    color:"#203a75"
+    fontSize:14,
+    color:"#203a75",
+    margin:"0px 25px"
   }
 }));
 
@@ -39,8 +40,8 @@ const Certificaciones = () => {
   return (
     <div>
       <BorderWrapper borderColor="#f96f5a">
-        <Box width="100%" display="flex" justifyContent="center">
-          <Box width="95%" minWidth={200}>
+        <Box width="100%"  height="100%" display="flex" justifyContent="center" alignItems="center">
+          <Box width="95%" minWidth={200}  >
             <Grid
               container
               spacing={5}
@@ -49,19 +50,19 @@ const Certificaciones = () => {
               alignItems="center"
             >
               <Grid item xs={6}>
-                <img src={Img1} className={classes.image} alt="Sigas" />
+                <img src={Img1} className={classes.image} alt="Sigas"  />
               </Grid>
               <Grid item container spacing={3} xs={6}>
                 <Grid item xs={4}>
                   <img src={Dat1} alt="sigas" width="100%"  />
-                  <Typography varaint="h3" align="center">
+                  <Typography varaint="h3" align="center" className={classes.title}>
                     Sistema propio, pero auditado y certificado por un organismo
                     externo, validado internacionalmente.
                   </Typography>
                 </Grid>
                 <Grid item xs={4}>
                   <img src={Dat2} alt="sigas"  width="100%"/>
-                  <Typography varaint="h3" align="center">
+                  <Typography varaint="h3" align="center" className={classes.title}>
                     Nos certifica DQS (Sociedad Alemana deCalidad) conformado
                     por el DIN (Instituto Alemán de Normalización) y la división
                     QRS de UL (Underwriters Laboratories).
@@ -69,7 +70,7 @@ const Certificaciones = () => {
                 </Grid>
                 <Grid item xs={4}>
                   <img src={Dat3} alt="sigas" width="100%" />
-                  <Typography varaint="h3" align="center">
+                  <Typography varaint="h3" align="center" className={classes.title}>
                     Al certificarnos nos permiten el uso de los GC Marks, que
                     son una acreditación de la Union Europea respecto a las
                     diferentes variaciones.

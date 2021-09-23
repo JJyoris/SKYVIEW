@@ -4,7 +4,7 @@ import {
   Box,
   CardMedia,
   CardContent,
-  Card,
+ 
   makeStyles,
   Typography,
 } from "@material-ui/core";
@@ -20,6 +20,9 @@ const useStyles = makeStyles((theme) => ({
     height:150,
     width: "100%",
   },
+  text:{
+    fontWeight:700
+  }
 }));
 
 const NavCard = ({ image, tittle, subtittle, link }) => {
@@ -42,8 +45,8 @@ const NavCard = ({ image, tittle, subtittle, link }) => {
 
       <CardContent>
         <Box textAlign='center' mt={2}>
-          <Typography variant="h1">{tittle}</Typography>
-          <Typography variant="h1">{subtittle}</Typography>
+          <Typography variant="h1" className={classes.text}>{tittle}</Typography>
+          <Typography variant="h1" className={classes.text}> {subtittle}</Typography>
         </Box>
       </CardContent>
       

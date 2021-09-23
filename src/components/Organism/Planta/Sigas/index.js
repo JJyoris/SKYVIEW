@@ -12,8 +12,8 @@ const useStyles = makeStyles((theme) => ({
   },
   image: {
     zIndex:-1,
-   
-    height: "65vh",
+    width:"80%",
+    height: "auto",
   },
   title: {
     color: theme.palette.text.button,
@@ -51,9 +51,10 @@ const Sigas = () => {
         display='flex'
         justifyContent='center'
         alignItems='center'
+        height="100%"
       
       >
-        <Box width='90%' minWidth={200}>
+        <Box width='90%' minWidth={200}  >
           <Grid container direction='row' spacing={5} justifyContent="center" alignItems="center">
             <Grid
               item

@@ -12,22 +12,10 @@ const useStyles = makeStyles((theme) => ({
   },
    img: {
     width:"100%",
- 
+    height:"auto"
 
-    [theme.breakpoints.down("md")]: {
-      width: "260px",
-      height: "260px",
-    },
-
-    [theme.breakpoints.down("xs")]: {
-      width: "200px",
-      height: "200px",
-    },
   },
-  // slider:{
-  //     color:theme.palette.text.primary,
-    
-  // }
+
 }));
 
 
@@ -39,7 +27,7 @@ const ProcessSlider = () => {
     color:"black",
     dots: false,
     infinity: true,
-    speed: 2000,
+    // speed: 2000,
     slidesToShow: 2,   
     // centerMode:true,   
     initialSlide: 11,
@@ -48,19 +36,19 @@ const ProcessSlider = () => {
 
 
   return (
-      <Box height="100%">
-        <Slider {...settings} className={classes.slider} >
+    
+        <Slider {...settings} style={{ height: "100%"  }} >
           {processImage.map(({ name, url }) => {
             return (
-              <div key={name}>
+              <div key={name} >
            
-                  <img src={url} alt={name} className={classes.img} width="100%"  height="100%"/>
+                  <img src={url} alt={name} className={classes.img}  />
                
               </div>
             );
           })}
         </Slider>
-        </Box>
+       
  
     
   );

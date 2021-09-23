@@ -9,7 +9,7 @@ const useStyles = makeStyles((theme) => ({
     height: "auto",
   },
   image: {
-    maxWidth: 400,
+    maxWidth: "80%",
     height: "auto",
   },
   title: {
@@ -57,8 +57,8 @@ const Libertades = () => {
             >
               <ReactPlayer
                 url="https://skyviewagrosuper.com/videos/nuestras_granjas/Bienestar%20Animal.mp4"
-                width="700px"
-                height="470px"
+                width="100%"
+                height="100%"
                 className={classes.video}
                 controls
               />

@@ -126,14 +126,6 @@ const ProcessHeader = () => {
 
     },
     {
-      label: "NUESTRAS CERTIFICACIONES",
-      url: "/planta/certificaciones",
-      color: classes.planta,
-      previous: "/planta/beneficios",
-      next: null,
-
-    },
-    {
       label: "PLANTAS INDUSTRIALES",
       url: "/planta/sigas",
       color: classes.planta,
@@ -141,6 +133,17 @@ const ProcessHeader = () => {
       next: "/planta/certificaciones",
 
     },
+ 
+    {
+      label: "NUESTRAS CERTIFICACIONES",
+      url: "/planta/certificaciones",
+      color: classes.planta,
+      previous: "/planta/sigas",
+      next: null,
+
+    },
+ 
+ 
     {
       label: "NUESTRAS GRANJAS",
       url: "/granja",
