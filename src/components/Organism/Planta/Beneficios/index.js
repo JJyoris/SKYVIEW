@@ -59,7 +59,7 @@ const Beneficios = () => {
             <Grid item  lg={12} xs={12}>
             <RectangleArea
             Icon={Icn2}
-            title='Excelente fuente de fosforo'
+            title='Excelente fuente de fósforo'
             subtitle=''
             color='#FD7F2D'
           />
@@ -67,7 +67,7 @@ const Beneficios = () => {
             <Grid item  lg={12} xs={12}>
             <RectangleArea
             Icon={Icn3}
-            title='Su perfil aminoacido revela buena fuente de proteinas'
+            title='Su perfil aminoácido revela buena fuente de proteínas'
             subtitle=''
             color='#837EE8'
           />
