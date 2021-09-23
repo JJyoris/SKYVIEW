@@ -57,16 +57,11 @@ const WelcomeSection = () => {
   const [open, setOpen] = useState(true);
  
 
- useEffect(() => {
-  //  effect
-  //  return () => {
-  //    cleanup
-  //  }
- }, [])
-
   const handleClose = () => {
+    sessionStorage["PopupShown"] = "yes";
     setOpen(false);
   };
+
   const StyledButton = withStyles({
     root: {
       color: "#FFF",
@@ -81,7 +76,7 @@ const WelcomeSection = () => {
     <>
       <div className={classes.block}></div>
       <div id="home" className={classes.root}>
-        <Modal open={open} onClose={handleClose} className="modal">
+        <Modal open={ sessionStorage["PopupShown"] === "yes" ? false : open } onClose={handleClose} className="modal">
           <div style={{ borderRadius: 10, outline: 0 , width:"80%"}}>
             <ReactPlayer
               url="https://skyviewagrosuper.com/videos/intro-skyview.mp4"
