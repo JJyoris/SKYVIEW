@@ -49,50 +49,12 @@ const Proposito = () => {
   const classes = useStyles();
   return (
     <BorderWrapper borderColor="#459fc7">
-      <Box height="90%" width="90%" marginLeft={10} marginTop={3}>
+      <Box height="90%" width="90%" >
         <Grid container className={classes.grid}  spacing={5}>
           <Grid className={classes.grid} item xs={5} container direction="column">
             <img src={alimentacion} alt="alimentacion" tittle="Alimentar lo bueno todos los dias" width="100%"/>
-            {/* <Typography variant="h5" component="h1" className={classes.tittle}>
-              Alimentar
-            </Typography>
-
-            <Typography variant="h5" component="h1" className={classes.tittle}>
-              lo bueno de la vida
-            </Typography>
-            <Typography
-              variant="h5"
-              component="h1"
-              className={classes.subtittle}
-            >
-              todos los días
-            </Typography>
-            <Grid container item className={classes.gridIcons} >
-              <Grid item container alignItems="center" xs={4}>
-                <img src={icn1} className={classes.icon} />
-                <Typography className={classes.icontext} style={{color: "#007ec7",}} variant="h3">
-                  Hacer las cosas <br />
-                  siempre mejor
-                </Typography>
-              </Grid>
-              <Grid item container alignItems="center" xs={4}>
-                <img src={icn2} className={classes.icon} />
-                <Typography className={classes.icontext} style={{color:"#62bd14"}} variant="h3">
-                  Hacer las cosas <br />
-                  siempre mejor
-                </Typography>
-              </Grid>
-              <Grid item container alignItems="center" xs={4}>
-                <img src={icn3} className={classes.icon} />
-                <Typography className={classes.icontext} style={{color:"#da4f00"}} variant="h3">
-                  Hacer las cosas <br />
-                  siempre mejor
-                </Typography>
-              </Grid>
-            </Grid>*/}
-
             <Typography variant="h1" >
-              <Box lineHeight={2} textAlign="center" fontSize={17} margin="0px 40px" >
+              <Box lineHeight={2} textAlign="center" fontSize={13} margin="0px 40px" >
                 Porque alimentar es mucho más que nutrirse, es hacer que las
                 cosas pasen, es llenarse de buenas emociones y experiencias, es
                 ver la vida de forma positiva y alegre. Y queremos que tú seas

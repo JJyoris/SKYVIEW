@@ -10,13 +10,11 @@ import { ReactComponent as PRIcon4 } from "../../../../assets/PR-icn4.svg";
 import { ReactComponent as PRIcon5 } from "../../../../assets/PR-icn5.svg";
 import { ReactComponent as PRIcon6 } from "../../../../assets/PR-icn6.svg";
 import { ReactComponent as PRIcon7 } from "../../../../assets/PR-icn7.svg";
-import produccion from "../../../../assets/PRODUCCIÓN RESPONSABLE.jpg";
+import produccion from "../../../../assets/produccion_responsable.jpg";
 import bioabono from "../../../../assets/bioabono.png";
 
 const useStyles = makeStyles((theme) => ({
-  // root: {
-  //   height: "90vh",
-  // },
+
   background: {
     height: "70vh",
   },

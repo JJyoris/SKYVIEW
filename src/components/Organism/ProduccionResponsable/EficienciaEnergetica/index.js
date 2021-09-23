@@ -32,6 +32,14 @@ const useStyles = makeStyles((theme) => ({
     color: "#34B29A",
     fontSize:35
   },
+  text:{
+    fontSize:20
+  },
+  img:{
+    left:"50%",
+    position:"absolute",
+    top:"35%"
+  }
 }));
 
 const EficienciaEnergetica = () => {
@@ -59,18 +67,18 @@ const EficienciaEnergetica = () => {
               <Grid
                 item
                 container
-                spacing={5}
+                spacing={3}
                 alignItems='center'
                 justifyContent='center'
               >
                 <Grid item md={7}>
-                  <Box component='img' height='65vh' src={Ilustracion2} />
-                </Grid>
-                <Grid item md={3}>
-                  <Box component='img' height='35vh' src={Ilustracion3} />
+                  <Box component='img'width="100%" src={Ilustracion2} />
                 </Grid>
                 <Grid item md={2}>
-                  <Typography variant='h3'>
+                  <Box component='img' height='35vh' src={Ilustracion3}  className={classes.img}/>
+                </Grid>
+                <Grid item md={3}>
+                  <Typography variant='h3' className={classes.text}>
                     La mitad de la electricidad que ocupa Agrosuper será energía
                     limpia gracias a Noruega Statkraft.
                   </Typography>

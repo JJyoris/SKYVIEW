@@ -11,7 +11,7 @@ const useStyles = makeStyles((theme) => ({
   //   height: "auto",
   // },
   image: {
-    maxWidth: 400,
+    width:"80%",
     height: "auto",
   },
   title: {
@@ -44,7 +44,7 @@ const Granja = () => {
         display="flex"
         justifyContent="center"
         alignItems="center"
-        // marginTop={15}
+        
       >
         <Box width="80%" minWidth={200}>
           <Grid container direction="row" spacing={0}>
@@ -62,6 +62,7 @@ const Granja = () => {
                     src={alimentacion}
                     alt="alimentacion"
                     className={classes.image}
+
                   />
                 </Grid>
 
@@ -78,14 +79,15 @@ const Granja = () => {
             <Grid
               item
               xs={12}
-              md={6}
+              md={7}
               justifyContent="center"
               alignItems="center"
             >
               <ReactPlayer
                 url="https://skyviewagrosuper.com/videos/nuestras_granjas/Testimonial%20Noelia%20AS_17082021%20(1).mp4"
-                width="700px"
-                height="470px"
+                width="100%"
+                height="100%"
+               
                 className={classes.video}
                 controls
               />

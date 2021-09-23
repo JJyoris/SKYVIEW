@@ -34,7 +34,7 @@ const useStyles = makeStyles((theme) => ({
   subtitle:{
       color: '#fff',
       fontWeight: 600,
-      fontSize: 28
+      fontSize: 22
   }
 }));
 
@@ -70,13 +70,13 @@ const Agua = () => {
                 justifyContent='center'
               >
                 <Grid item md={4}>
-                  <Box component='img' height='60vh' src={Ilustracion4} />
+                  <Box component='img'  width="80%"  src={Ilustracion4} />
                 </Grid>
                 <Grid item md={4}>
-                  <Box component='img' height='60vh' src={Ilustracion5} />
+                  <Box component='img'  width="80%" src={Ilustracion5} />
                 </Grid>
                 <Grid item md={4}>
-                  <Box component='img' height='60vh' src={Ilustracion6} />
+                  <Box component='img' width="80%" src={Ilustracion6} />
                 </Grid>
               </Grid>
             </Grid>
