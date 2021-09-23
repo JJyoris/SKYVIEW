@@ -54,7 +54,7 @@ const useStyles = makeStyles((theme) => ({
 
 const WelcomeSection = () => {
   const classes = useStyles();
-  const [open, setOpen] = useState(false);
+  const [open, setOpen] = useState(true);
  
 
  useEffect(() => {
@@ -89,7 +89,7 @@ const WelcomeSection = () => {
               width="100%"
               height="100%"
               playing={true}
-              loop={false}
+              loop={true}
               controls={true}
             />
             <StyledButton variant="outlined" onClick={handleClose} size="small" className={classes.exitButton}>
