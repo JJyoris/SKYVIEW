@@ -79,7 +79,7 @@ const WelcomeSection = () => {
         <Modal open={ sessionStorage["PopupShown"] === "yes" ? false : open } onClose={handleClose} className="modal">
           <div style={{ borderRadius: 10, outline: 0 , width:"80%"}}>
             <ReactPlayer
-              url="https://skyviewagrosuper.com/videos/intro-skyview_reducido.mp4"
+              url="https://skyviewagrosuper.com/videos/intro-skyview.mp4"
               volume={0.2}
               width="100%"
               height="100%"
