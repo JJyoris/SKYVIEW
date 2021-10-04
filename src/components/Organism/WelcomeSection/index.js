@@ -72,7 +72,7 @@ const WelcomeSection = () => {
     },
   })(Button);
 
-  return (
+  return (  
     <>
       <div className={classes.block}></div>
       <div id="home" className={classes.root}>
