@@ -70,7 +70,7 @@ const Sigas = () => {
               </Typography>
               
               <ReactPlayer
-                url='http://skyviewagrosuper.com/videos/plantas_industriales/SIGAS_ON2.mp4'
+                url='http://skyviewagrosuper.com/videos/plantas_industriales/SIGAS_reduccion.mp4'
                 width='100%'
                 height="auto"
                 
