@@ -70,7 +70,7 @@ const WelcomeSection = () => {
     label: {
       textTransform: "capitalize",
     },
-  })(Button);
+  })(Button  );
 
   return (  
     <>
