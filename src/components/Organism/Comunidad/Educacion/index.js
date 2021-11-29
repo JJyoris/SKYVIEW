@@ -43,7 +43,7 @@ const Educacion = () => {
           <Grid container spacing={1} item>
             <Grid item xs={4}>
               <ReactPlayer
-                url="https://skyviewagrosuper.com/videos/comunidad/Colegio%20Los%20Cipreses%20Baja.mp4"
+                url="https://youtu.be/AUWHOaA2irs"
                 width="100%"
 
                 loop={true}
