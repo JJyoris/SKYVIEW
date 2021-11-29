@@ -102,7 +102,7 @@ const WelcomeSection = () => {
               className={classes.tittle}
               gutterBottom
             >
-              EXPERIENCIA SKY VIEW
+              EXPERIENCIA SKYVIEW
             </Typography>
             <Box margin="0px 50px">
             <Typography align="center" variant="h2" gutterBottom>
