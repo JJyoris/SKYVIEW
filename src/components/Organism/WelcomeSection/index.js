@@ -70,9 +70,9 @@ const WelcomeSection = () => {
     label: {
       textTransform: "capitalize",
     },
-  })(Button);
+  })(Button  );
 
-  return (
+  return (  
     <>
       <div className={classes.block}></div>
       <div id="home" className={classes.root}>
