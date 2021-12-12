@@ -4,6 +4,7 @@ import nubes from "../../../assets/nubes.png";
 import { IconButton } from "@material-ui/core";
 import cardMapContent from "../../../utils/cardMapContent";
 
+
 import RadioButtonCheckedOutlinedIcon from "@material-ui/icons/RadioButtonCheckedOutlined";
 
 import "./index.css";
@@ -87,7 +88,7 @@ const MapAgroSuper = () => {
         <RadioButtonCheckedOutlinedIcon
           style={{ fontSize: 30 }}
           className="btn-map-oficina"
-        />
+        /> 
       </IconButton>
 
       <IconButton

@@ -42,10 +42,10 @@ const Educacion = () => {
              <div className={classes.line}> </div>
           <Grid container spacing={1} item>
             <Grid item xs={4}>
-              <ReactPlayer
-                url="https://youtu.be/AUWHOaA2irs"
+            <ReactPlayer
+                url="https://skyviewagrosuper.com/videos/comunidad/Colegio%20Los%20Cipreses%20Baja.mp4"
                 width="100%"
-
+                height="auto"
                 loop={true}
                 playing={true}
                 className={classes.video}

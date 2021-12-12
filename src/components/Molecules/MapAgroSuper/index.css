@@ -17,6 +17,7 @@ body{
 }
 
 .historia{
+	
     color:#779743
 }
 .oficina{
@@ -43,6 +44,7 @@ body{
 }
 
 .icon-button-historia{
+	background: url("../../../assets/icn_1.png");
 	top: 400px;
 	left: 1350px;
 	display: flex;

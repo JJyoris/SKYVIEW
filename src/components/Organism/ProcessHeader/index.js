@@ -145,14 +145,14 @@ const ProcessHeader = () => {
  
  
     {
-      label: "NUESTRAS GRANJAS",
+      label: "NUESTROS PLANTELES",
       url: "/granja",
       color: classes.granja,
       previous: "/",
       next: "/granja/libertades",
     },
     {
-      label: "NUESTRAS GRANJAS",
+      label: "NUESTROS PLANTELES",
       url: "/granja/libertades",
       color: classes.granja,
       previous: "/granja",

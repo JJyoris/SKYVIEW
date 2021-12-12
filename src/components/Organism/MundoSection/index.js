@@ -20,7 +20,9 @@ const useStyles = makeStyles((theme) => ({
   },
   dots:{
     color:"#ee7623"
-  }
+  },
+  
+
 
 }));
 
@@ -48,9 +50,9 @@ const MundoSection = () => {
                 Descubre nuestros procesos navegando en nuestro mundo
               </Typography>
             </Box>
-            <Grid container spacing={3} item xs={11}  justifyContent="space-around">
+            <Grid  container spacing={3} item xs={11}  justifyContent="space-around">
               <Grid item lg md={4} sm={6} xs={12}>
-                <NavCard image={historia} tittle='Historia' link='/historia' />                
+                <NavCard  image={historia} tittle='Historia' link='/historia' />                
               </Grid>
               <Box  lg md={4} sm={6} xs={12} mt={8} >
                <Typography variant='h4' className={classes.dots}>. . . . </Typography>
@@ -69,8 +71,8 @@ const MundoSection = () => {
               <Grid item lg md={4} sm={6} xs={12} mt={8}>
                 <NavCard
                   image={crianza}
-                  tittle='Nuestras '
-                  subtittle='Granjas'
+                  tittle='Nuestros '
+                  subtittle='Planteles'
                   link='/granja'
                 />
               </Grid>
@@ -101,6 +103,7 @@ const MundoSection = () => {
                </Box>
               <Grid item lg md={4} sm={6} xs={12}  >
                 <NavCard
+                  
                   image={comunidad}
                   tittle='Comunidad'
                   link='/comunidad'
