@@ -8,6 +8,7 @@ import Historia from "./components/Screens/Historia";
 import ProcessHeader from "./components/Organism/ProcessHeader";
 import OficinaCentral from "./components/Screens/OficinaCentral";
 import Granja from "./components/Screens/Granja";
+import IntegracionVertical from "./components/Screens/IntegracionVertical";
 import Protocolos from './components/Organism/Planta/Protocolos'
 import Faenado from './components/Organism/Planta/Faenado'
 import Areas from './components/Organism/Planta/Areas'
@@ -44,7 +45,9 @@ function App() {
               <Route path="/historia" exact component={Historia} />
               <Route path="/oficina" exact component={OficinaCentral} />
               <Route path="/granja" exact component={Granja} />
+              <Route path="/granja/integracionvertical" exact component={IntegracionVertical} />
               <Route path="/granja/libertades" exact component={Libertades} />
+
               <Route path="/planta" exact component={Protocolos} />
               <Route path="/planta/faenado" exact component={Faenado} />
               <Route path="/planta/areas" exact component={Areas} />

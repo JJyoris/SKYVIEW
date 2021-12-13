@@ -46,40 +46,12 @@ const Granja = () => {
         alignItems="center"
         
       >
-        <Box width="80%" minWidth={200}>
+        <Box width="60%" minWidth={200}>
           <Grid container direction="row" spacing={0}>
-            <Grid item xs={12} md={5}>
-              <Grid
-                container
-                direction="column"
-                spacing={5}
-                justifyContent="center"
-                alignItems="center"
-                className={classes.gridContainer}
-              >
-                <Grid item>
-                  <img
-                    src={alimentacion}
-                    alt="alimentacion"
-                    className={classes.image}
-
-                  />
-                </Grid>
-
-                <Grid item>
-                  <img
-                    src={cuidados}
-                    alt="cuidados"
-                    className={classes.image}
-                  />
-                </Grid>
-              </Grid>
-            </Grid>
-
             <Grid
               item
               xs={12}
-              md={7}
+              
               justifyContent="center"
               alignItems="center"
             >

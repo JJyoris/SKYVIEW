@@ -102,12 +102,12 @@ const WelcomeSection = () => {
               className={classes.tittle}
               gutterBottom
             >
-              EXPERIENCIA SKY VIEW
+              EXPERIENCIA SKYVIEW
             </Typography>
             <Box margin="0px 50px">
             <Typography align="center" variant="h2" gutterBottom>
               <Box lineHeight={1}>
-              Sky View virtual es un espacio abierto para conocer en profundidad Agrosuper.
+              Skyview virtual es un espacio abierto para conocer en profundidad Agrosuper.
               </Box>
             </Typography>
             <Typography align="center" variant="h2" gutterBottom>

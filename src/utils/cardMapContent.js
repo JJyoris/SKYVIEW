@@ -1,8 +1,8 @@
-import imgHistoria from "../assets/img-nh.png";
-import imgOficina from "../assets/img-oc.png";
-import imgGranjas from "../assets/img-ng.png"
-import imgPlantas from "../assets/img-pi.png"
-import imgProduccion from "../assets/img-pr.png"
+import imgHistoria from "../assets/img-nh.gif";
+import imgOficina from "../assets/img-oc.gif";
+import imgGranjas from "../assets/img-ng.gif"
+import imgPlantas from "../assets/img-pi.gif"
+import imgProduccion from "../assets/img-pr.gif"
 import imgComunidad from "../assets/img-co.png"
 
 const cardMapContent = [

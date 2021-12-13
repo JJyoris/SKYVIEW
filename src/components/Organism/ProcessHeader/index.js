@@ -149,13 +149,20 @@ const ProcessHeader = () => {
       url: "/granja",
       color: classes.granja,
       previous: "/",
+      next: "/granja/IntegracionVertical",
+    },
+    {
+      label: "INTEGRACIÓN VERTICAL",
+      url: "/granja/IntegracionVertical",
+      color: classes.granja,
+      previous: "/granja",
       next: "/granja/libertades",
     },
     {
       label: "NUESTROS PLANTELES",
       url: "/granja/libertades",
       color: classes.granja,
-      previous: "/granja",
+      previous: "/granja/IntegracionVertical",
       next: null,
     },
 
