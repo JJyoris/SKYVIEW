@@ -63,10 +63,10 @@ const Sigas = () => {
 
             >
               <Typography variant='h3' align='start' className={classes.title}>
-                Sistema integrado propio de Agrosuper
+                SIGAS: Sistema Integrado de Gestión
               </Typography>
               <Typography variant='h4' align='start' className={classes.subtitle} gutterBottom>
-                que toma las mejores prácticas de distintas formas.
+                que toma las mejores prácticas de distintas normas.
               </Typography>
               
               <ReactPlayer

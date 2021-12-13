@@ -1,13 +1,11 @@
 import React from "react";
 import { Grid, Box, Typography, makeStyles } from "@material-ui/core";
-import CertificacionePicture from "../../../../assets/foto_slide-5.png";
 import BorderWrapper from "../../../Atoms/BorderWrapper";
-import Img1 from "../../../../assets/img-1 (1).png";
+import Img1 from "../../../../assets/img-am_ac.png";
 import Dat1 from "../../../../assets/dat-1.png";
 import Dat2 from "../../../../assets/dat-2.png";
 import Dat3 from "../../../../assets/dat-3.png";
-import flecha from "../../../../assets/flechaCertificaciones.png";
-import caja from "../../../../assets/caja.png";
+
 const useStyles = makeStyles((theme) => ({
   root: {
     height: "90vh",
@@ -17,11 +15,13 @@ const useStyles = makeStyles((theme) => ({
   },
 
   image: {
-    width: "50%",
+    width: "70%",
     height: "auto",
-    position: "absolute",
-    top: "25%",
-    left: 32,
+    justifyContent:'center',
+    alignItems:'center',
+    display:'flex',
+    marginLeft:"80px",
+    
     // zIndex:-1
   },
   title: {
@@ -29,6 +29,7 @@ const useStyles = makeStyles((theme) => ({
   },
   footer:{
     fontSize:14,
+    textAlign: 'center',
     color:"#203a75",
     margin:"0px 25px"
   }
@@ -63,7 +64,7 @@ const Certificaciones = () => {
                 <Grid item xs={4}>
                   <img src={Dat2} alt="sigas"  width="100%"/>
                   <Typography varaint="h3" align="center" className={classes.title}>
-                    Nos certifica DQS (Sociedad Alemana deCalidad) conformado
+                    Nos certifica DQS (Sociedad Alemana de Calidad) conformado
                     por el DIN (Instituto Alemán de Normalización) y la división
                     QRS de UL (Underwriters Laboratories).
                   </Typography>
@@ -76,24 +77,7 @@ const Certificaciones = () => {
                     diferentes variaciones.
                   </Typography>
                 </Grid>
-                <Grid item container>
-                  <Grid item xs={8}>
-                    <img
-                      src={flecha}
-                      alt="certificaciones"
-                      tittle="Certificaciones"
-                      width="100%"
-                    />
-                  </Grid>
-                  <Grid item xs={4}>
-                    <img
-                      src={caja}
-                      alt="certificaciones"
-                      tittle="Certificaciones"
-                      width="100%"
-                    />
-                  </Grid>
-                </Grid>
+                
                 <Typography variant="h3" className={classes.footer}>
                   
                   Cumplir con todas estas normas es muy importante porque

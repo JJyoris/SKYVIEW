@@ -71,10 +71,10 @@ const Protocolos = () => {
                       gutterBottom
                       className={classes.tittle}
                     >
-                      Protocolos de Higiene
+                      Protocolos de Seguridad
                     </Typography>
                     <Typography variant="h4" align="center" gutterBottom>
-                      Al ingresar se cumplen medidas estrictas de seguridad
+                      Al ingresar se cumplen medidas estrictas de higiene
                     </Typography>
                   </Grid>
                   <Grid item>
