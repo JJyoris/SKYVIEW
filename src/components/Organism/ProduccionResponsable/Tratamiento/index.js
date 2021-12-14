@@ -80,9 +80,7 @@ const ProcesosTratamiento = () => {
                 justifyContent="center"
                 alignItems="center"
               >
-                <Typography variant="h3" className={classes.tittle}>
-                  Impacto positivo en el medio ambiente
-                </Typography>
+                
                 <Typography variant="h4" gutterBottom className={classes.subtittle}>
                   gracias a diferentes procesos de tratamiento
                 </Typography>

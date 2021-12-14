@@ -9,6 +9,10 @@ const useStyles = makeStyles((theme) => ({
     fontSize: 25,
     color: "#08ba32",
   },
+  tittle2: {
+    fontSize: 14,
+    color: "#728292",
+  },
   grid: {
     height: "100%",
   },
@@ -40,7 +44,7 @@ const VidaEquilibrada = () => {
           className={classes.grid}
         >
           <div className={classes.line}> </div>
-          <Grid container spacing={1} item>
+          <Grid container spacing={3} item>
             <Grid item xs={4}>
               <ReactPlayer
                 url="https://skyviewagrosuper.com/videos/comunidad/Super%20Sano%20Baja.mp4"
@@ -51,15 +55,18 @@ const VidaEquilibrada = () => {
               />
             </Grid>
             <Grid item xs={5} container direction="column">
+            <Typography variant="h5" className={classes.tittle2}>
+                Vida Saludable
+              </Typography>
               <Typography variant="h5" className={classes.tittle}>
                 Súper Sano
               </Typography>
               <Typography variant="h1">
                 {" "}
-                <Box lineHeight={1.5}>
-                  La educación es una preocupación central para nuestra empresa,
-                  por lo cual el año 2002 creamos el Colegio Los Cipreses a
-                  través de la Fundación Agrosuper.{" "}
+                <Box lineHeight={1.5} marginBottom={1.5}>
+                Programa que fomenta la alimentación equilibrada y
+la actividad física en niños de primero a cuarto básico,
+profesores y apoderados.{" "}
                 </Box>{" "}
               </Typography>
               <img src={superSano} alt="Super sano" tittle="Super Sano" width="110%" />

@@ -3,7 +3,6 @@ import BorderWrapper from "../../../Atoms/BorderWrapper";
 import { Box, Grid, makeStyles } from "@material-ui/core";
 import ReactPlayer from "react-player";
 import voluntarios from "../../../../assets/voluntarios.png";
-import voluntarioVideo from "../../../../assets/VOLUNTARIADO.jpg"
 const useStyles = makeStyles((theme) => ({
   grid: {
     height: "100%",
@@ -21,14 +20,14 @@ const Voluntario = () => {
       <Box height="100%" width="100%" >
         <Grid container className={classes.grid} spacing={3} justifyContent="center"  alignItems="center">
           <Grid item xs={7} container direction="column" alignItems="center" justifyContent="center">
-            {/* <ReactPlayer
-              url="https://skyviewagrosuper.com/videos/comunidad/Manifiesto_ON4-B.mp4"
-              width="90%"
-              height="100%"
+             <ReactPlayer
+              url="https://skyviewagrosuper.com/videos/comunidad/voluntariados_as.mp4"
+              width="100%"
+              height="auto"
               className={classes.video}
-
-            /> */}
-             <img src={voluntarioVideo} alt="voluntarios" width="100%"></img>
+              controls
+           /> 
+            
           </Grid>
           <Grid item xs={5} container direction="column" alignItems="center" justifyContent="center">
             

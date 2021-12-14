@@ -59,17 +59,24 @@ const ProcessHeader = () => {
       next: "/historia/timeline",
     },
     {
-      label: "EMPRENDIMIENTO",
+      label: "COMUNIDADES",
       url: "/comunidad",
       color: classes.comunidad,
       previous: "/",
+      next: "/comunidad/emprendimiento",
+    },
+    {
+      label: "EMPRENDIMIENTO",
+      url: "/comunidad/emprendimiento",
+      color: classes.comunidad,
+      previous: "/comunidad",
       next: "/comunidad/educacion",
     },
     {
       label: "EDUCACIÓN",
       url: "/comunidad/educacion",
       color: classes.comunidad,
-      previous: "/comunidad",
+      previous: "/comunidad/emprendimiento",
       next:"/comunidad/vida",
     },
     {
