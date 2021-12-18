@@ -1,17 +1,10 @@
 import { Box, Grid, makeStyles, Typography } from "@material-ui/core";
+import { ArrowLeft } from "@material-ui/icons";
 import React from "react";
 import ReactPlayer from "react-player";
-import bioabono from "../../../../assets/bioabono.png";
-import { ReactComponent as PRIcon1 } from "../../../../assets/PR-icn1.svg";
-import { ReactComponent as PRIcon2 } from "../../../../assets/PR-icn2.svg";
-import { ReactComponent as PRIcon3 } from "../../../../assets/PR-icn3.svg";
-import { ReactComponent as PRIcon4 } from "../../../../assets/PR-icn4.svg";
-import { ReactComponent as PRIcon5 } from "../../../../assets/PR-icn5.svg";
-import { ReactComponent as PRIcon6 } from "../../../../assets/PR-icn6.svg";
-import { ReactComponent as PRIcon7 } from "../../../../assets/PR-icn7.svg";
-import produccion from "../../../../assets/produccion_responsable.jpg";
+import AreaPicture from "../../../../assets/foto_PR.png";
 import BorderWrapper from "../../../Atoms/BorderWrapper";
-import CircleArea from "../../../Atoms/CircleArea";
+
 
 const useStyles = makeStyles((theme) => ({
 
@@ -21,44 +14,45 @@ const useStyles = makeStyles((theme) => ({
   video: {
     borderRadius: 20,
     overflow: "hidden",
+
   },
   gridContainer: {
     [theme.breakpoints.down("md")]: {
       flexDirection: "row",
       alignItems: "center",
       justifyContent: "center",
+      
     },
   },
   tittle: {
     fontSize: 24,
     color:"#728292"
   },
-  subtittle: {
+  subtitle: {
     fontSize: 18,
-    color:"#728292"
+    textAlign: "left",
+    color:"#728292",
+    marginTop:"10px",
+    lineHeight:"1.5",
   },
+ 
 }));
 
 const ProcesosTratamiento = () => {
   const classes = useStyles();
   return (
     <div className={classes.root}>
-      <BorderWrapper borderColor="#34b29a">
+      <BorderWrapper background={AreaPicture} borderColor='#34b29a'>
         <Box
-          width="100%"
-          height="100%"
-          display="flex"
-          justifyContent="center"
-          alignItems="center"
+          className={classes.background}
+          width='100%'
+          display='flex'
+          justifyContent='center'
+          alignItems='center'
+          textAlign='center'
         >
-          <Box width="90%" minWidth={200}>
-            <Grid
-              container
-              direction="row"
-              spacing={5}
-              justifyContent="center"
-              alignItems="center"
-            >
+          <Box width="80%" minWidth={200}>
+            
               <Grid item xs={12} md={6}>
                 <Grid
                   container
@@ -68,24 +62,20 @@ const ProcesosTratamiento = () => {
                   alignItems="center"
                   className={classes.gridContainer}
                 >
-                  <img src={produccion} alt="produccion" width="100%" />
-                </Grid>
+                  <ReactPlayer
+                    url="https://skyviewagrosuper.com/videos/plantas_industriales/Multimedia1%20Faena.mp4"
+                    width="100%"
+                    height="auto"
+                    
+                    className={classes.video}
+                    controls
+                  />
+                  <Typography variant="h4" align="center" gutterBottom  className={classes.subtitle}>
+                    Nuestro objetico es fomentar el cuidado del medio ambiente y el usto eficiente de los recursos naturales. Incorporamos la mejor tecnología para cumplir con los más altos estándares y continuar produciendo de manera sustentable.
+                  </Typography>
               </Grid>
               
-              <Grid
-                item
-                container
-                xs={12}
-                md={6}
-                justifyContent="center"
-                alignItems="center"
-              >
-                
-                <Typography variant="h4" gutterBottom className={classes.subtittle}>
-                  gracias a diferentes procesos de tratamiento
-                </Typography>
-                <img src={bioabono} width="90%"></img>
-              </Grid>
+              
               
             </Grid>
           </Box>

@@ -213,20 +213,13 @@ const ProcessHeader = () => {
       url: "/produccion",
       color: classes.produccion,
       previous: "/",
-      next:'/produccion/bioriles',
-    },
-    {
-      label: "PRODUCCIÓN RESPONSABLE",
-      url: "/produccion/bioriles",
-      color: classes.produccion,
-      previous: "/produccion",
-      next:'/produccion/carbono',
+      next:'/produccion/agua',
     },
     {
       label: "PRODUCCIÓN RESPONSABLE",
       url: "/produccion/carbono",
       color: classes.produccion,
-      previous: "/produccion/bioriles",
+      previous: "/produccion",
       next:'/produccion/eficiencia',
     },
     {

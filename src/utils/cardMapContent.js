@@ -3,7 +3,7 @@ import imgOficina from "../assets/img-oc.gif";
 import imgGranjas from "../assets/img-ng.gif"
 import imgPlantas from "../assets/img-pi.gif"
 import imgProduccion from "../assets/img-pr.gif"
-import imgComunidad from "../assets/img-co.png"
+import imgComunidad from "../assets/img-co.gif"
 
 const cardMapContent = [
   {
