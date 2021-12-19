@@ -18,6 +18,7 @@ const useStyles = makeStyles((theme) => ({
     fontSize: 35,
   },
   tittle2: {
+    marginTop:"10px",
     fontSize: 20,
     color: "#ee7623",
   },
@@ -27,13 +28,28 @@ const useStyles = makeStyles((theme) => ({
   gridContainer: {
     [theme.breakpoints.down("md")]: {
       flexDirection: "row",
+      display:"flex",
       alignItems: "center",
       justifyContent: "center",
     },
   },
   video: {
     borderRadius: 20,
+    marginTop:"40px",
     overflow: "hidden",
+  },
+  border: {
+    padding: "10px",
+    border:"1px solid",
+    borderRadius: 50,
+    borderColor:"#ee7623",
+    overflow: "hidden",
+  },
+  abajo: {
+    display:"wrap",
+    direction:"row",
+    justifyContent:"center",
+    alignItems:"center",
   },
 }));
 
@@ -52,12 +68,13 @@ const Faenado = () => {
        
 
       >
-        <Box width="90%" minWidth={200}>
-          <Grid container direction="row" spacing={5}>
+        <Box width="100%" minWidth={200}>
+          <Grid container direction="row" >
             <Grid
               item
               xs={12}
-              md={6}
+              md={7}
+              display="flex"
               justifyContent="center"
               alignItems="center"
             
@@ -70,7 +87,6 @@ const Faenado = () => {
                 controls
               />
             </Grid>
-            <Grid item md={1}></Grid>
             <Grid item xs={12} md={5} container                 justifyContent="center"
                 alignItems="center" >
               <Grid
@@ -86,23 +102,26 @@ const Faenado = () => {
                     alt="faenado"
                     className={classes.image}
                   />
+                  <div className={classes.abajo}> 
                   <Typography variant="h5" align="center" className={classes.tittle}>
                     Área de Faenado
                   </Typography>
                   <Typography variant="h4" align="center" gutterBottom  className={classes.subtitle}>
                     Explicación de nuestros actuales procesos
                   </Typography>
+                  </div>
                    <Grid
                     item
                     container
                     direction='row'
                     justifyContent='center'
-                
+                    
                     // alignItems='center'
                     md={12}
-                    >   
-                  <LineasDeProduccion /> 
-               </Grid>
+                    >  
+                    <div className={classes.border}> 
+                  <LineasDeProduccion /> </div>
+                  </Grid>
                   <Typography variant="h5" align="center" className={classes.tittle2}>
                     Líneas de Producción
                   </Typography>

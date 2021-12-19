@@ -25,7 +25,7 @@ const useStyles = makeStyles((theme) => ({
     // zIndex:-1
   },
   title: {
-    fontSize:13,
+    fontSize:15,
   },
   footer:{
     fontSize:14,

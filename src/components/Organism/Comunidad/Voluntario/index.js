@@ -21,7 +21,7 @@ const Voluntario = () => {
         <Grid container className={classes.grid} spacing={3} justifyContent="center"  alignItems="center">
           <Grid item xs={7} container direction="column" alignItems="center" justifyContent="center">
              <ReactPlayer
-              url="https://skyviewagrosuper.com/videos/comunidad/voluntariados_as.mp4"
+              url="https://skyviewagrosuper.com/videos/comunidad/VoluntariadoAS.mp4"
               width="100%"
               height="auto"
               className={classes.video}
