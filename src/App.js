@@ -24,8 +24,11 @@ import Timeline from "./components/Screens/Timeline";
 import Libertades from "./components/Screens/Libertades";
 import BioRiles from './components/Organism/ProduccionResponsable/BioRiles';
 import HuellaCarbono from './components/Organism/ProduccionResponsable/HuellaCarbono';
-import EficienciaEnergetica from './components/Organism/ProduccionResponsable/EficienciaEnergetica';
-import Agua from "./components/Organism/ProduccionResponsable/Agua";
+import Agua1 from "./components/Organism/ProduccionResponsable/Agua-1";
+import Agua2 from "./components/Organism/ProduccionResponsable/Agua-2";
+import Olores from "./components/Organism/ProduccionResponsable/Olores";
+import Suelos from "./components/Organism/ProduccionResponsable/Suelos";
+import Eficiencia from "./components/Organism/ProduccionResponsable/Eficiencia";
 import Comunidades from "./components/Organism/Comunidad/Comunidades";
 import Emprendimiento from "./components/Organism/Comunidad/Emprendimiento";
 import Educacion from "./components/Organism/Comunidad/Educacion";
@@ -79,8 +82,11 @@ function App() {
               <Route path="/produccion" exact component={Produccion} />
               <Route path="/produccion/bioriles" exact component={BioRiles} />
               <Route path="/produccion/carbono" exact component={HuellaCarbono} />
-              <Route path="/produccion/eficiencia" exact component={EficienciaEnergetica} />
-              <Route path="/produccion/agua" exact component={Agua} />
+              <Route path="/produccion/agua-1" exact component={Agua1} />
+              <Route path="/produccion/agua-2" exact component={Agua2} />
+              <Route path="/produccion/suelos" exact component={Suelos} />
+              <Route path="/produccion/olores" exact component={Olores} />
+              <Route path="/produccion/eficiencia" exact component={Eficiencia} />
 
               
 

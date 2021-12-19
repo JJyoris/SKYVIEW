@@ -1,11 +1,9 @@
 import React from "react";
 import { Grid, Box, Typography, makeStyles } from "@material-ui/core";
 import BorderWrapper from "../../../Atoms/BorderWrapper";
-import Ilustracion4 from "../../../../assets/ilus-4.png";
-import Ilustracion5 from "../../../../assets/ilus-5.png";
-import Ilustracion6 from "../../../../assets/ilus-6.png";
+import cifras2 from "../../../../assets/cifras_sl7.png";
+import ReactPlayer from "react-player";
 
-import ProduccionResponsableFooter from "../../../Molecules/ProduccionResponsableFooter";
 const useStyles = makeStyles((theme) => ({
   root: {
     height: "90vh",
@@ -22,9 +20,10 @@ const useStyles = makeStyles((theme) => ({
     paddingBottom:5,
     paddingLeft: 15,
     paddingRight: 15,
-    backgroundColor: "#34B29A",
+    backgroundColor: "#837beb",
     width: "fit-content",
-    borderRadius: '0px 10px 10px 0px',
+    borderRadius: '0px 20px 20px 0px',
+    marginBottom: 20,
   },
   title: {
     color: "#34B29A",
@@ -32,13 +31,14 @@ const useStyles = makeStyles((theme) => ({
 
   },
   subtitle:{
-      color: '#fff',
-      fontWeight: 600,
-      fontSize: 22
-  }
+    color: '#fff',
+    fontWeight: 600,
+    fontSize: 22,
+    
+},
 }));
 
-const Agua = () => {
+const Agua2 = () => {
   const classes = useStyles();
   return (
     <div>
@@ -51,9 +51,8 @@ const Agua = () => {
           alignItems='center'
         >
           <Box width='100%' minWidth={400}>
-            <Typography className={classes.title} variant='h5'>Reutilizacion del Agua</Typography>
             <div className={classes.titleContainer}>
-            <Typography className={classes.subtitle} variant='h4'>Limpieza y Riego</Typography>
+            <Typography className={classes.subtitle} variant='h5'>Reutilización del Agua - Planteles de Crianza</Typography>
             </div>
             <Grid
               container
@@ -65,32 +64,27 @@ const Agua = () => {
               <Grid
                 item
                 container
-                spacing={5}
                 alignItems='center'
                 justifyContent='center'
               >
-                <Grid item md={4}>
-                  <Box component='img'  width="80%"  src={Ilustracion4} />
+                <Grid item md={6}>
+                <ReactPlayer
+                      url='https://skyviewagrosuper.com/videos/produccion_responsable/REUTILIZACIONDELAGUA-2.mp4'
+                      width='100%'
+                      height='auto'
+                      className={classes.videoContainer}
+                      playing
+                      controls
+                    />
                 </Grid>
-                <Grid item md={4}>
-                  <Box component='img'  width="80%" src={Ilustracion5} />
+                <Grid item md={6}>
+                  <Box component='img'  width="100%" src={cifras2} />
                 </Grid>
-                <Grid item md={4}>
-                  <Box component='img' width="80%" src={Ilustracion6} />
-                </Grid>
+                
               </Grid>
             </Grid>
 
-            <Grid
-              item
-              container
-              direction='row'
-              justifyContent='center'
-              alignItems='center'
-              md={12}
-            >
-              <ProduccionResponsableFooter />
-            </Grid>
+            
           </Box>
         </Box>
       </BorderWrapper>
@@ -98,4 +92,4 @@ const Agua = () => {
   );
 };
 
-export default Agua;
+export default Agua2;

@@ -82,8 +82,8 @@ const BioRiles = () => {
                     {" "}
                     <ReactPlayer
                       url='https://skyviewagrosuper.com/videos/produccion_responsable/BIOESTABILIZADO%20BAJA.mp4'
-                      width='auto'
-                      height='190px'
+                      width='25%'
+                      height='25%'
                       className={classes.video}
                       playing
                       loop

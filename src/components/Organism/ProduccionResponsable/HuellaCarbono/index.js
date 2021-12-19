@@ -9,12 +9,19 @@ import {
   makeStyles,
 } from "@material-ui/core";
 import BorderWrapper from "../../../Atoms/BorderWrapper";
-import ProduccionResponsableFooter from "../../../Molecules/ProduccionResponsableFooter";
 import IlustracionCarbono from "../../../../assets/ilus-1.png";
 import RadioButtonUncheckedIcon from "@material-ui/icons/RadioButtonUnchecked";
 const useStyles = makeStyles((theme) => ({
   root: {
     height: "90vh",
+  },
+  titleContainer: {
+    paddingTop: 5,
+    paddingBottom:5,
+    paddingLeft: 15,
+    paddingRight: 15,
+    backgroundColor: "#eb827f",
+    borderRadius: '0px 20px 20px 0px',
   },
   background: {
     height: "70vh",
@@ -23,7 +30,7 @@ const useStyles = makeStyles((theme) => ({
     borderRadius: 20,
     overflow: "hidden",
   },
-  titleContainer: {
+  titleContainer2: {
     marginBottom: 20,
     backgroundColor: "#66D8E350",
     width: "fit-content",
@@ -33,7 +40,7 @@ const useStyles = makeStyles((theme) => ({
     color: "#66D8E3",
   },
   title: {
-    color: "#34B29A",
+    color: "#fff",
     fontSize: 35,
   },
   text: {
@@ -62,15 +69,20 @@ const HuellaCarbono = () => {
               container
               spacing={3}
               direction="row"
-              justifyContent="center"
+              justifyContent="start"
               alignItems="center"
             > 
               <Grid item xs={9} container >
+              <div className={classes.titleContainer}>
                 <Typography className={classes.title} variant="h5">
                   Huella de Carbono
                 </Typography>
+              </div>
               </Grid>
-              <Grid item container spacing={3}                     alignItems="center"
+              <Grid item
+                    container
+                    spacing={3}
+                    alignItems="center"
                     justifyContent="center">
                 <Grid item md={5}>
                   <Box
@@ -78,7 +90,7 @@ const HuellaCarbono = () => {
                     alignItems="center"
                     justifyContent="center"
                     display="flex"
-                   
+                    marginLeft={"75px"}
                     height="auto"
                     src={IlustracionCarbono}
                     width="70%"
@@ -92,7 +104,7 @@ const HuellaCarbono = () => {
                     height="100%"
                   >
                     <List disablePadding>
-                      <div className={classes.titleContainer}>
+                      <div className={classes.titleContainer2}>
                         <ListItem>
                           <ListItemIcon>
                             <RadioButtonUncheckedIcon
@@ -116,7 +128,7 @@ const HuellaCarbono = () => {
                         </Typography>
                       </Box>
                       <div
-                        className={classes.titleContainer}
+                        className={classes.titleContainer2}
                         style={{ marginTop: 45 }}
                       >
                         <ListItem>
@@ -143,7 +155,7 @@ const HuellaCarbono = () => {
                         </Typography>
                       </Box>
                       <div
-                        className={classes.titleContainer}
+                        className={classes.titleContainer2}
                         style={{ marginTop: 45 }}
                       >
                         <ListItem>
@@ -182,7 +194,7 @@ const HuellaCarbono = () => {
                 alignItems="center"
                 md={12}
               >
-                <ProduccionResponsableFooter />
+                
               </Grid>
             </Grid>
           {/* </Box> */}
