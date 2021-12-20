@@ -1,3 +1,5 @@
+
+
 /*Time to finalise the cloud shape*/
 body{
 	overflow-x: hidden;
@@ -16,8 +18,9 @@ body{
 	
 }
 
+
+/*
 .historia{
-	
     color:#779743
 }
 .oficina{
@@ -35,6 +38,8 @@ body{
 .comunidad{
     color:#4b95c0
 }
+*/
+
 
 .modal{
 	display: flex;
@@ -44,35 +49,34 @@ body{
 }
 
 .icon-button-historia{
-	background: url("../../../assets/icn_1.png");
 	top: 400px;
-	left: 1350px;
+	left: 910px;
 	display: flex;
 	position: relative;
 }
 
 .icon-button-oficina{
 	top: 565px;
-	left: 1200px;
+	left: 650px;
 	display: flex;
 	position: relative;
 }
 
 .icon-button-comunidad{
-	top: 460px;
-	left: 2380px;
+	top: 510px;
+	left: 2080px;
 	display: flex;
 	position: relative;
 }
 .icon-button-produccion{
 	top: 380px;
-	left: 3480px;
+	left: 3380px;
 	display: flex;
 	position: relative;
 }
 .icon-button-granjas{
 	top: 470px;
-	left: 680px;
+	left: 80px;
 	display: flex;
 	position: relative;
 }
@@ -87,40 +91,40 @@ body{
 
 @media only screen and (max-width: 1600px) {
 	.icon-button-historia{
-		top: 320px;
-		left: 1150px;
+		top: 380px;
+		left: 920px;
 		display: flex;
 		position: relative;
 	}
 
 	.icon-button-oficina{
-		top: 465px;
-		left: 900px;
+		top: 565px;
+		left: 680px;
 		display: flex;
 		position: relative;
 	}
 
 	.icon-button-comunidad{
-		top: 360px;
-		left: 1950px;
+		top: 490px;
+		left: 2100px;
 		display: flex;
 		position: relative;
 	}
 	.icon-button-produccion{
 		top: 380px;
-		left: 2850px;
+		left: 3350px;
 		display: flex;
 		position: relative;
 	}
 	.icon-button-granjas{
-		top: 400px;
-		left: 520px;
+		top: 500px;
+		left: 120px;
 		display: flex;
 		position: relative;
 	}
 	.icon-button-plantas{
-		top: 360px;
-		left: 3450px;
+		top: 430px;
+		left: 4150px;
 		display: flex;
 		position: relative;
 	}
@@ -130,43 +134,43 @@ body{
 /* NOTEBOOKS - ICONS MAP */
 @media only screen and (max-width: 1280px) {
 	.icon-button-historia{
-		top: 340px;
-		left: 1120px;
+		top: 380px;
+		left: 920px;
 		display: flex;
 		position: relative;
 	}
 
 	.icon-button-oficina{
-		top: 500px;
-		left: 950px;
+		top: 600px;
+		left: 640px;
 		display: flex;
 		position: relative;
 	}
 
 	.icon-button-comunidad{
-		top: 390px;
-		left: 1990px;
+		top: 520px;
+		left: 2080px;
 		display: flex;
 		position: relative;
 	}
 
 	.icon-button-produccion{
-		top: 390px;
-		left: 2930px;
+		top: 440px;
+		left: 3960px;
 		display: flex;
 		position: relative;
 	}
 
 	.icon-button-granjas{
-		top: 400px;
-		left: 520px;
+		top: 480px;
+		left: 80px;
 		display: flex;
 		position: relative;
 	}
 
 	.icon-button-plantas{
 		top: 375px;
-		left: 3500px;
+		left: 3600px;
 		display: flex;
 		position: relative;
 	}
@@ -176,21 +180,21 @@ body{
 @media only screen and (max-width: 768px) {
     .icon-button-historia{
         top: 420px;
-        left: 1480px;
+        left: 1000px;
         display: flex;
         position: relative;
     }
 
     .icon-button-oficina{
         top: 650px;
-        left: 1260px;
+        left: 760px;
         display: flex;
         position: relative;
     }
 
     .icon-button-comunidad{
-        top: 480px;
-        left: 2590px;
+        top: 530px;
+        left: 2290px;
         display: flex;
         position: relative;
     }
@@ -202,7 +206,7 @@ body{
     }
     .icon-button-granjas{
         top: 510px;
-        left: 780px;
+        left: 180px;
         display: flex;
         position: relative;
     }
@@ -219,31 +223,31 @@ body{
 @media only screen and (max-width: 414px) {
 	.icon-button-historia{
         top: 320px;
-        left: 1010px;
+        left: 600px;
         display: flex;
         position: relative;
     }
 	.icon-button-oficina{
-        top: 460px;
-        left: 860px;
+        top: 430px;
+        left: 380px;
         display: flex;
         position: relative;
     }
 	.icon-button-comunidad{
-        top: 350px;
-        left: 1817px;
+        top: 390px;
+        left: 1517px;
         display: flex;
         position: relative;
     }
 	.icon-button-produccion{
-        top: 360px;
-        left: 2695px;
+        top: 330px;
+        left: 2550px;
         display: flex;
         position: relative;
     }
 	.icon-button-granjas{
         top: 370px;
-        left: 450px;
+        left: -120px;
         display: flex;
         position: relative;
     }
@@ -260,31 +264,31 @@ body{
 @media only screen and (max-width: 375px) {
 	.icon-button-historia{
         top: 350px;
-        left: 1140px;
+        left: 690px;
         display: flex;
         position: relative;
     }
 	.icon-button-oficina{
-        top: 515px;
-        left: 960px;
+        top: 500px;
+        left: 450px;
         display: flex;
         position: relative;
     }
 	.icon-button-comunidad{
-        top: 390px;
-        left: 2017px;
+        top: 450px;
+        left: 1717px;
         display: flex;
         position: relative;
     }
 	.icon-button-produccion{
-        top: 390px;
-        left: 2980px;
+        top: 330px;
+        left: 2880px;
         display: flex;
         position: relative;
     }
 	.icon-button-granjas{
         top: 420px;
-        left: 570px;
+        left: -50px;
         display: flex;
         position: relative;
     }
@@ -299,36 +303,79 @@ body{
 
 
 .btn-map-historia{
-	animation: changeColor 3s;
-	animation-iteration-count: infinite;
+	font-size: 14px;
+	background-color: #7e9e47;
+	color: white;
+	font-weight: bolder;
+	padding: 3px 10px;
+	border-radius: 20px;
+	display: flex;
+	justify-content: "center";
+	align-items: "center";
 }
 
 .btn-map-planta{
-	animation:changeColorPi 3s;
-	animation-iteration-count: infinite;
+	font-size: 14px;
+	background-color: #774a4b;
+	color: white;
+	font-weight: bolder;
+	padding: 3px 10px;
+	border-radius: 20px;
+	display: flex;
+	justify-content: "center";
+	align-items: "center";
+	
 }
 .btn-map-produccion{
-	animation:changeColorPr 3s;
-	animation-iteration-count: infinite;
+	font-size: 14px;
+	background-color: #34b29a;
+	color: white;
+	font-weight: bolder;
+	padding: 3px 10px;
+	border-radius: 20px;
+	display: flex;
+	justify-content: "center";
+	align-items: "center";
 }
 
 .btn-map-comunidad{
-	animation:changeColorC 3s;
-	animation-iteration-count: infinite;
+	font-size: 14px;
+	background-color: #01a0c6;
+	color: white;
+	font-weight: bolder;
+	padding: 3px 10px;
+	border-radius: 20px;
+	display: flex;
+	justify-content: "center";
+	align-items: "center";
 }
 
 .btn-map-oficina{
-	animation:changeColorO 3s;
-	animation-iteration-count: infinite;
+	font-size: 14px;
+	background-color: #22d7d9;
+	color: white;
+	font-weight: bolder;
+	padding: 3px 10px;
+	border-radius: 20px;
+	display: flex;
+	justify-content: "center";
+	align-items: "center";
 }
 
 .btn-map-granjas{
-	animation:changeColorGr 3s;
-	animation-iteration-count: infinite;
+	font-size: 14px;
+	background-color: #f96f5a;
+	color: white;
+	font-weight: bolder;
+	padding: 3px 10px;
+	border-radius: 20px;
+	display: flex;
+	justify-content: "center";
+	align-items: "center";
 }
 
 
-  /* GRANJAS  */
+  /* GRANJAS  
 @-webkit-keyframes changeColorGr {
 	0% {-webkit-color: #fff;}
  	50% {-webkit-color: #b8de6a;}
@@ -338,8 +385,11 @@ body{
 	0% {color: #fff;}
  	50% {color: #b8de6a;}
 	100%{color: #fff;}
-}
-/* OFICINA CENTRAL  */
+}*/
+
+
+
+/* OFICINA CENTRAL  
 @-webkit-keyframes changeColorO {
 	0% {-webkit-color: #fff;}
  	50% {-webkit-color: #22d7d9;}
@@ -349,9 +399,11 @@ body{
 	0% {color: #fff;}
  	50% {color: #22d7d9;}
 	100%{color: #fff;}
-}
+}*/
 
-/* COMUNIDAD  */
+
+
+/* COMUNIDAD  
 
 @-webkit-keyframes changeColorC {
 	0% {-webkit-color: #fff;}
@@ -362,9 +414,11 @@ body{
 	0% {color: #fff;}
  	50% {color: #22d7d9;}
 	100%{color: #fff;}
-}
+}*/
 
-/* PRODUCCION RESPONSABLE  */
+
+
+/* PRODUCCION RESPONSABLE  
 
 @-webkit-keyframes changeColorPr {
 	0% {-webkit-color: #fff;}
@@ -376,8 +430,10 @@ body{
 	0% {color: #fff;}
  	50% {color: #34b29a;}
 	100%{color: #fff;}
-}
-/* PLANTAS INDUSTRIALES */
+}*/
+
+
+/* PLANTAS INDUSTRIALES 
 @-webkit-keyframes changeColorPr {
 	0% {-webkit-color: #fff;}
  	50% {-webkit-color: #f96f5a;}
@@ -387,9 +443,10 @@ body{
 	0% {color: #fff;}
  	50% {color: #f96f5a;}
 	100%{color: #fff;}
-}
+}*/
 
-/* HISTORIA  */
+
+/* HISTORIA  
 @-webkit-keyframes changeColor {
 	0% {-webkit-color: #fff;}
  	50% {-webkit-color: #7e9e47;}
@@ -399,7 +456,7 @@ body{
 	0% {color: #fff;}
  	50% {color: #7e9e47;}
 	100%{color: #fff;}
-}
+}*/
 
 
 /* NUBES  */

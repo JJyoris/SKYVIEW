@@ -1,7 +1,7 @@
 import {  useState } from "react";
 import mapa from "../../../assets/fondo.png";
 import nubes from "../../../assets/nubes.png";
-import { IconButton } from "@material-ui/core";
+import { IconButton, Typography } from "@material-ui/core";
 import cardMapContent from "../../../utils/cardMapContent";
 
 
@@ -33,10 +33,15 @@ const MapAgroSuper = () => {
         className="icon-button-plantas"
         onClick={handleOpen}
       >
-        <RadioButtonCheckedOutlinedIcon
-          style={{ fontSize: 30 }}
+        <Typography
           className="btn-map-planta"
-        />
+        >
+          <RadioButtonCheckedOutlinedIcon
+          style={{ fontSize: 20, marginRight: 3 }}
+               
+          
+        />Plantas Industriales
+        </Typography>
       </IconButton>
          <IconButton
         id="Producción Responsable"
@@ -45,10 +50,15 @@ const MapAgroSuper = () => {
         className="icon-button-produccion"
         onClick={handleOpen}
       >
-        <RadioButtonCheckedOutlinedIcon
-          style={{ fontSize: 30 }}
+        <Typography
           className="btn-map-produccion"
-        />
+        >
+          <RadioButtonCheckedOutlinedIcon
+          style={{ fontSize: 20, marginRight: 3 }}
+               
+          
+        />Producción Responsable
+        </Typography>
       </IconButton>
       
       <IconButton
@@ -58,10 +68,15 @@ const MapAgroSuper = () => {
         className="icon-button-comunidad"
         onClick={handleOpen}
       >
-        <RadioButtonCheckedOutlinedIcon
-          style={{ fontSize: 30 }}
+        <Typography
           className="btn-map-comunidad"
-        />
+        >
+          <RadioButtonCheckedOutlinedIcon
+          style={{ fontSize: 20, marginRight: 3 }}
+               
+          
+        />Comunidades
+        </Typography>
       </IconButton>
       
       <IconButton
@@ -71,10 +86,15 @@ const MapAgroSuper = () => {
         className="icon-button-historia"
         onClick={handleOpen}
       >
-        <RadioButtonCheckedOutlinedIcon
-          style={{ fontSize: 30 }}
+        <Typography
           className="btn-map-historia"
-        />
+        >
+          <RadioButtonCheckedOutlinedIcon
+          style={{ fontSize: 20, marginRight: 3 }}
+               
+          
+        />Historia
+        </Typography>
       </IconButton>
 
 
@@ -85,10 +105,15 @@ const MapAgroSuper = () => {
         className="icon-button-oficina"
         onClick={handleOpen}
       >
-        <RadioButtonCheckedOutlinedIcon
-          style={{ fontSize: 30 }}
+        <Typography
           className="btn-map-oficina"
-        /> 
+        >
+          <RadioButtonCheckedOutlinedIcon
+          style={{ fontSize: 20, marginRight: 3 }}
+               
+          
+        />Oficina Central
+        </Typography> 
       </IconButton>
 
       <IconButton
@@ -98,10 +123,15 @@ const MapAgroSuper = () => {
         className="icon-button-granjas"
         onClick={handleOpen}
       >
-        <RadioButtonCheckedOutlinedIcon
-          style={{ fontSize: 30 }}
+        <Typography
           className="btn-map-granjas"
-        />
+        >
+          <RadioButtonCheckedOutlinedIcon
+          style={{ fontSize: 20, marginRight: 3 }}
+               
+          
+        />Nuestros Planteles
+        </Typography>
       </IconButton>
       
       {cardMapContent.map(({label, body, image, link , id })=>{
