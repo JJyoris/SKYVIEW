@@ -37,7 +37,7 @@ const Granja = () => {
   const classes = useStyles();
   return (
     <div id="granja" className={classes.root}>
-      <BorderWrapper borderColor='#b8de6a'> 
+      <BorderWrapper borderColor='#f96f5a'> 
       <Box
         width="100%"
         height="100%"

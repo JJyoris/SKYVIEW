@@ -25,7 +25,7 @@ const Beneficios = () => {
 
   return (
     <div>
-      <BorderWrapper background={Img1}  borderColor='#f96f5a'>
+      <BorderWrapper background={Img1}  borderColor='#774a4b'>
       <Box
         width='100%'
         height="100%"

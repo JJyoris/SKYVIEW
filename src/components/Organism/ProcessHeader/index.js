@@ -30,19 +30,19 @@ const useStyles = makeStyles((theme) => ({
     color: "#7e9e47",
   },
   comunidad: {
-    color: "#459fc7",
+    color: "#01a0c6",
   },
   oficina: {
     color: "#22d7d9",
   },
   planta: {
-    color: "#f96f5a",
+    color: "#774a4b",
   },
   produccion: {
     color: "#34b29a",
   },
   granja: {
-    color: "#b8de6a",
+    color: "#f96f5a",
   },
 }));
 

@@ -43,7 +43,7 @@ const useStyles = makeStyles((theme) => ({
     paddingBottom:5,
     paddingLeft: 15,
     paddingRight: 15,
-    backgroundColor: "#d693c9",
+    backgroundColor: "#837beb",
     width: "100%",
     height:"auto",
     borderRadius: '10px 10px 10px 10px',

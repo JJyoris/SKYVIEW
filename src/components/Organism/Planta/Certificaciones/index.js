@@ -40,7 +40,7 @@ const Certificaciones = () => {
 
   return (
     <div>
-      <BorderWrapper borderColor="#f96f5a">
+      <BorderWrapper borderColor="#774a4b">
         <Box width="100%"  height="100%" display="flex" justifyContent="center" alignItems="center">
           <Box width="95%" minWidth={200}  >
             <Grid

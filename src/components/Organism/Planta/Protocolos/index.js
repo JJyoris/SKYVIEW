@@ -39,7 +39,7 @@ const Protocolos = () => {
 
   return (
     <div className={classes.root}>
-      <BorderWrapper borderColor="#f96f5a">
+      <BorderWrapper borderColor="#774a4b">
         <Box
           width="100%"
           height="100%"
