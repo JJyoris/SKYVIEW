@@ -137,6 +137,7 @@ const WelcomeSection = () => {
           <TransformWrapper
             initialScale={1.2}
             minScale={1.2}
+            maxScale={1.7}
             initialPositionX={-2000}
             initialPositionY={-100}
             wrapperStyle={{borderRadius:"50px"}}
