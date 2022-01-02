@@ -63,7 +63,7 @@ const ProcesosTratamiento = () => {
                   className={classes.gridContainer}
                 >
                   <ReactPlayer
-                    url="https://skyviewagrosuper.com/videos/plantas_industriales/Multimedia1%20Faena.mp4"
+                    url="https://skyviewagrosuper.com/videos/produccion_responsable/ProduccionResponsable.mp4"
                     width="100%"
                     height="auto"
                     

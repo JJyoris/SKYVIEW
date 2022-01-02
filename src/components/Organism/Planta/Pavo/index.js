@@ -62,7 +62,7 @@ const Faenado = () => {
             
             >
               <ReactPlayer
-                url="https://youtu.be/AUWHOaA2irs"
+                url="https://vimeo.com/660971967/73ca0224e6"
                 width="100%"
                 
                 className={classes.video}
