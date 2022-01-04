@@ -90,6 +90,11 @@ const Protocolos = () => {
               <Grid item xs={12} md={8}>
                 <Grid item xs={12} justifyContent="center" alignItems="center">
                   <ReactPlayer
+                  // Disable download button
+                config={{ file: { attributes: { controlsList: 'nodownload' } } }}
+
+                // Disable right click
+                onContextMenu={e => e.preventDefault()}
                     url="https://skyviewagrosuper.com/videos/plantas_industriales/Agrosuper%20-%20Medidas%20de%20Seguridad%20FHD_V05.mp4"
                     width="100%"
                     height="100%"

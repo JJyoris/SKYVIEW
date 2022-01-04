@@ -103,7 +103,7 @@ const Agua1 = () => {
         >
           <Box width='100%' minWidth={400}>
           <div className={classes.titleContainer}>
-            <Typography className={classes.subtitle} variant='h5'>Reutilización de Agua - Plantas Industriales</Typography>
+            <Typography className={classes.subtitle} variant='h5'>Eficiencia Energética</Typography>
             </div>
             <Grid
               container
@@ -121,6 +121,11 @@ const Agua1 = () => {
               >
                 <Grid item md={6}>
                 <ReactPlayer
+                   // Disable download button
+                    config={{ file: { attributes: { controlsList: 'nodownload' } } }}
+
+                   // Disable right click
+                   onContextMenu={e => e.preventDefault()}
                       url='https://skyviewagrosuper.com/videos/produccion_responsable/REUTILIZACIONDELAGUA-1.mp4'
                       width='100%'
                       height='auto'

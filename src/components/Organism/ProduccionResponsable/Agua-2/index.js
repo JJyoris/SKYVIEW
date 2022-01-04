@@ -1,6 +1,7 @@
 import React from "react";
 import { Grid, Box, Typography, makeStyles } from "@material-ui/core";
 import BorderWrapper from "../../../Atoms/BorderWrapper";
+import reagua from "../../../../assets/re_agua.png";
 import cifras2 from "../../../../assets/cifras_sl7.png";
 import ReactPlayer from "react-player";
 
@@ -67,17 +68,19 @@ const Agua2 = () => {
                 alignItems='center'
                 justifyContent='center'
               >
-                <Grid item md={6}>
-                <ReactPlayer
-                      url='https://skyviewagrosuper.com/videos/produccion_responsable/REUTILIZACIONDELAGUA-2.mp4'
-                      width='100%'
-                      height='auto'
-                      className={classes.videoContainer}
-                      playing
-                      controls
-                    />
+                <Grid item md={5}>
+                  <Box
+                    component="img"
+                    alignItems="center"
+                    justifyContent="center"
+                    display="flex"
+                    marginLeft={"75px"}
+                    height="auto"
+                    src={reagua}
+                    width="90%"
+                  />
                 </Grid>
-                <Grid item md={6}>
+                <Grid item md={7}>
                   <Box component='img'  width="100%" src={cifras2} />
                 </Grid>
                 

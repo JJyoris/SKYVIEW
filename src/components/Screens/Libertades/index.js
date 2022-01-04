@@ -56,7 +56,12 @@ const Libertades = () => {
               alignItems="center"
             >
               <ReactPlayer
-                url="https://skyviewagrosuper.com/videos/nuestras_granjas/Bienestar%20Animal.mp4"
+                // Disable download button
+                config={{ file: { attributes: { controlsList: 'nodownload' } } }}
+
+                // Disable right click
+                onContextMenu={e => e.preventDefault()}              
+                url="https://skyviewagrosuper.com/videos/nuestras_granjas/Bienestar.mp4"
                 width="100%"
                 height="100%"
                 className={classes.video}

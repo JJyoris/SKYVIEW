@@ -22,7 +22,7 @@ const useStyles = makeStyles((theme) => ({
   subtittle: {
     color: "#d98a08",
     textAlign: "center",
-    fontSize: 25,
+    fontSize: 30,
     marginBottom: 20,
   },
   icontext: {
@@ -44,7 +44,7 @@ const useStyles = makeStyles((theme) => ({
   line: {
     height: 300,
     width: "96.5%",
-    background: "#728292",
+    background: "#b4bbc4",
     position: "absolute",
     margin: "0 auto 0 auto",
     zIndex: -1,
@@ -62,7 +62,7 @@ const Proposito = () => {
           <Grid className={classes.grid} item xs={4} container direction="column">
           
             <Typography variant="h1" >
-              <Box lineHeight={2} textAlign="left" fontSize={15} color={"#fff"}  >
+              <Box lineHeight={2} textAlign="left" fontSize={18} color={"#fff"}  >
               Somos un equipo de profesionales comprometidos día a día en terreno. Para construir relaciones de confianza y transformarnos en puentes de comunicación con los vecinos y nuestras comunidades. 
               </Box>
             </Typography> 

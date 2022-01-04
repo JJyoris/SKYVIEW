@@ -41,7 +41,7 @@ const useStyles = makeStyles((theme) => ({
   },
   title: {
     color: "#fff",
-    fontSize: 35,
+    fontSize: 25,
   },
   text: {
     fontSize: 14,

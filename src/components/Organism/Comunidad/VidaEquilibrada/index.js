@@ -25,7 +25,7 @@ const useStyles = makeStyles((theme) => ({
     borderRadius:50,
     zIndex: -1,
   },
-  video:{
+  video: {
     borderRadius: 20,
     overflow: "hidden",
   },
@@ -47,16 +47,23 @@ const VidaEquilibrada = () => {
           <Grid container spacing={3} item>
             <Grid item xs={4}>
               <ReactPlayer
+                // Disable download button
+                config={{ file: { attributes: { controlsList: 'nodownload' } } }}
+
+                // Disable right click
+                onContextMenu={e => e.preventDefault()}
+                className={classes.video}
                 url="https://skyviewagrosuper.com/videos/comunidad/Super%20Sano%20Baja.mp4"
                 width="100%"
+                height="auto"
                 loop={true}
                 playing={true}
-                className={classes.video}
+                controls
               />
             </Grid>
             <Grid item xs={5} container direction="column">
             <Typography variant="h5" className={classes.tittle2}>
-                Vida Saludable
+                Vida Equilibrada
               </Typography>
               <Typography variant="h5" className={classes.tittle}>
                 Súper Sano

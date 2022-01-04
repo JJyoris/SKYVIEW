@@ -105,7 +105,7 @@ const MundoSection = () => {
                 <NavCard
                   
                   image={comunidad}
-                  tittle='Comunidad'
+                  tittle='Comunidades'
                   link='/comunidad'
                 />
               </Grid>

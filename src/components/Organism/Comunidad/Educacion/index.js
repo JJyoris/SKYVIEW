@@ -40,15 +40,21 @@ const Educacion = () => {
           className={classes.grid}
         >
              <div className={classes.line}> </div>
-          <Grid container spacing={1} item>
+          <Grid container spacing={3} item>
             <Grid item xs={4}>
             <ReactPlayer
+                className={classes.video}
+                // Disable download button
+                config={{ file: { attributes: { controlsList: 'nodownload' } } }}
+
+                // Disable right click
+                onContextMenu={e => e.preventDefault()}
                 url="https://skyviewagrosuper.com/videos/comunidad/Colegio%20Los%20Cipreses%20Baja.mp4"
                 width="100%"
                 height="auto"
                 loop={true}
-                playing={true}
-                className={classes.video}
+                controls
+                
               />
             </Grid>
             <Grid item xs={5} container direction="column">

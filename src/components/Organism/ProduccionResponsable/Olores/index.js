@@ -100,6 +100,11 @@ const Olores = () => {
                     <div className={classes.videoContainer}>
                     {" "}
                       <ReactPlayer
+                      // Disable download button
+                      config={{ file: { attributes: { controlsList: 'nodownload' } } }}
+
+                      // Disable right click
+                      onContextMenu={e => e.preventDefault()}                      
                       url='https://skyviewagrosuper.com/videos/produccion_responsable/GESTIONOLORES.mp4'
                       width='600px'
                       height='auto'

@@ -67,6 +67,11 @@ const Proposito = () => {
 
           <Grid item xs={7}>
             <ReactPlayer
+              // Disable download button
+              config={{ file: { attributes: { controlsList: 'nodownload' } } }}
+
+              // Disable right click
+              onContextMenu={e => e.preventDefault()}
               url="https://skyviewagrosuper.com/videos/comunidad/Manifiesto_ON4-B.mp4"
               width="100%"
               height="auto"

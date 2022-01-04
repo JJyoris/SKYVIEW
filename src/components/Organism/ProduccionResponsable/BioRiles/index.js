@@ -164,6 +164,11 @@ const BioRiles = () => {
                   </Typography>
                   <div className={classes.videoContainer}>
                     <ReactPlayer
+                      // Disable download button
+                      config={{ file: { attributes: { controlsList: 'nodownload' } } }}
+
+                      // Disable right click
+                      onContextMenu={e => e.preventDefault()}                    
                       url='https://skyviewagrosuper.com/videos/produccion_responsable/BIOMASA%20BAJA.mp4'
                       width='auto'
                       height='190px'

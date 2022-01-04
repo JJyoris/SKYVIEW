@@ -80,6 +80,11 @@ const Faenado = () => {
             
             >
               <ReactPlayer
+              // Disable download button
+              config={{ file: { attributes: { controlsList: 'nodownload' } } }}
+
+              // Disable right click
+              onContextMenu={e => e.preventDefault()}
                 url="https://skyviewagrosuper.com/videos/plantas_industriales/Multimedia1%20Faena.mp4"
                 width="100%"
                 height="auto"

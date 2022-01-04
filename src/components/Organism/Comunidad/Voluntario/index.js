@@ -21,6 +21,11 @@ const Voluntario = () => {
         <Grid container className={classes.grid} spacing={3} justifyContent="center"  alignItems="center">
           <Grid item xs={7} container direction="column" alignItems="center" justifyContent="center">
              <ReactPlayer
+             // Disable download button
+             config={{ file: { attributes: { controlsList: 'nodownload' } } }}
+
+             // Disable right click
+             onContextMenu={e => e.preventDefault()}
               url="https://skyviewagrosuper.com/videos/comunidad/VoluntariadoAS.mp4"
               width="100%"
               height="auto"

@@ -75,6 +75,11 @@ const Granja = () => {
               alignItems="center"
             >
               <ReactPlayer
+                // Disable download button
+                config={{ file: { attributes: { controlsList: 'nodownload' } } }}
+
+                // Disable right click
+                onContextMenu={e => e.preventDefault()}              
                 url="https://skyviewagrosuper.com/videos/oficina_central/Integraci%C3%B3n%20Vertical.mp4"
                 width="100%"
                 height="100%"

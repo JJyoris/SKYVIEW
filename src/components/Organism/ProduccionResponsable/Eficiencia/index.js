@@ -136,6 +136,11 @@ const Eficiencia = () => {
               >
                 <Grid item md={6}>
                 <ReactPlayer
+                       // Disable download button
+                       config={{ file: { attributes: { controlsList: 'nodownload' } } }}
+
+                       // Disable right click
+                       onContextMenu={e => e.preventDefault()}                
                       url='https://skyviewagrosuper.com/videos/produccion_responsable/BIOMASA.mp4'
                       width='100%'
                       height='auto'
@@ -173,6 +178,11 @@ const Eficiencia = () => {
                     </Typography>
                   </div>  
                   <ReactPlayer
+                      // Disable download button
+                      config={{ file: { attributes: { controlsList: 'nodownload' } } }}
+
+                      // Disable right click
+                      onContextMenu={e => e.preventDefault()}                  
                       url='https://skyviewagrosuper.com/videos/produccion_responsable/BIOMASA%20BAJA.mp4'
                       width='50%'
                       height='auto'

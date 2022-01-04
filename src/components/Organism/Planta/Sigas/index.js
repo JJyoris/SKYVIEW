@@ -70,6 +70,11 @@ const Sigas = () => {
               </Typography>
               
               <ReactPlayer
+              // Disable download button
+              config={{ file: { attributes: { controlsList: 'nodownload' } } }}
+
+              // Disable right click
+              onContextMenu={e => e.preventDefault()}
                 url='http://skyviewagrosuper.com/videos/plantas_industriales/SIGAS_reduccion.mp4'
                 width='100%'
                 height="auto"

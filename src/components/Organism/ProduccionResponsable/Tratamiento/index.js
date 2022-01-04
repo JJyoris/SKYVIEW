@@ -63,7 +63,12 @@ const ProcesosTratamiento = () => {
                   className={classes.gridContainer}
                 >
                   <ReactPlayer
-                    url="https://skyviewagrosuper.com/videos/produccion_responsable/ProduccionResponsable.mp4"
+                    // Disable download button
+                    config={{ file: { attributes: { controlsList: 'nodownload' } } }}
+
+                    // Disable right click
+                    onContextMenu={e => e.preventDefault()}                  
+                    url="https://skyviewagrosuper.com/videos/produccion_responsable/PRODUCCION_RESPONSABLE.mp4"
                     width="100%"
                     height="auto"
                     
@@ -71,7 +76,7 @@ const ProcesosTratamiento = () => {
                     controls
                   />
                   <Typography variant="h4" align="center" gutterBottom  className={classes.subtitle}>
-                    Nuestro objetico es fomentar el cuidado del medio ambiente y el usto eficiente de los recursos naturales. Incorporamos la mejor tecnología para cumplir con los más altos estándares y continuar produciendo de manera sustentable.
+                    Nuestro objetivo es fomentar el cuidado del medio ambiente y el usto eficiente de los recursos naturales. Incorporamos la mejor tecnología para cumplir con los más altos estándares y continuar produciendo de manera sustentable.
                   </Typography>
               </Grid>
               

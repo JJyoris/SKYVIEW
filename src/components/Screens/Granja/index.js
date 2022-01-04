@@ -56,6 +56,11 @@ const Granja = () => {
               alignItems="center"
             >
               <ReactPlayer
+                // Disable download button
+                config={{ file: { attributes: { controlsList: 'nodownload' } } }}
+
+                // Disable right click
+                onContextMenu={e => e.preventDefault()}              
                 url="https://skyviewagrosuper.com/videos/nuestras_granjas/Testimonial%20Noelia%20AS_17082021%20(1).mp4"
                 width="100%"
                 height="100%"

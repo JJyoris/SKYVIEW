@@ -79,7 +79,12 @@ const WelcomeSection = () => {
         <Modal open={ sessionStorage["PopupShown"] === "yes" ? false : open } onClose={handleClose} className="modal">
           <div style={{ borderRadius: 10, outline: 0 , width:"80%"}}>
             <ReactPlayer
-              url="https://skyviewagrosuper.com/videos/intro-skyview.mp4"
+              // Disable download button
+              config={{ file: { attributes: { controlsList: 'nodownload' } } }}
+
+              // Disable right click
+              onContextMenu={e => e.preventDefault()}            
+              url="https://skyviewagrosuper.com/videos/intro.mp4"
               volume={0.2}
               width="100%"
               height="100%"

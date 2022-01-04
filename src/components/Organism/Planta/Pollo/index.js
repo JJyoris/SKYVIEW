@@ -62,7 +62,12 @@ const Faenado = () => {
             
             >
               <ReactPlayer
-                url="https://vimeo.com/660972960/2af5c4a8e0"
+              // Disable download button
+              config={{ file: { attributes: { controlsList: 'nodownload' } } }}
+
+              // Disable right click
+              onContextMenu={e => e.preventDefault()}
+                url="https://youtu.be/jG0DWgyaFnI"
                 width="100%"
                 
                 className={classes.video}

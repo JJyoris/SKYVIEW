@@ -139,6 +139,11 @@ const Suelos = () => {
                            src={icnbio} />Bioestabilizado</Typography>
                   </div>
                   <ReactPlayer
+                      // Disable download button
+                      config={{ file: { attributes: { controlsList: 'nodownload' } } }}
+
+                      // Disable right click
+                      onContextMenu={e => e.preventDefault()}                  
                       url='https://skyviewagrosuper.com/videos/produccion_responsable/BIOESTABILIZADO%20BAJA.mp4'
                       width='25%'
                       height='auto'

@@ -78,6 +78,11 @@ const Historia = () => {
 
               <Grid item xs={8} md={6}>
                 <ReactPlayer
+                  // Disable download button
+                  config={{ file: { attributes: { controlsList: 'nodownload' } } }}
+
+                  // Disable right click
+                  onContextMenu={e => e.preventDefault()}                
                   url="https://skyviewagrosuper.com/videos/nuestra_historia/Video%20Intro%20Historia.mp4"
                   width="100%"
                   height="AUTO"
