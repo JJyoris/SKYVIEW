@@ -63,7 +63,7 @@ const VidaEquilibrada = () => {
             </Grid>
             <Grid item xs={5} container direction="column">
             <Typography variant="h5" className={classes.tittle2}>
-                Vida Equilibrada
+                Alimentación Equilibrada
               </Typography>
               <Typography variant="h5" className={classes.tittle}>
                 Súper Sano
