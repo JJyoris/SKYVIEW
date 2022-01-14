@@ -80,7 +80,7 @@ const ProcessHeader = () => {
       next:"/comunidad/vida",
     },
     {
-      label: "VIDA EQUILIBRADA",
+      label: "ALIMENTACIÓN EQUILIBRADA",
       url: "/comunidad/vida",
       color: classes.comunidad,
       previous: "/comunidad/educacion",
