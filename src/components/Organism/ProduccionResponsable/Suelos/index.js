@@ -144,7 +144,7 @@ const Suelos = () => {
 
                       // Disable right click
                       onContextMenu={e => e.preventDefault()}                  
-                      url='https://skyviewagrosuper.com/videos/produccion_responsable/BIOESTABILIZADO%20BAJA.mp4'
+                      url='https://skyviewagrosuper.com/videos/produccion_responsable/Bioestabilizado.mp4'
                       width='25%'
                       height='auto'
                       className={classes.videoContainer}

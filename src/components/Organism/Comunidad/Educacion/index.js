@@ -49,7 +49,7 @@ const Educacion = () => {
 
                 // Disable right click
                 onContextMenu={e => e.preventDefault()}
-                url="https://skyviewagrosuper.com/videos/comunidad/Colegio%20Los%20Cipreses%20Baja.mp4"
+                url="https://skyviewagrosuper.com/videos/comunidad/Colegio%20Los%20Cipreses.mp4"
                 width="100%"
                 height="auto"
                 loop={true}
